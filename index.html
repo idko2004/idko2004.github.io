@@ -6,8 +6,9 @@
 		
 		<link rel="stylesheet" href="style.css">
 
-		<script defer src="random.js"></script>
-		<script defer src="background.js"></script>
+		<script defer src="js/random.js"></script>
+		<script defer src="js/background.js"></script>
+		<script defer src="js/modals.js"></script>
 	</head>
 	<body>
 		<div id="loadingScreen" hidden>
@@ -27,9 +28,20 @@
 								<h2>Projects</h2>
 							</div>
 						</div>
+						<div>
+							<article>
+								<a href="http://idko.infinityfreeapp.com/md-view" target="_blank">
+									<img src="img/mdview.svg" class="card" right-click="modal-mdview" alt="md-view" title="md-view: Markdown Viewer">
+								</a>
+							</article>
+						</div>
 					</section>
 				</main>
 			</div>
 		</div>
+		<!--Windowses-->
+		<dialog id="modal-mdview">
+
+		</dialog>
 	</body>
 </html>
