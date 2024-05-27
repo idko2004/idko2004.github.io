@@ -1,0 +1,153 @@
+dialog
+{
+	width: 50rem;
+	/*height: 40rem;*/
+	max-width: 90vw;
+	/*max-height: 80vh;*/
+	border: 0;
+	border-radius: 0.7rem;
+	padding: 0;
+	overflow: hidden;
+}
+
+dialog header
+{
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 0.8rem;
+	margin: 0;
+}
+
+dialog main
+{
+	height: 25rem;
+	max-height: 75vh;
+	overflow: auto;
+
+	line-height: 1.5rem;
+	padding: 0.8rem 0.8rem calc((0.8rem * 2) + 2rem) 0.8rem; /*The calc is done to prevent the content from being behind the footer, or at least try to*/
+	margin: 0;
+}
+
+dialog footer
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+}
+
+dialog footer div
+{
+	padding: 0.8rem;
+}
+
+dialog footer a,
+.closemodal
+{
+	display: inline-block;
+	height: var(--icon-size);
+	width: var(--icon-size);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: transform 70ms linear;
+}
+
+dialog footer a:hover,
+.closemodal:hover
+{
+	transform: scale(1.2);
+}
+
+.github-link
+{
+	background-image: url("commonassets/icons/github-mark/github-mark.svg");
+	margin-right: 1rem;
+	--icon-size: 2rem;
+}
+
+.project-link
+{
+	background-image: url("commonassets/icons/svgrepo/outside-page-no-padding.svg");
+	margin-right: 1rem;
+	--icon-size: 2rem;
+}
+
+.closemodal
+{
+	background-image: url("commonassets/icons/svgrepo/close-clean-no-padding.svg");
+	float: right;
+	cursor: pointer;
+	--icon-size: 1rem;
+	margin-top: calc(1.5rem /4);
+}
+
+.anim-generic-zoom-in
+{
+	animation: generic-zoom-in 300ms linear 1;
+}
+
+@keyframes generic-zoom-in
+{
+	0%
+	{
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	70%
+	{
+		transform: scale(1.07);
+		opacity: 1;
+	}
+
+	100%
+	{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.anim-generic-zoom-out
+{
+	animation: generic-zoom-out 150ms linear 1;
+}
+
+@keyframes generic-zoom-out
+{
+	0%
+	{
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100%
+	{
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+
+/*
+	card specifics
+*/
+
+/*   md-view   */
+#modal-mdview
+{
+	font-family: system-ui;
+}
+
+#modal-mdview header
+{
+	background-color: #f0f0f0;
+	text-decoration: underline;
+	text-decoration-color: #62a0ea;
+}
+
+#modal-mdview footer
+{
+	background-color: #f0f0f0;
+}
+
