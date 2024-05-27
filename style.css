@@ -1,0 +1,13 @@
+html
+{
+	--bg-gradient-1: #deddda;
+	--bg-gradient-2: #9a9996;
+	--bg-rotation: -9deg;
+}
+
+body
+{
+	background: linear-gradient(var(--bg-rotation), var(--bg-gradient-2), var(--bg-gradient-1));
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
