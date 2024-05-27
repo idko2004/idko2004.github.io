@@ -1,7 +1,7 @@
 html
 {
-	--bg-gradient-1: #deddda;
-	--bg-gradient-2: #9a9996;
+	--bg-gradient-1: #9a9996;
+	--bg-gradient-2: #241f31;
 	--bg-rotation: -9deg;
 }
 
@@ -77,4 +77,9 @@ article a img
 	width: 20rem;
 	max-width: 70vw;
 	cursor: pointer;
+}
+
+article
+{
+	margin-bottom: 1rem;
 }
