@@ -85,7 +85,7 @@ dialog footer a:hover,
 
 .anim-generic-zoom-in
 {
-	animation: generic-zoom-in 300ms linear 1;
+	animation: generic-zoom-in 250ms linear 1;
 }
 
 @keyframes generic-zoom-in
@@ -111,7 +111,7 @@ dialog footer a:hover,
 
 .anim-generic-zoom-out
 {
-	animation: generic-zoom-out 150ms linear 1;
+	animation: generic-zoom-out 100ms linear 1;
 }
 
 @keyframes generic-zoom-out

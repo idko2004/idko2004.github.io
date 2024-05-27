@@ -1,5 +1,5 @@
 //	Animations
-const cardAnimationList =
+const modalAnimationList =
 {
 	'modal-mdview':
 	{
@@ -10,7 +10,9 @@ const cardAnimationList =
 	}
 }
 
-async function animateCard(card, id, open)
+let dialogOpened; //Save the current opened dialog
+
+async function animateModal(modal, id, open)
 {
 	return new Promise((good, bad) =>
 	{
@@ -27,19 +29,19 @@ async function animateCard(card, id, open)
 			actionAnim = 'closeAnim';
 		}
 
-		let classname = cardAnimationList[id][actionClass];
-		let animname = cardAnimationList[id][actionAnim];
+		let classname = modalAnimationList[id][actionClass];
+		let animname = modalAnimationList[id][actionAnim];
 
-		let animationListener = card.addEventListener('animationend', (e) =>
+		let animationListener = modal.addEventListener('animationend', (e) =>
 		{
 			if(e.animationName !== animname) return;
 
-			card.classList.remove(classname);
-			card.removeEventListener("animationend", animationListener);
+			modal.classList.remove(classname);
+			modal.removeEventListener("animationend", animationListener);
 			good();
 		});
 
-		card.classList.add(classname);
+		modal.classList.add(classname);
 	});
 }
 
@@ -52,29 +54,43 @@ for(let i = 0; i < cards.length; i++)
 		e.preventDefault();
 
 		let id = e.target.getAttribute('right-click');
-		let card = document.getElementById(id);
+		let modal = document.getElementById(id);
 
-		card.showModal();
-		animateCard(card, id, true);
+		modal.showModal();
+		animateModal(modal, id, true);
+		dialogOpened = id;
 	});
 }
 
-//	To make the cards close
-async function closeCardByAttribute(e)
+//	To make the modals close
+async function closeModal(modal, modalID)
 {
-	const modalID = e.target.getAttribute('modalparent');
-	
-	const card = document.getElementById(modalID);
-
-	await animateCard(card, modalID, false);
-	card.close();
+	await animateModal(modal, modalID, false);
+	modal.close();
+	dialogOpened = null;
 }
 
+//	To make the modals close clicking the close button
 const closeModalButtons = document.getElementsByClassName('closemodal');
 for(let i = 0; i < closeModalButtons.length; i++)
 {
 	closeModalButtons[i].addEventListener('click', (e) =>
 	{
-		closeCardByAttribute(e);
+		const modalID = e.target.getAttribute('modalparent');
+	
+		const modal = document.getElementById(modalID);
+	
+		closeModal(modal, modalID);
+	});
+}
+
+//	To make the modals close by clicking outside
+const dialogs = document.getElementsByTagName('dialog');
+for(let i = 0; i < dialogs.length; i++)
+{
+	dialogs[i].addEventListener('click', (e) =>
+	{
+		if(e.target.id !== dialogOpened) return;
+		closeModal(e.target, e.target.id);
 	});
 }
