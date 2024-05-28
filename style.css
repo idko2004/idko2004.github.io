@@ -77,6 +77,12 @@ article a img
 	width: 20rem;
 	max-width: 70vw;
 	cursor: pointer;
+	transition: transform 100ms cubic-bezier(.39,.58,.57,1);
+}
+
+article a img:hover
+{
+	transform: scale(1.1);
 }
 
 article
