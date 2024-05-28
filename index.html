@@ -6,6 +6,7 @@
 		
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="dialog.css">
+		<link rel="stylesheet" href="commonassets/fonts.css">
 
 		<script defer src="js/random.js"></script>
 		<script defer src="js/background.js"></script>
@@ -36,8 +37,8 @@
 								</a>
 							</article>
 							<article>
-								<a href="http://idko.infinityfreeapp.com/md-view" target="_blank">
-									<img src="img/unidad.svg" class="card" right-click="modal-mdview" alt="md-view" title="md-view: Markdown Viewer">
+								<a href="http://idko.infinityfreeapp.com/unidad" target="_blank">
+									<img src="img/unidad.svg" class="card" right-click="modal-unidad" alt="Unidad" title="Unidad: LAN cards game">
 								</a>
 							</article>
 						</div>
@@ -50,7 +51,7 @@
 			<div>
 				<header>
 					md-view
-					<a class="closemodal" alt="close button" title="Close" modalparent="modal-mdview"></a>
+					<a class="closemodal dark-icon" alt="close button" title="Close" modalparent="modal-mdview"></a>
 				</header>
 				<main>
 					<p>md-view is a markdown reader for the browser.</p>
@@ -59,11 +60,33 @@
 				</main>
 				<footer>
 					<div>
-						<a class="github-link" href="https://github.com/idko2004/md-view" target="_blank" alt="github logo" title="View the source code"></a>
-						<a class="project-link" href="http://idko.infinityfreeapp.com/md-view" target="_blank" alt="go to project" title="Try it out"></a>
+						<a class="github-link dark-icon" href="https://github.com/idko2004/md-view" target="_blank" alt="github logo" title="View the source code"></a>
+						<a class="project-link dark-icon" href="http://idko.infinityfreeapp.com/md-view" target="_blank" alt="go to project" title="Try it out"></a>
 					</div>
 				</footer>
 			</div>
 		</dialog>
+
+		<dialog id="modal-unidad">
+			<div>
+				<header>
+					Unidad
+					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-unidad"></a>
+				</header>
+				<main>
+					<p>Unidad is a cards game similar to UNO that you can play with others in your local network.</p>
+					<p>Do you know how nobody plays UNO with the official rules? Well, this is basically UNO but with the rules I'm used to play with (although you surely may know some of them).</p>
+					<p>Also, there are <i>more special cards</i>, these are new cards from this game.</p>
+					<p>To play, you need to iniciate the server (works great on termux), the server will tell you your ip address in your local network, access to that ip from your favorite web browser, and tell your friend to do the same. Now you can play together!!!</p>
+				</main>
+				<footer>
+					<div>
+						<a class="github-link light-icon" href="https://github.com/idko2004/unidad" target="_blank" alt="github logo" title="View the source code"></a>
+						<a class="project-link light-icon" href="http://idko.infinityfreeapp.com/unidad" target="_blank" alt="go to project" title="Try it out"></a>
+					</div>
+				</footer>
+			</div>
+		</dialog>
+
 	</body>
 </html>

@@ -7,6 +7,13 @@ const modalAnimationList =
 		openAnim: 'generic-zoom-in',
 		closeClass: 'anim-generic-zoom-out',
 		closeAnim: 'generic-zoom-out'
+	},
+	'modal-unidad':
+	{
+		openClass: 'anim-unidad-open',
+		openAnim: 'unidad-open',
+		closeClass: 'anim-unidad-close',
+		closeAnim: 'unidad-close'
 	}
 }
 

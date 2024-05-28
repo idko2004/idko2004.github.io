@@ -60,23 +60,37 @@ dialog footer a:hover,
 	transform: scale(1.2);
 }
 
+.light-icon
+{
+	--github-icon: url("commonassets/icons/github-mark/github-mark-white.svg");
+	--project-icon: url("commonassets/icons/svgrepo/outside-page-no-padding-white.svg");
+	--close-icon: url("commonassets/icons/svgrepo/close-clean-no-padding-white.svg");
+}
+
+.dark-icon
+{
+	--github-icon: url("commonassets/icons/github-mark/github-mark.svg");
+	--project-icon: url("commonassets/icons/svgrepo/outside-page-no-padding.svg");
+	--close-icon: url("commonassets/icons/svgrepo/close-clean-no-padding.svg");
+}
+
 .github-link
 {
-	background-image: url("commonassets/icons/github-mark/github-mark.svg");
+	background-image: var(--github-icon);
 	margin-right: 1rem;
 	--icon-size: 2rem;
 }
 
 .project-link
 {
-	background-image: url("commonassets/icons/svgrepo/outside-page-no-padding.svg");
+	background-image: var(--project-icon);
 	margin-right: 1rem;
 	--icon-size: 2rem;
 }
 
 .closemodal
 {
-	background-image: url("commonassets/icons/svgrepo/close-clean-no-padding.svg");
+	background-image: var(--close-icon);
 	float: right;
 	cursor: pointer;
 	--icon-size: 1rem;
@@ -149,5 +163,62 @@ dialog footer a:hover,
 #modal-mdview footer
 {
 	background-color: #f0f0f0;
+}
+
+/*   Unidad   */
+#modal-unidad
+{
+	background-color: #241f31;
+	color: #f6f5f4;
+	font-family: 'Tilt Warp', cursive;
+}
+
+#modal-unidad header,
+#modal-unidad footer
+{
+	background-color: #c01c28;
+}
+
+.anim-unidad-open
+{
+	animation: unidad-open 300ms ease-in-out 1;
+}
+
+@keyframes unidad-open
+{
+	0%
+	{
+		transform: rotateZ(20deg);
+		opacity: 0;
+	}
+	60%
+	{
+		transform: rotateZ(-6deg);
+		opacity: 0.6;
+	}
+	100%
+	{
+		transform: rotateZ(0deg);
+		opacity: 1;
+	}
+}
+
+.anim-unidad-close
+{
+	animation: unidad-close 100ms linear 1;
+}
+
+@keyframes unidad-close
+{
+	0%
+	{
+		transform: rotateZ(0deg);
+		opacity: 1;
+	}
+	100%
+	{
+		transform: rotateZ(15deg);
+		opacity: 0;
+	}
 }
 
