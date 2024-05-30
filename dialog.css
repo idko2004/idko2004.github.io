@@ -99,7 +99,7 @@ dialog footer a:hover,
 
 .anim-generic-zoom-in
 {
-	animation: generic-zoom-in 250ms linear 1;
+	animation: generic-zoom-in 250ms cubic-bezier(.39,.58,.57,1) 1;
 }
 
 @keyframes generic-zoom-in
@@ -125,7 +125,7 @@ dialog footer a:hover,
 
 .anim-generic-zoom-out
 {
-	animation: generic-zoom-out 100ms linear 1;
+	animation: generic-zoom-out 100ms cubic-bezier(.39,.58,.57,1) 1;
 }
 
 @keyframes generic-zoom-out
@@ -142,6 +142,48 @@ dialog footer a:hover,
 		opacity: 0;
 	}
 }
+
+.anim-generic-scalex-open
+{
+	animation: generic-scalex-open 250ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
+@keyframes generic-scalex-open
+{
+	0%
+	{
+		transform: scaleX(0);
+	}
+	70%
+	{
+		transform: scaleX(1.1);
+	}
+	100%
+	{
+		transform: scaleX(1);
+	}
+}
+
+.anim-generic-scalex-close
+{
+	animation: generic-scalex-close 100ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
+@keyframes generic-scalex-close
+{
+	0%
+	{
+		transform: scaleX(1);
+	}
+	100%
+	{
+		transform: scaleX(0);
+	}
+}
+
+
+
+
 
 /*
 	card specifics
@@ -164,6 +206,10 @@ dialog footer a:hover,
 {
 	background-color: #f0f0f0;
 }
+
+
+
+
 
 /*   Unidad   */
 #modal-unidad
@@ -220,5 +266,23 @@ dialog footer a:hover,
 		transform: rotateZ(15deg);
 		opacity: 0;
 	}
+}
+
+
+
+
+
+/*   colon-three-bot   */
+#modal-colonthreebot
+{
+	background-color: #2e3035;
+	color: #dbdee1;
+	font-family: 'Noto Sans', system-ui;
+}
+
+#modal-colonthreebot header,
+#modal-colonthreebot footer
+{
+	background-color: #161cbb;
 }
 

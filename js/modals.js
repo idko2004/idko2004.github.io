@@ -14,6 +14,13 @@ const modalAnimationList =
 		openAnim: 'unidad-open',
 		closeClass: 'anim-unidad-close',
 		closeAnim: 'unidad-close'
+	},
+	'modal-colonthreebot':
+	{
+		openClass: 'anim-generic-scalex-open',
+		openAnim: 'generic-scalex-open',
+		closeClass: 'anim-generic-scalex-close',
+		closeAnim: 'generic-scalex-close'
 	}
 }
 

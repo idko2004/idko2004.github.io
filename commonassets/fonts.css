@@ -195,6 +195,22 @@
 }
 
 /*
+	Noto Sans
+*/
+@font-face
+{
+	font-family: 'Noto Sans';
+	src: url('fonts/NotoSans-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face
+{
+	font-family: 'Sans Sans';
+	src: url('fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf');
+	font-style: italic;
+}
+
+/*
 	Playfair
 */
 @font-face
