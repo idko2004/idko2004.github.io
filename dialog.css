@@ -97,6 +97,11 @@ dialog footer a:hover,
 	margin-top: calc(1.5rem /4);
 }
 
+.spacer
+{
+	margin: 0 0.5rem;
+}
+
 .anim-generic-zoom-in
 {
 	animation: generic-zoom-in 250ms cubic-bezier(.39,.58,.57,1) 1;
