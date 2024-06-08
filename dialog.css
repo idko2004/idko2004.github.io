@@ -285,14 +285,15 @@ dialog footer a:hover,
 /*   colon-three-bot   */
 #modal-colonthreebot
 {
-	background-color: #2e3035;
 	color: #dbdee1;
+	background-color: #2e3035;
 	font-family: 'Noto Sans', system-ui;
 }
 
 #modal-colonthreebot header,
 #modal-colonthreebot footer
 {
-	background-color: #161cbb;
+	background-color: #3a406e;
+	color: #c9cdfb;
 }
 
