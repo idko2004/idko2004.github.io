@@ -46,7 +46,25 @@
 									<img src="img/colon-three-bot.svg" class="card" right-click="modal-colonthreebot" alt="Unidad" title="colon-three-bot: A Discord bot that does :3">
 								</a>
 							</article>
+							<article>
+								<a href="https://github.com/idko2004/secret-santa" target="_blank">
+									<img src="img/secretsanta.svg" class="card" right-click="modal-secretsanta" alt="Secret santa" title="Secret Santa: Organize a secret santa between your friends on discord">
+								</a>
+							</article>
+							<article>
+								<a href="http://idko.infinityfreeapp.com/dot-matrix" target="_blank">
+									<img src="img/dotmatrix.svg" class="card" right-click="modal-dotmatrix" alt="Dot Matrix" title='Dot Matrix: "Simulating" a dot matrix billboard'>
+								</a>
+							</article>
+							<article>
+								<a href="https://github.com/idko2004/convertMusic" target="_blank">
+									<img src="img/convertmusic.svg" class="card" right-click="modal-convertmusic" alt="convertMusic" title='convertMusic: Use ffmpeg to convert a folder of one type of files to another'>
+								</a>
+							</article>
 						</div>
+					</section>
+					<section>
+						<button class="btn-showthings">Show small projects</button>
 					</section>
 				</main>
 			</div>
@@ -137,6 +155,51 @@
 			</div>
 		</dialog>
 
+		<dialog id="modal-secretsanta">
+			<div>
+				<header>
+					Secret Santa
+					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-secretsanta"></a>
+				</header>
+				<main>
+					<p>Secret santa is a Discord bot for doing a... secret santa.</p>
+					<p>
+						The way it works is:
+						<ul>
+							<li>It sends a message in the specified channel.</li>
+							<li>The people who wants to participate react to the message with a specific emoji.</li>
+							<li>If the participant has the requiered role (optional), another role is given to them.</li>
+							<li>You should set up that role in a way that it gives access to a secret santa channel.</li>
+							<li>When you click the send santas button, the participants will receive their santa in their DMs (please tell everyone to keep their DMs open).</li>
+						</ul>
+					</p>
+				</main>
+				<footer>
+					<div>
+						<a class="github-link light-icon" href="https://github.com/idko2004/secret-santa" target="_blank" alt="github logo" title="View the source code"></a>
+					</div>
+				</footer>
+			</div>
+		</dialog>
+
+		<dialog id="modal-dotmatrix">
+			<div>
+				<header>
+					<img src="img/dotmatrix-title.svg" alt="Dot Matrix">
+					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-dotmatrix"></a>
+				</header>
+				<main>
+					<p>Dot Matrix is just a simple webpage that simulates a Dot matrix display billboard.</p>
+					<p>I made it because i thought it would be funny.</p>
+				</main>
+				<footer>
+					<div>
+						<a class="github-link light-icon" href="https://github.com/idko2004/dot-matrix" target="_blank" alt="github logo" title="View the source code"></a>
+						<a class="project-link light-icon" href="http://idko.infinityfreeapp.com/dot-matrix" target="_blank" alt="go to project" title="Try it out"></a>
+					</div>
+				</footer>
+			</div>
+		</dialog>
 
 	</body>
 </html>

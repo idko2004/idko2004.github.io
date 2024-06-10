@@ -89,3 +89,16 @@ article
 {
 	margin-bottom: 1rem;
 }
+
+.btn-showthings
+{
+	margin: 2rem 0;
+	width: 100%;
+	padding: 0.5rem;
+	font-size: 1rem;
+	border: 2px solid #9141ac;
+	border-radius: 0.7rem;
+	background-image: linear-gradient(to right, #9141ac, #613583);
+	color: white;
+	cursor: pointer;
+}

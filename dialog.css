@@ -116,19 +116,19 @@ dialog footer a:hover,
 {
 	0%
 	{
-		transform: scale(0.4);
+		transform: scale(0.4) rotateZ(10deg);
 		opacity: 0;
 	}
 
 	70%
 	{
-		transform: scale(1.07);
+		transform: scale(1.07) rotateZ(0deg);
 		opacity: 1;
 	}
 
 	100%
 	{
-		transform: scale(1);
+		transform: scale(1) rotateZ(0deg);
 		opacity: 1;
 	}
 }
@@ -142,13 +142,13 @@ dialog footer a:hover,
 {
 	0%
 	{
-		transform: scale(1);
+		transform: scale(1) rotateZ(0deg);
 		opacity: 1;
 	}
 
 	100%
 	{
-		transform: scale(0.7);
+		transform: scale(0.7) rotateZ(-10deg);
 		opacity: 0;
 	}
 }
@@ -162,15 +162,15 @@ dialog footer a:hover,
 {
 	0%
 	{
-		transform: scaleX(0);
+		transform: scaleX(0) rotateZ(5deg);
 	}
 	70%
 	{
-		transform: scaleX(1.1);
+		transform: scaleX(1.1) rotateZ(0deg);
 	}
 	100%
 	{
-		transform: scaleX(1);
+		transform: scaleX(1) rotateZ(0deg);
 	}
 }
 
@@ -188,6 +188,44 @@ dialog footer a:hover,
 	100%
 	{
 		transform: scaleX(0);
+	}
+}
+
+.anim-generic-scaley-open
+{
+	animation: generic-scaley-open 250ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
+@keyframes generic-scaley-open
+{
+	0%
+	{
+		transform: scaleY(0) rotateZ(5deg);
+	}
+	70%
+	{
+		transform: scaleY(1.1) rotateZ(0deg);
+	}
+	100%
+	{
+		transform: scaleY(1) rotateZ(0deg);
+	}
+}
+
+.anim-generic-scaley-close
+{
+	animation: generic-scaley-close 100ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
+@keyframes generic-scaley-close
+{
+	0%
+	{
+		transform: scaleY(1);
+	}
+	100%
+	{
+		transform: scaleY(0);
 	}
 }
 
@@ -297,3 +335,61 @@ dialog footer a:hover,
 	color: #c9cdfb;
 }
 
+
+
+/*   Secret Santa   */
+#modal-secretsanta
+{
+	background-color: #241f31;
+	color: #fff;
+	font-family: 'Noto Sans', system-ui;
+}
+
+#modal-secretsanta header,
+#modal-secretsanta footer
+{
+	background-color: #c01c28;
+}
+
+
+/*   Dot Matrix   */
+.anim-steps-right-open
+{
+	animation: right-open 250ms steps(3) 1;
+}
+
+@keyframes right-open
+{
+	0%
+	{
+		transform: translateX(50vw);
+	}
+	100%
+	{
+		transform: translateX(0);
+	}
+}
+
+.anim-steps-left-close
+{
+	animation: left-close 250ms steps(3) 1;
+}
+
+@keyframes left-close
+{
+	0%
+	{
+		transform: translateX(0);
+	}
+	100%
+	{
+		transform: translateX(-50vw);
+	}
+}
+
+#modal-dotmatrix
+{
+	background-color: #000;
+	color: #fff;
+	font-family: system-ui;
+}

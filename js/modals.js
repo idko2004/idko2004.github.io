@@ -21,6 +21,20 @@ const modalAnimationList =
 		openAnim: 'generic-scalex-open',
 		closeClass: 'anim-generic-scalex-close',
 		closeAnim: 'generic-scalex-close'
+	},
+	'modal-secretsanta':
+	{
+		openClass: 'anim-generic-scaley-open',
+		openAnim: 'generic-scaley-open',
+		closeClass: 'anim-generic-scaley-close',
+		closeAnim: 'generic-scaley-close'
+	},
+	'modal-dotmatrix':
+	{
+		openClass: 'anim-steps-right-open',
+		openAnim: 'right-open',
+		closeClass: 'anim-steps-left-close',
+		closeAnim: 'left-close'
 	}
 }
 
