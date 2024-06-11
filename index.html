@@ -11,7 +11,8 @@
 		<script defer src="js/random.js"></script>
 		<script defer src="js/background.js"></script>
 		<script defer src="js/modals.js"></script>
-		<script defer src="js/showsections.js"></script>
+		<!--script defer src="js/showsections.js"></script-->
+		<script defer src="js/music.js"></script>
 	</head>
 	<body>
 		<div id="contentScreen">
@@ -58,13 +59,10 @@
 							</article>
 						</div>
 					</section>
-					<section>
-						<button class="btn-showthings" id="showsmallprojects">Show small projects</button>
-					</section>
-					<section id="smallprojectssection" hidden>
+					<section id="smallprojectssection">
 						<div class="h2-container-container">
 							<div class="h2-container">
-								<h2>Small Projects</h2>
+								<h2>Smaller Projects</h2>
 							</div>
 						</div>
 						<div>
@@ -86,9 +84,6 @@
 						</div>
 					</section>
 					<section>
-						<button class="btn-showthings" id="showabandonedprojects">Show abandoned projects</button>
-					</section>
-					<section>
 
 					</section>
 				</main>
@@ -100,14 +95,19 @@
 			</div>
 			<div class="musiccontainercontainer">
 				<div class="musiccontainer">
-					<div style="grid-column: 1; grid-row: 1; --music-cover:url('img/music/hawaiipartiijpg');" class="musiccover" alt="Cover of the recomended album"></div>
+					<div style="grid-column: 1; grid-row: 1;" id="divmusiccover" class="musiccover" title="Cover of the recomended album"></div>
 					<div style="grid-column: 2; grid-row: 1;">
-						<div class="musictitle"><a id="amusictitle" href="">Some music I really like</a></div>
-						<div class="musicalbum"><a id="amusicalbum" href="">Some album I really like</a></div>
-						<div class="musicartist"><a id="amusicartist" href="">Some artist I really like</a></div>
+						<div class="musictitle"><a id="amusictitle" href="https://youtu.be/HJNxcmp5nHg" target="_blank">Something</a></div>
+						<div class="musicalbum"><a id="amusicalbum" href="https://youtu.be/LaJTDvX2yFs" target="_blank">Something</a></div>
+						<div class="musicartist"><a id="amusicartist" href="https://youtu.be/u79QHXzKq2M" target="_blank">Something</a></div>
+						<div>
+							<a class="listenlink" id="listenlink" target="_blank" href="https://youtu.be/slwmJLaVrdE">
+								<img src="commonassets/icons/svgrepo/play-clean-white.svg" alt="Play icon" title="Listen in Youtube Music">
+							</a>
+						</div>
 					</div>
 					<div style="grid-column: 1/4; grid-row: 2;" class="musiclyric" id="musiclyric">
-						"Some phrase in the music that I really like"
+						"Wooops. You have to put the CD in your computer."
 					</div>
 				</div>
 			</div>
