@@ -11,9 +11,12 @@ body
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: white;
+	margin: 0;
+	border: 0;
+	padding: 0 0 5rem 0;
 }
 
-#contentScreen, body
+#contentScreen
 {
 	border: 0;
 	margin: 0;
@@ -92,13 +95,24 @@ article
 
 .btn-showthings
 {
-	margin: 2rem 0;
+	margin: 1rem 0;
 	width: 100%;
 	padding: 0.5rem;
 	font-size: 1rem;
-	border: 2px solid #9141ac;
+	/*border: 1.5px solid #1a5fb4;*/
+	border: 0;
 	border-radius: 0.7rem;
-	background-image: linear-gradient(to right, #9141ac, #613583);
+	/*background-image: linear-gradient(to right, #62a0ea, #1a5fb4);*/
+	background-image: linear-gradient(to right, #1a5fb4, #613583);
 	color: white;
+	font-weight: bold;
 	cursor: pointer;
+	transition: transform 100ms cubic-bezier(.39,.58,.57,1);
+	box-shadow: 0 0 1px 0px #613583 inset, 0 0 1px 0px #613583;
+}
+
+.btn-showthings:hover
+{
+	text-decoration: underline;
+	transform: scale(1.1);
 }

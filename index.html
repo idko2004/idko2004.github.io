@@ -11,16 +11,21 @@
 		<script defer src="js/random.js"></script>
 		<script defer src="js/background.js"></script>
 		<script defer src="js/modals.js"></script>
+		<script defer src="js/showsections.js"></script>
 	</head>
 	<body>
-		<div id="loadingScreen" hidden>
-			Doing things...
-		</div>
 		<div id="contentScreen">
 			<header>
 				<div>Welcome to</div>
 				<h1>idko's projects</h1>
 				<div class="header-tooltip"><small><i><b>Tip:</b> Right-click (or hold) a project to see details</i></small></div>
+				<noscript>
+					<div class="h2-container-container">
+						<div class="h2-container">
+							<h2>Some things might not work if JavaScript is disabled</h2>
+						</div>
+					</div>
+				</noscript>
 			</header>
 			<div class="container">
 				<main>
@@ -51,6 +56,18 @@
 									<img src="img/secretsanta.svg" class="card" right-click="modal-secretsanta" alt="Secret santa" title="Secret Santa: Organize a secret santa between your friends on discord">
 								</a>
 							</article>
+						</div>
+					</section>
+					<section>
+						<button class="btn-showthings" id="showsmallprojects">Show small projects</button>
+					</section>
+					<section id="smallprojectssection" hidden>
+						<div class="h2-container-container">
+							<div class="h2-container">
+								<h2>Small Projects</h2>
+							</div>
+						</div>
+						<div>
 							<article>
 								<a href="http://idko.infinityfreeapp.com/dot-matrix" target="_blank">
 									<img src="img/dotmatrix.svg" class="card" right-click="modal-dotmatrix" alt="Dot Matrix" title='Dot Matrix: "Simulating" a dot matrix billboard'>
@@ -61,14 +78,23 @@
 									<img src="img/convertmusic.svg" class="card" right-click="modal-convertmusic" alt="convertMusic" title='convertMusic: Use ffmpeg to convert a folder of one type of files to another'>
 								</a>
 							</article>
+							<article>
+								<a href="https://github.com/idko2004/random-c" target="_blank">
+									<img src="img/randomc.svg" class="card" right-click="modal-randomc" alt="random-c" title='random-c: Generate a random number'>
+								</a>
+							</article>
 						</div>
 					</section>
 					<section>
-						<button class="btn-showthings">Show small projects</button>
+						<button class="btn-showthings" id="showabandonedprojects">Show abandoned projects</button>
 					</section>
 				</main>
 			</div>
 		</div>
+
+
+
+
 <!--Windowses-->
 		<dialog id="modal-mdview">
 			<div>
@@ -196,6 +222,44 @@
 					<div>
 						<a class="github-link light-icon" href="https://github.com/idko2004/dot-matrix" target="_blank" alt="github logo" title="View the source code"></a>
 						<a class="project-link light-icon" href="http://idko.infinityfreeapp.com/dot-matrix" target="_blank" alt="go to project" title="Try it out"></a>
+					</div>
+				</footer>
+			</div>
+		</dialog>
+
+		<dialog id="modal-convertmusic">
+			<div>
+				<header>
+					convertMusic
+					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-convertmusic"></a>
+				</header>
+				<main>
+					<p>convertMusic is a little node.js program that converts files in a folder to another format using ffmpeg.</p>
+					<p>Like, for example, imagine that your car has a cheap stereo system that only works with mp3 files, but all your music files are in opus, instead of converting them one by one with ffmpeg, you can just use this program.</p>
+					<p>This program is basically a glorified way of running "ffmpeg -i input.opus output.mp3", I mean, that's literally what it does, but for each file in a folder.</p>
+				</main>
+				<footer>
+					<div>
+						<a class="github-link light-icon" href="https://github.com/idko2004/convertMusic" target="_blank" alt="github logo" title="View the source code"></a>
+					</div>
+				</footer>
+			</div>
+		</dialog>
+
+		<dialog id="modal-randomc">
+			<div>
+				<header>
+					random-c
+					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-convertmusic"></a>
+				</header>
+				<main>
+					<p>random-c is my first program written in the C language<span class="spacer">c:</span></p>
+					<p>It chooses one of the options you give in the arguments. Or a random number if you use the -d flag.</p>
+					<p>Can choose from a file with the -f flag, or be piped to another program with the -p flag.</p>
+				</main>
+				<footer>
+					<div>
+						<a class="github-link light-icon" href="https://github.com/idko2004/convertMusic" target="_blank" alt="github logo" title="View the source code"></a>
 					</div>
 				</footer>
 			</div>

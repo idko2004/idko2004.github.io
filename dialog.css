@@ -393,3 +393,23 @@ dialog footer a:hover,
 	color: #fff;
 	font-family: system-ui;
 }
+
+
+
+/*   convertMusic   */
+#modal-convertmusic
+{
+	background-color: #000;
+	color: #44aa00;
+	font-family: 'JetBrains Mono';
+}
+
+
+
+/*   random-c   */
+#modal-randomc
+{
+	background-color: #000;
+	color: #f2f2f2;
+	font-family: 'JetBrains Mono';
+}

@@ -35,6 +35,20 @@ const modalAnimationList =
 		openAnim: 'right-open',
 		closeClass: 'anim-steps-left-close',
 		closeAnim: 'left-close'
+	},
+	'modal-convertmusic':
+	{
+		openClass: 'anim-generic-zoom-in',
+		openAnim: 'generic-zoom-in',
+		closeClass: 'anim-generic-scaley-close',
+		closeAnim: 'generic-scaley-close'
+	},
+	'modal-randomc':
+	{
+		openClass: 'anim-generic-scaley-open',
+		openAnim: 'generic-scaley-open',
+		closeClass: 'anim-generic-scalex-close',
+		closeAnim: 'generic-scalex-close'
 	}
 }
 
