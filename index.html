@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>idko projects</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="dialog.css">
@@ -10,16 +12,23 @@
 
 		<script defer src="js/random.js"></script>
 		<script defer src="js/background.js"></script>
+		<script defer src="js/language.js"></script>
 		<script defer src="js/modals.js"></script>
-		<!--script defer src="js/showsections.js"></script-->
 		<script defer src="js/music.js"></script>
 	</head>
 	<body>
 		<div id="contentScreen">
 			<header>
-				<div>Welcome to</div>
-				<h1>idko's projects</h1>
-				<div class="header-tooltip"><small><i><b>Tip:</b> Right-click (or hold) a project to see details</i></small></div>
+				<div class="txt" txt="welcometo">Welcome to</div>
+				<h1 class="txt" txt="maintitle">idko's projects</h1>
+				<div class="header-tooltip">
+					<small>
+						<i>
+							<b class="txt" txt="tip">Tip: </b>
+							<span class="txt" txt="rightclicktip">Right-click (or hold) a project to see details</span>
+						</i>
+					</small>
+				</div>
 				<noscript>
 					<div class="h2-container-container">
 						<div class="h2-container">
@@ -33,28 +42,28 @@
 					<section>
 						<div class="h2-container-container">
 							<div class="h2-container">
-								<h2>Projects</h2>
+								<h2 class="txt" txt="projects">Projects</h2>
 							</div>
 						</div>
 						<div>
 							<article>
 								<a href="http://idko.infinityfreeapp.com/md-view" target="_blank">
-									<img src="img/mdview.svg" class="card" right-click="modal-mdview" alt="md-view" title="md-view: Markdown Viewer">
+									<img src="img/mdview.svg" class="card titletxt" titletxt="tmdview" right-click="modal-mdview" alt="md-view" title="md-view: Markdown Viewer">
 								</a>
 							</article>
 							<article>
 								<a href="http://idko.infinityfreeapp.com/unidad" target="_blank">
-									<img src="img/unidad.svg" class="card" right-click="modal-unidad" alt="Unidad" title="Unidad: LAN cards game">
+									<img src="img/unidad.svg" class="card titletxt" titletxt="tunidad" right-click="modal-unidad" alt="Unidad" title="Unidad: LAN cards game">
 								</a>
 							</article>
 							<article>
 								<a href="https://github.com/idko2004/colon-three-bot" target="_blank">
-									<img src="img/colon-three-bot.svg" class="card" right-click="modal-colonthreebot" alt="Unidad" title="colon-three-bot: A Discord bot that does :3">
+									<img src="img/colon-three-bot.svg" class="card titletxt" titletxt="tcolonthree" right-click="modal-colonthreebot" alt="colon-three-bot" title="colon-three-bot: A Discord bot that does :3">
 								</a>
 							</article>
 							<article>
 								<a href="https://github.com/idko2004/secret-santa" target="_blank">
-									<img src="img/secretsanta.svg" class="card" right-click="modal-secretsanta" alt="Secret santa" title="Secret Santa: Organize a secret santa between your friends on discord">
+									<img src="img/secretsanta.svg" class="card titletxt" titletxt="tsanta" right-click="modal-secretsanta" alt="Secret santa" title="Secret Santa: Organize a secret santa between your friends on discord">
 								</a>
 							</article>
 						</div>
@@ -62,23 +71,23 @@
 					<section id="smallprojectssection">
 						<div class="h2-container-container">
 							<div class="h2-container">
-								<h2>Smaller Projects</h2>
+								<h2 class="txt" txt="smallerprojects">Smaller Projects</h2>
 							</div>
 						</div>
 						<div>
 							<article>
 								<a href="http://idko.infinityfreeapp.com/dot-matrix" target="_blank">
-									<img src="img/dotmatrix.svg" class="card" right-click="modal-dotmatrix" alt="Dot Matrix" title='Dot Matrix: "Simulating" a dot matrix billboard'>
+									<img src="img/dotmatrix.svg" class="card titletxt" titletxt="tmatrix" right-click="modal-dotmatrix" alt="Dot Matrix" title='Dot Matrix: "Simulating" a dot matrix billboard'>
 								</a>
 							</article>
 							<article>
 								<a href="https://github.com/idko2004/convertMusic" target="_blank">
-									<img src="img/convertmusic.svg" class="card" right-click="modal-convertmusic" alt="convertMusic" title='convertMusic: Use ffmpeg to convert a folder of one type of files to another'>
+									<img src="img/convertmusic.svg" class="card titletxt" titletxt="tconvertmusic" right-click="modal-convertmusic" alt="convertMusic" title='convertMusic: Use ffmpeg to convert a folder of one type of files to another'>
 								</a>
 							</article>
 							<article>
 								<a href="https://github.com/idko2004/random-c" target="_blank">
-									<img src="img/randomc.svg" class="card" right-click="modal-randomc" alt="random-c" title='random-c: Generate a random number'>
+									<img src="img/randomc.svg" class="card titletxt" titletxt="trandomc" right-click="modal-randomc" alt="random-c" title='random-c: Generate a random number'>
 								</a>
 							</article>
 						</div>
@@ -90,19 +99,19 @@
 			</div>
 			<div class="h2-container-container">
 				<div class="h2-container">
-					<h2>Music Recomendation</h2>
+					<h2 class="txt" txt="musicrecomend">Music Recomendation</h2>
 				</div>
 			</div>
 			<div class="musiccontainercontainer">
 				<div class="musiccontainer">
-					<div style="grid-column: 1; grid-row: 1;" id="divmusiccover" class="musiccover" title="Cover of the recomended album"></div>
+					<div style="grid-column: 1; grid-row: 1;" id="divmusiccover" class="musiccover titletxt" titletxt="albumcover" title="Cover of the recomended album"></div>
 					<div style="grid-column: 2; grid-row: 1;">
 						<div class="musictitle"><a id="amusictitle" href="https://youtu.be/HJNxcmp5nHg" target="_blank">Something</a></div>
 						<div class="musicalbum"><a id="amusicalbum" href="https://youtu.be/LaJTDvX2yFs" target="_blank">Something</a></div>
 						<div class="musicartist"><a id="amusicartist" href="https://youtu.be/u79QHXzKq2M" target="_blank">Something</a></div>
 						<div>
 							<a class="listenlink" id="listenlink" target="_blank" href="https://youtu.be/slwmJLaVrdE">
-								<img src="commonassets/icons/svgrepo/play-clean-white.svg" alt="Play icon" title="Listen in Youtube Music">
+								<img src="commonassets/icons/svgrepo/play-clean-white.svg" class="alttxt titletxt" alttxt="playicon" titletxt="listenyt" alt="Play icon" title="Listen in Youtube Music">
 							</a>
 						</div>
 					</div>
