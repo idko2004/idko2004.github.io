@@ -18,6 +18,29 @@ body
 	font-family: 'Ubuntu', system-ui;
 }
 
+#langbtn
+{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+
+	padding: 0.5rem;
+	font-size: 0.8rem;
+
+	background-color: var(--bg-gradient-2);
+
+	color: #f6f5f4;
+	border: 0;
+	border-radius: 0.7rem;
+	cursor: pointer;
+}
+
+#langbtn:hover
+{
+	text-decoration: underline;
+}
+
+
 #contentScreen
 {
 	border: 0;

@@ -29,21 +29,7 @@ dialog main
 	margin: 0;
 }
 
-dialog footer
-{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	margin: 0;
-}
-
-dialog footer div
-{
-	padding: 0.8rem;
-}
-
-dialog footer a,
+dialog .projecticons a,
 .closemodal
 {
 	display: inline-block;
@@ -54,7 +40,7 @@ dialog footer a,
 	transition: transform 70ms linear;
 }
 
-dialog footer a:hover,
+dialog .projecticons a:hover,
 .closemodal:hover
 {
 	transform: scale(1.2);
@@ -358,6 +344,11 @@ dialog footer a:hover,
 	animation: right-open 250ms steps(3) 1;
 }
 
+.anim-fluid-right-open
+{
+	animation: right-open 250ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
 @keyframes right-open
 {
 	0%
@@ -373,6 +364,11 @@ dialog footer a:hover,
 .anim-steps-left-close
 {
 	animation: left-close 250ms steps(3) 1;
+}
+
+.anim-fluid-left-close
+{
+	animation: left-close 100ms cubic-bezier(.39,.58,.57,1) 1;
 }
 
 @keyframes left-close
@@ -412,4 +408,33 @@ dialog footer a:hover,
 	background-color: #000;
 	color: #f2f2f2;
 	font-family: 'JetBrains Mono';
+}
+
+/*   language   */
+#modal-language
+{
+	background-color: #3d3846;
+	color: white;
+}
+#modal-language main
+{
+	height: 5rem;
+}
+
+#modal-language .langbtn
+{
+	width: 100%;
+	font-size: 1rem;
+	background-color: #77767b;
+	color: white;
+	margin: 0.3rem 0;
+	padding: 0.3rem;
+	border: 0;
+	border-radius: 0.7rem;
+	cursor: pointer;
+}
+
+.langbtn:hover
+{
+	text-decoration: underline;
 }

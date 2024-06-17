@@ -1,6 +1,13 @@
 //	Animations
 const modalAnimationList =
 {
+	'modal-language':
+	{
+		openClass: 'anim-fluid-right-open',
+		openAnim: 'right-open',
+		closeClass: 'anim-fluid-left-close',
+		closeAnim: 'left-close'
+	},
 	'modal-mdview':
 	{
 		openClass: 'anim-generic-zoom-in',
