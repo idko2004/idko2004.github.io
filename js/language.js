@@ -3,6 +3,7 @@ const supportedLanguages = ['es', 'en'];
 
 const allTexts =
 {
+	'windowtitle': {es: 'La idko página', en: "idko's projects"},
 	'chlang': {es: 'Change language', en: 'Cambiar idioma'},
 	'welcometo': {es: 'Bienvenido a', en: 'Welcome to'},
 	'maintitle': {es: 'La idko página', en: "idko's projects"},
