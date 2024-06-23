@@ -18,17 +18,19 @@
 		<script defer src="js/language.js"></script>
 		<script defer src="js/music.js"></script>
 
-		<link rel="prefetch" href="commonassets/icons/github-mark/github-mark.svg">
-		<link rel="prefetch" href="commonassets/icons/svgrepo/outside-page-no-padding.svg">
-		<link rel="prefetch" href="commonassets/fonts/TiltWarp-Regular-VariableFont.ttf">
-		<link rel="prefetch" href="commonassets/icons/svgrepo/close-clean-no-padding.svg">
-		<link rel="prefetch" href="commonassets/icons/svgrepo/close-clean-no-padding-white.svg">
-		<link rel="prefetch" href="commonassets/icons/github-mark/github-mark-white.svg">
-		<link rel="prefetch" href="commonassets/icons/svgrepo/outside-page-no-padding-white.svg">
-		<link rel="prefetch" href="commonassets/fonts/NotoSans-VariableFont_wdth,wght.ttf">
-		<link rel="prefetch" href="commonassets/fonts/JetBrainsMono-VariableFont_wght.ttf">
-		<link rel="prefetch" href="commonassets/fonts/JetBrainsMono-VariableFont_wght.ttf">
+		<link rel="stylesheet" href="prefetch.css">
+		<!--Aquí poner fuentes para precargar-->
+		<!--Idealmente pondríamos todo aquí y con rel="prefetch" pero se ve que los navegadores son tontísimos-->
+		<link rel="preload" href="commonassets/fonts/Ubuntu-Regular.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/Ubuntu-Italic.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/Ubuntu-Bold.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/Ubuntu-BoldItalic.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/TiltWarp-Regular-VariableFont.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/NotoSans-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="commonassets/fonts/JetBrainsMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
 	</head>
+
 	<body>
 		<div id="contentScreen">
 			<header>

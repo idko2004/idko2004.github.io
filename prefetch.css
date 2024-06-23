@@ -1,0 +1,15 @@
+:root:before
+{
+	content: /*Aquí poner imágenes e iconos para precargar*/
+			url('commonassets/icons/github-mark/github-mark-white.svg')
+			url('commonassets/icons/svgrepo/outside-page-no-padding-white.svg')
+			url('commonassets/icons/svgrepo/close-clean-no-padding-white.svg')
+			url('commonassets/icons/github-mark/github-mark.svg')
+			url("commonassets/icons/svgrepo/outside-page-no-padding.svg")
+			url("commonassets/icons/svgrepo/close-clean-no-padding.svg");
+	/* partial fallback */
+	visibility: hidden;
+	position: absolute;
+	left: -999em;
+}
+
