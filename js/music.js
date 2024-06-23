@@ -282,7 +282,8 @@ const musics =
 			"I think I think I am unsure of what to say.",
 			"Live long and prosper while the winter melts away.",
 			"I've got Anubis on my back and something in my shoe.",
-			"Don't walk backwards, don't be jealous."
+			"Don't walk backwards, don't be jealous.",
+			"I cease to see you when I start to shut my eyes."
 		]
 	},
 	{
@@ -301,7 +302,127 @@ const musics =
 			"Kiss me under the bologna tree.",
 			"Hey! Stop licking my kangaroo!"
 		]
+	},
+	{
+		title: 'Dead Sea Monkeys',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=nvs38PgCN68',
+		lyrics:
+		[
+			"I love my brine shrimp pals, they are my friends.\nI watch them float around inside their tank.",
+			"But when I came back home from school today.\nMy little friends were dead and I was sad.",
+			"The other day they were alive.\nAnd now they're floating at the top.\nI knew they wouldn't last forever.\nAnd now they're just a bunch of dead sea monkeys.",
+			"Will my sea monkeys go to heaven?",
+			"Will my sea monkeys go to hell?",
+			"I miss 'em, I miss 'em, me oh my!\nI miss 'em, I miss 'em, me oh my!\nI miss 'em, I miss 'em, me oh my!\nI miss 'em, I miss 'em, me oh my!"
+		]
+	},
+	{
+		title: 'Sky Is Not Blue',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=95tWFGej2RE',
+		lyrics:
+		[
+			"I made you these construction paper dolls.\nConnected by the hands with tiny little faces.\nAnd now I'll hang them on the walls.\nSo you can see the people filling up the spaces.",
+			"I think I am the only one to ever realize that I am.\nThe only one to realize what's true.\nWhen all the world is stuck in a jam:\nThe sky is not blue",
+			"Will my sea monkeys go to hell?",
+			"I might have stated what I thought before.\nI might have kept it in, my memory is failing.\nI might have stumbled through the door.\nYou might have stared and asked what I had been inhaling.",
+			"I'm setting up my tiny little town.\nA Lego set in which I'm planning to retire.\nIt's really time I settled down.\nBut not before I set everything on fire.",
+			"They tell me things I can't deny.\nThey tell me I'm a sap, I'm a square.\nThey tell me things I already knew.\nThe greatest of the secrets they share:\nThe sky is not blue."
+		]
+	},
+	{
+		title: 'Pumpkin Pie',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=0Npj_Evy54U',
+		lyrics:
+		[
+			"There lived a merchant in the days of old.\nWho is remembered for the things he sold.\nNo silly trinkets, silver, bronze, or gold.\nSo I'm told, so I'm told.",
+			"He made a most delicious pumpkin pie.\nWhich he presented to the passersby.\nBefore the sun set he'd be all but dry.\nFolks would buy the whole supply.",
+			"He lived alone, (He lived alone.).\nAnd every night he sat upon a throne of pumpkin pie.\nI do not know his name. (He'd never say his name.).\nHe never wanted all the fame that came with pumpkin pie.",
+			"Before you knew it he was in full swing.\nHis pumpkin pies became the next big thing.\nSoon he was called upon to feed the king.\nAnd they'd sing, feed the king."
+		]
+	},
+	{
+		title: 'When Robots Attack',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=lX-T7aUseUI',
+		lyrics:
+		[
+			"Lock up your children.\nLock up your pets as well (Your pets as well).\nIt's time to panic, because.\nSomething terrible is mad as hell!",
+			"They have malfunctioned, they went insane.\nHere come the buzzsaws and rattling chains.\nNo way to stop them, nowhere to run.\nRobotic destruction has now begun.",
+			"In man against machine, machine will conquer all."
+		]
+	},
+	{
+		title: 'Geeks in Love',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=_ZoEI-7j4xM',
+		lyrics:
+		[
+			"Nobody's cool as we.\nNor quite as esoterically far out.\nWe're so far out it's creepy",
+			"They have no roses.\nSubconsciously they envy us a lot",
+			"And when they hear our favorite bands, they wish that they were geeks in love.",
+			"As far as I can tell.\nWhile other lovers go through hell.\nWe'll know we're too cool for damnation.",
+			"When they see us on the street, they wish that they were geeks in love.",
+			"And when they hear us trick or treat, they wish that they were geeks in love.",
+			"Geekity-geekity-geeks in love."
+		]
+	},
+	{
+		title: 'New Way Out',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=zRtOVD3tIWY',
+		lyrics:
+		[
+			"Burger King fries on a dashboard underneath the burning hot sun.",
+			"Serpentine alarm clock, ringing up a horrid little kamikaze ding-ding-a-ding-ding-a-ding.",
+			"Nana korobi ya oki.\nRo-ma wa ichinichi ni shite narazu, baby",
+			"I don't know my way around.\nBut if I follow every sound.\nA new way out is soon surrounding me",
+			"And lo and behold, the very next morning.\nThey climbed out of bed and gazed out upon the morning world.\nAnd to their complete and utter amazement.\nIt had not snowed at all.\nThe end.",
+			"Don't mean to bug, but I thought I'd tell you that your shoes are untied.",
+			"Oh, running 'round in circles like a Chupacabra Capybara."
+		]
+	},
+	{
+		title: 'Kitten Is Angry',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=zjf2FKlZl9M',
+		lyrics:
+		[
+			"My kitten, my kitty cat.\nWhen she's content she purrs.\nShe thinks the house is hers.\nBut you won't like her when she's angry.\nNo, you won't like her when she's angry.\nAngry, angry.",
+			"Kitten is angry, kitten is offended.\nFur standing out and little claws extended.",
+			"Don't touch her, don't look at her.\nMy kitten knows tae kwon do.\nShe can take you out, I know.\nI've seen it before and it's not pretty.\nShe's really one ferocious kitty cat now.",
+			"She's deadly, she'll hurt you.\nShe'll show you endless pain.\nHer little whiskers are stained with the blood of those that she has slain.\nBelieve me, she will go insane.\nShe will go insane."
+		]
+	},
+	{
+		title: 'The Ceiling',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=Q7DSeyUX7yk',
+		lyrics:
+		[
+			"When did my room get a ceiling?\nI've never seen it before.",
+			'Sit down, you walking disaster.\nLook up and ask yourself.\nWhat can I see in the plaster?',
+			"I'd like to hop on a space ride.\nExit the universe.\nSee how it looks from the outside."
+		]
 	}
+
+
+
+
+
+
+
+
 ]
 
 const albums =
@@ -325,6 +446,11 @@ const albums =
 	{
 		cover: 'img/music/view-monster.jpg',
 		url: 'https://music.youtube.com/playlist?list=OLAK5uy_k1UEDR-LlDPRR8RLPPdJr69Xod0JjmyAc'
+	},
+	'Damn Skippy':
+	{
+		cover: 'img/music/damnskippy.png',
+		url: 'https://music.youtube.com/playlist?list=OLAK5uy_mEnkr4sqnNPZh6t5EqLWcKAR_9DfQoIrc'
 	}
 }
 
