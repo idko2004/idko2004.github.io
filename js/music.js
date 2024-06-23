@@ -360,6 +360,10 @@ element.href = artist[musics[musicIndex].artist];
 //Cover
 element = document.getElementById('divmusiccover');
 element.style = `--music-cover:url("${albums[musics[musicIndex].album].cover}")`;
+element.addEventListener('click', ()=>
+{
+	document.getElementById('listenlink').click();
+});
 
 //Lyric
 let lyric;
