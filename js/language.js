@@ -31,7 +31,27 @@ const allTexts =
 	'munidad3': {es: 'También hay ', en: "Also, there are "},
 	'munidad4': {es: 'cartas más especiales', en: "more special cards"},
 	'munidad5': {es: ', estas son cartas nuevas de este juego.', en: ", these are new cards from this game."},
-	'munidad6': {es: 'Para jugar, necesitas inicar el servidor (también se puede inicar en termux, funciona bien), el servidor te dirá la dirección ip de la red local, ingresa a esa dirección en el dispositivo que quieras jugar, y dile a tus amigos que hagan lo mismo. Ahora pueden jugar juntos!!!', en: "To play, you need to iniciate the server (works great on termux), the server will tell you your ip address in your local network, access to that ip from your favorite web browser, and tell your friend to do the same. Now you can play together!!!"}
+	'munidad6': {es: 'Para jugar, necesitas inicar el servidor (también se puede inicar en termux, funciona bien), el servidor te dirá la dirección ip de la red local, ingresa a esa dirección en el dispositivo que quieras jugar, y dile a tus amigos que hagan lo mismo. Ahora pueden jugar juntos!!!', en: "To play, you need to iniciate the server (works great on termux), the server will tell you your ip address in your local network, access to that ip from your favorite web browser, and tell your friend to do the same. Now you can play together!!!"},
+	'm:31': {es: 'colon-three-bot es un bot de Discord que hace :3.', en: 'colon-three-bot is a Discord bot that does :3.'},
+	'm:32': {es: 'Si envías algunos emoticonos, también responderá con esos mismos emoticonos.', en: 'It will reply with certain emoticons if it finds them in a message.'},
+	'm:33': {es: 'Algunos emoticonos son:', en: 'Some of them are:'},
+	'm:34': {es: 'También hay emoticonos tristes:', en: 'There are also sad ones:'},
+	'm:35': {es: 'Para configurarlo se necesita crear un bot en el Portal de Desarrolladores de Discord, consulta la guía disponible en la página de GitHub.', en: 'For setting it up you will need to create a Discord bot (There are steps are detailed in the GitHub page).'},
+	'msanta1': {es: 'Secret santa es un bot de Discord para hacer un santa secreto.\n(Explicación de santa secreto: Todos los participantes reciben el nombre de una persona en sus mensajes privados, preparan un regalo para esta persona y se lo entregan el dia de nochebuena).', en: 'Secret santa is a Discord bot for doing a... secret santa.'},
+	'msanta2': {es: 'Cómo funciona:', en: 'The way it works is:'},
+	'msanta3': {es: 'El bot envía un mensaje en un canal especificado, como en #anuncios.', en: 'It sends a message in the specified channel, like #annoucements or something.'},
+	'msanta4': {es: 'La gente que quiera participar reacciona a ese mensaje con un emoji.', en: 'The people who wants to participate react to the message with a specific emoji.'},
+	'msanta5': {es: 'Si tienen el rol requerido (que es opcional), el bot les otorga otro rol.', en: 'If the participant has the requiered role (optional), another role is given to them.'},
+	'msanta6': {es: 'Ese rol debe estar configurado de forma que de acceso a otro canal para el evento del santa secreto.', en: 'You should set up that role in a way that it gives access to a secret santa channel.'},
+	'msanta7': {es: 'Cuando quién esté a cargo pulse el botón de enviar santas, los participantes recibirán el nombre de usuario de la persona a la que deben prepararle un regalo. (Por favor, avísen a los que quieran participar que dejen abierto sus mensajes privados o el bot no les podrá hablar).', en: 'When you click the send santas button, the participants will receive their santa in their DMs (please tell everyone to keep their DMs open).'},
+	'mmatrix1': {es: 'Dot Matrix es una simple página web que simula una pantalla de matriz de puntos.', en: 'Dot Matrix is just a simple webpage that simulates a Dot matrix display billboard.'},
+	'mmatrix2': {es: 'Lo hice porque pensé que sería divertido.', en: 'I made it because i thought it would be fun.'},
+	'mcm1': {es: 'convertMusic es un pequeño programa para node.js que convierte archivos en una carpeta de un formato a otro usando ffmpeg.', en: 'convertMusic is a little node.js program that converts files in a folder to another format using ffmpeg.'},
+	'mcm2': {es: 'Por ejemplo: imagina que la radio de tu auto solo funciona con archivos mp3, pero tienes toda tu música en archivos opus, en vez de convertirlos uno por uno usando ffmpeg, puedes usar esto.', en: 'Like, for example, imagine that your car has a cheap stereo system that only works with mp3 files, but all your music files are in opus, instead of converting them one by one with ffmpeg, you can just use this program.'},
+	'mcm3': {es: 'Lo único que hace este programa es ejecutar "ffmpeg -i input.opus output.mp3" por cada archivo en una carpeta.', en: 'This program is basically a glorified way of running "ffmpeg -i input.opus output.mp3", I mean, that\'s literally what it does, but for each file in a folder.'},
+	'mrandom1': {es: 'random-c es mi primer programa escrito en C.', en: 'random-c is my first program written in the C language'},
+	'mrandom2': {es: 'Elige de forma aleatoria una de las opciones proporcionadas en los argumentos. O un número random con la flag -d.', en: 'It chooses one of the options you give in the arguments. Or a random number if you use the -d flag.'},
+	'mrandom3': {es: 'También se puede usar con archivos usando la flag -f, o se puede leer la salida de otro programa con la flag -p.', en: 'Can choose from a file with the -f flag, or be piped to another program with the -p flag.'}
 }
 
 const langmodal = document.getElementById('modal-language');
