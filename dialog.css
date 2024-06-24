@@ -29,6 +29,27 @@ dialog main
 	margin: 0;
 }
 
+dialog a,
+dialog a:visited,
+dialog a:hover,
+dialog a:active
+{
+	text-decoration: underline;
+	color: inherit;
+	cursor: pointer;
+}
+
+.linknodecoration,
+.linknodecoration:visited,
+.linknodecoration:hover,
+.linknodecoration:active
+{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+
 dialog .projecticons a,
 .closemodal
 {

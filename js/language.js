@@ -14,6 +14,7 @@ const allTexts =
 	'musicrecomend': {es: 'Recomendación de música', en: 'Music recomendation'},
 	'playicon': {es: 'Icono de reproducir', en: 'Play icon'},
 	'listenyt': {es: 'Escuchar en Youtube Music', en: 'Listen in Youtube Music'},
+	'nodelibs': {es: 'Librerías en node.js:', en: 'Node.js libraries:'},
 	'tmdview': {es: 'md-view: Visualizador de Markdown', en: 'md-view: Markdown Viewer'},
 	'tunidad': {es: 'Unidad: Juego de cartas LAN', en: 'Unidad: LAN cards game'},
 	'tcolonthree': {es: 'colon-three-bot: Un bot que hace :3', en: 'colon-three-bot: A Discord bot that does :3'},
