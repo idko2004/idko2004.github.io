@@ -414,15 +414,105 @@ const musics =
 			'Sit down, you walking disaster.\nLook up and ask yourself.\nWhat can I see in the plaster?',
 			"I'd like to hop on a space ride.\nExit the universe.\nSee how it looks from the outside."
 		]
+	},
+	{
+		title: 'Rainwater',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=0ukn5UD8xm4',
+		lyrics:
+		[
+			"Is it safe to drink the rainwater?"
+		]
+	},
+	{
+		title: 'Dizziful Bliss',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=wen1_32bCSo',
+		lyrics:
+		[
+			"If you are not busy right now. Close your eyes and spin in your chair."
+		]
+	},
+	{
+		title: 'Word Disassociation',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=bil3TUilhsw',
+		lyrics:
+		[
+			"Enemy lasagna.",
+			"Robust below wax.",
+			"Semiautomatic aqua",
+			"Accompany slacks.",
+			"Why coffee gymnastic.",
+			"Motorcycle unibrow.",
+			"Existential plastic extra nightly cow.",
+			"Damn jettison goodbye through.",
+			"Everything center who.",
+			"Spidery concubine.",
+			"Pale lickity-split remorse.",
+			"Vitamin after force.",
+			"Already nested human wine.",
+			"Flight.",
+			"Luminary uprise.",
+			"Entanglement broke.",
+			"Unsophisticated clockwise.",
+			"Holiday way smoke.",
+			"Abundant various.",
+			"Metaphorically applause.",
+			"Underneath hilarious oxymoron claws.",
+			"Rectangular awkward hurt.",
+			"Million controvert",
+			"Never undressing sneer.",
+			"Blue therapy fall inside.",
+			"Father dethrone applied.",
+			"Guillotine apprehensive engineer.",
+			"Prance omelette stalking chimneysweep.",
+			"Eleven hatred earmuff okay rathskeller.",
+			"My elusive hula yellow sketching creamy helium gentlemanly.",
+			"communique.",
+			"Flouncy!",
+			"Panicky redundant.",
+			"Psychedelic while.",
+			"Raisin terrible abundant.",
+			"Polyurethane smile.",
+			"Scrumptious mechanical.",
+			"Jungle uncle wish.",
+			"Paleobotanical backwards licorice.",
+			"Truth medical entertain.",
+			"Cleverly porridge brain.",
+			"Jellyfish fingernail.",
+			"Agnostic oppressive wall.",
+			"Platypus parasol.",
+			"Sauntering sawdust opera monorail.",
+			"Letter no sly violin dust-bunny.",
+			"Explode serenade why spoil play drip.",
+			"Skullduggery freezer monocle pelican.",
+			"Cool milk freak tongue television staple-gun.",
+			"Mellow face bubblegum periscope fight silly.",
+			"Elephant akimbo paranoia sever maybe.",
+			"Crush toy spoon melt feather clear king weird.",
+			"Space love domino reality apostrophe.",
+			"Dollar jade velocity meringue assuming gentle mister.",
+			"Advertisement suitcase pining lobsters over murderous.",
+			"Distraction flames imposter a-capella crouch about bionic.",
+			"Ruby quickly antidisestablishmentarianism."
+		]
+	},
+	{
+		title: 'Scatterbrained',
+		artist: 'Lemon Demon',
+		album: 'Damn Skippy',
+		url: 'https://music.youtube.com/watch?v=rzjp3CaLEcU',
+		lyrics:
+		[
+			"Lately I've not been feeling so good.\nLike I'm just random knots in wood.\nI'm careful where I crawl.\nIf nothing else at all.",
+			"Some friends come by at seven 'o clock.\nThey ask if I'll go out for a walk.\nI tell them not today.\nBut they take me anyway.",
+			"Now won't you tell me why I feel so scatterbrained?.\nThe moon still hasn't come back since it's waned.\nIt can't be what I'm looking for.\nI'm thinking but I don't know, oh, oh."
+		]
 	}
-
-
-
-
-
-
-
-
 ]
 
 const albums =
