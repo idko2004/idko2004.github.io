@@ -1,90 +1,6 @@
 const musics =
 [
 	{
-		title: 'Dream Sweet in Sea Major',
-		artist: 'Miracle Musical',
-		album: 'Hawaii: Part II',
-		url: 'https://music.youtube.com/watch?v=uxyM7vhU0uU',
-		lyrics:
-		[
-			"Alone at the edge of a universe humming a tune.",
-			"Believe me, darling, the stars were made for falling.",
-			"Signed, yours truly, the whale."
-		]
-	},
-	{
-		title: 'Isle Unto Thyself',
-		artist: 'Miracle Musical',
-		album: 'Hawaii: Part II',
-		url: 'https://music.youtube.com/watch?v=uQnz55oYEA4',
-		lyrics:
-		[
-			"I was a victim of magic, Apollo.",
-			"Why did fire-erupted lands arrive?",
-			"Why did murderous animals survive?",
-			"Why did we deserve to be revived?",
-			"Why was any and everything alive?"
-		]
-	},
-	{
-		title: 'White Ball',
-		artist: 'Miracle Musical',
-		album: 'Hawaii: Part II',
-		url: 'https://music.youtube.com/watch?v=bnUZ8HcPKsA',
-		lyrics:
-		[
-			"Such impossible bliss."
-		]
-	},
-	{
-		title: 'Murders',
-		artist: 'Miracle Musical',
-		album: 'Hawaii: Part II',
-		url: 'https://music.youtube.com/watch?v=CaTX0pt3uyg',
-		lyrics:
-		[
-			"I was in the forest, looking to see the trees, but none were there.",
-			"All, for nothing at all.",
-			"I was in the middle ground, looking to find the."
-		]
-	},
-	{
-		title: 'The Mind Electric',
-		artist: 'Miracle Musical',
-		album: 'Hawaii: Part II',
-		url: 'https://music.youtube.com/watch?v=0vfZjdK8Ktw',
-		lyrics:
-		[
-			"See how the serfs work the ground (See how they fall).",
-			"See how the brain plays around. And you fall inside a hole you couldn't see.",
-			"And you fall inside a hole inside a. Someone help me.",
-			"Doctor, I can't tell if I'm not me.",
-			"My brain has claimed its glory over me.",
-			"I've a good heart albeit enasni."
-		]
-	},
-	{
-		title: 'Lifetime Achievement Award',
-		artist: 'Lemon Demon',
-		album: 'Spirit Phone',
-		url: 'https://music.youtube.com/watch?v=ecjnB6Ght8Y',
-		lyrics:
-		[
-			"Hey, remember Michael Jackson? Michael Jackson really happened."
-		]
-	},
-	{
-		title: 'Touch-Tone Telephone',
-		artist: 'Lemon Demon',
-		album: 'Spirit Phone',
-		url: 'https://music.youtube.com/watch?v=rbxL5BVEkRs',
-		lyrics:
-		[
-			"Better to be laughed at than wrong.",
-			"UFOlogy, yes, it's all real."
-		]
-	},
-	{
 		title: 'Cabinet Man',
 		artist: 'Lemon Demon',
 		album: 'Spirit Phone',
@@ -515,40 +431,8 @@ const musics =
 	}
 ]
 
-const albums =
-{
-	'Hawaii: Part II':
-	{
-		cover: 'img/music/hawaiipartii.jpg',
-		url: 'https://music.youtube.com/playlist?list=OLAK5uy_kCPng04PE0tr1Lw6kaCt7-O5xk2ztqsJw'
-	},
-	'Spirit Phone':
-	{
-		cover: 'img/music/spiritphone.jpg',
-		url: 'https://music.youtube.com/playlist?list=OLAK5uy_k-gjwrMLQJbpBbYgWuTv0FYiws5aXkoG0'
-	},
-	'I Am Become Christmas':
-	{
-		cover: 'img/music/iambecomechristmas.jpg',
-		url: 'https://music.youtube.com/playlist?list=OLAK5uy_meZR7YAAKWmOgGRCJypf-uMsi0cYrck6c'
-	},
-	'View-Monster':
-	{
-		cover: 'img/music/view-monster.jpg',
-		url: 'https://music.youtube.com/playlist?list=OLAK5uy_k1UEDR-LlDPRR8RLPPdJr69Xod0JjmyAc'
-	},
-	'Damn Skippy':
-	{
-		cover: 'img/music/damnskippy.png',
-		url: 'https://music.youtube.com/playlist?list=OLAK5uy_mEnkr4sqnNPZh6t5EqLWcKAR_9DfQoIrc'
-	}
-}
-
-const artist =
-{
-	'Miracle Musical': 'https://music.youtube.com/channel/UCLcDCIWMBruo5VASmmlv7Uw',
-	'Lemon Demon': 'https://music.youtube.com/channel/UCOk35jhmr5852r8_XHQSguQ'
-}
+let albums = {};
+let artist = {};
 
 const musicIndex = randomRange(0, musics.length - 1);
 
