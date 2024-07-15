@@ -63,6 +63,13 @@ const modalAnimationList =
 		openAnim: 'slide-v-open',
 		closeClass: 'anim-slide-v-close',
 		closeAnim: 'slide-v-close'
+	},
+	'modal-cosa':
+	{
+		openClass: 'anim-generic-scalex-open',
+		openAnim: 'generic-scalex-open',
+		closeClass: 'anim-slide-v-close',
+		closeAnim: 'slide-v-close'
 	}
 }
 

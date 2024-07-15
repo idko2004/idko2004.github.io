@@ -461,7 +461,9 @@ dialog .projecticons a:hover,
 
 
 /*   random-c   */
-#modal-randomc
+/*   cosa-matemáticas   */
+#modal-randomc,
+#modal-cosa
 {
 	background-color: #000;
 	color: #f2f2f2;

@@ -24,6 +24,7 @@ const allTexts =
 	'tconvertmusic': {es: 'convertMusic: Usa ffmpeg para convertir una carpeta de archivos en un formato a otro', en: 'convertMusic: Use ffmpeg to convert a folder of one type of files to another'},
 	'trandomc': {es: 'random-c: Genera un número aleatorio', en: 'random-c: Generate a random number'},
 	'tmal': {es: 'mal-randomizer: Encuentra el próximo anime que ver', en: 'mal-randomizer: Find what anime to watch next'},
+	'tcosa': {es: 'cosa-matemáticas: Ayuda con un problema de matemática en específico.', en: 'cosa-matemáticas: Helps with one specific math problem.'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
@@ -57,7 +58,10 @@ const allTexts =
 	'mrandom3': {es: 'También se puede usar con archivos usando la flag -f, o se puede leer la salida de otro programa con la flag -p.', en: 'Can choose from a file with the -f flag, or be piped to another program with the -p flag.'},
 	'mmal1': {es: 'mal-randomizer muestra un anime aleatorio de una lista de MyAnimeList', en: 'mal-randomizer shows a random anime from MyAnimeList.'},
 	'mmal2': {es: 'Solo ingresa el usuario, elige la lista y la aplicación elegirá un anime aleatorio de esa lista.', en: 'Just type the username, choose the list and the app will pick a random anime from that list.'},
-	'mmal3': {es: 'La aplicación está desarrollada en el lenguaje C, utiliza el toolkit gráfico GTK3.', en: 'This app was made with the C language and uses the GTK3 graphic toolkit.'}
+	'mmal3': {es: 'La aplicación está desarrollada en el lenguaje C, utiliza el toolkit gráfico GTK3.', en: 'This app was made with the C language and uses the GTK3 graphic toolkit.'},
+	'mcosa1': {es: 'cosa-matemáticas genera una ecuación a partir de una serie de coordenadas.', en: 'cosa-matemáticas generates an equation from a series of coordinates.'},
+	'mcosa2': {es: 'No quería hacer la tarea de matemáticas así que hice un programa para que haga la tarea (y casi no llego a entregarla).', en: "I didn't want to do math's homework, so I made a program that did it for me."},
+	'mcosa3': {es: 'Está hecho en el lenguaje C.', en: "It's build with the C language."}
 }
 
 const langmodal = document.getElementById('modal-language');
