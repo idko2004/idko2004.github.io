@@ -25,8 +25,8 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      inkscape:zoom="2.0000001"
-     inkscape:cx="282.74999"
-     inkscape:cy="904.74998"
+     inkscape:cx="364.74999"
+     inkscape:cy="905.74998"
      inkscape:window-width="1350"
      inkscape:window-height="728"
      inkscape:window-x="0"
@@ -1580,7 +1580,10 @@
        height="23.6033"
        x="61.876068"
        y="229.3223"
-       ry="2.7861159" /><image
+       ry="2.7861159"
+       inkscape:export-filename="random.svg"
+       inkscape:export-xdpi="516.53778"
+       inkscape:export-ydpi="516.53778" /><image
        width="55.369053"
        height="23.582205"
        preserveAspectRatio="none"
