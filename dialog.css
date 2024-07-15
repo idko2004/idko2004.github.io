@@ -114,6 +114,7 @@ dialog .projecticons a:hover,
 	height: 2rem;
 }
 
+/*   Animations   */
 .anim-generic-zoom-in
 {
 	animation: generic-zoom-in 250ms cubic-bezier(.39,.58,.57,1) 1;
@@ -236,50 +237,6 @@ dialog .projecticons a:hover,
 	}
 }
 
-
-
-
-
-/*
-	card specifics
-*/
-
-/*   md-view   */
-#modal-mdview
-{
-	font-family: system-ui;
-}
-
-#modal-mdview header
-{
-	background-color: #f0f0f0;
-	text-decoration: underline;
-	text-decoration-color: #62a0ea;
-}
-
-#modal-mdview footer
-{
-	background-color: #f0f0f0;
-}
-
-
-
-
-
-/*   Unidad   */
-#modal-unidad
-{
-	background-color: #241f31;
-	color: #f6f5f4;
-	font-family: 'Tilt Warp', cursive;
-}
-
-#modal-unidad header,
-#modal-unidad footer
-{
-	background-color: #c01c28;
-}
-
 .anim-unidad-open
 {
 	animation: unidad-open 300ms ease-in-out 1;
@@ -323,43 +280,6 @@ dialog .projecticons a:hover,
 	}
 }
 
-
-
-
-
-/*   colon-three-bot   */
-#modal-colonthreebot
-{
-	color: #dbdee1;
-	background-color: #2e3035;
-	font-family: 'Noto Sans', system-ui;
-}
-
-#modal-colonthreebot header,
-#modal-colonthreebot footer
-{
-	background-color: #3a406e;
-	color: #c9cdfb;
-}
-
-
-
-/*   Secret Santa   */
-#modal-secretsanta
-{
-	background-color: #241f31;
-	color: #fff;
-	font-family: 'Noto Sans', system-ui;
-}
-
-#modal-secretsanta header,
-#modal-secretsanta footer
-{
-	background-color: #c01c28;
-}
-
-
-/*   Dot Matrix   */
 .anim-steps-right-open
 {
 	animation: right-open 250ms steps(3) 1;
@@ -404,6 +324,123 @@ dialog .projecticons a:hover,
 	}
 }
 
+.anim-slide-v-open
+{
+	animation: slide-v-open 250ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
+@keyframes slide-v-open
+{
+	0%
+	{
+		transform: translateY(-100vh);
+	}
+	70%
+	{
+		transform: translateY(3vh);
+	}
+	100%
+	{
+		transform: translateY(0);
+	}
+}
+
+.anim-slide-v-close
+{
+	animation: slide-v-close 100ms cubic-bezier(.39,.58,.57,1) 1;
+}
+
+@keyframes slide-v-close
+{
+	0%
+	{
+		transform: translateY(0);
+	}
+	100%
+	{
+		transform: translateY(100vh);
+	}
+}
+
+
+
+
+/*
+	card specifics
+*/
+
+/*   md-view   */
+#modal-mdview
+{
+	font-family: system-ui;
+}
+
+#modal-mdview header
+{
+	background-color: #f0f0f0;
+	text-decoration: underline;
+	text-decoration-color: #62a0ea;
+}
+
+#modal-mdview footer
+{
+	background-color: #f0f0f0;
+}
+
+
+
+
+
+/*   Unidad   */
+#modal-unidad
+{
+	background-color: #241f31;
+	color: #f6f5f4;
+	font-family: 'Tilt Warp', cursive;
+}
+
+#modal-unidad header,
+#modal-unidad footer
+{
+	background-color: #c01c28;
+}
+
+
+
+
+/*   colon-three-bot   */
+#modal-colonthreebot
+{
+	color: #dbdee1;
+	background-color: #2e3035;
+	font-family: 'Noto Sans', system-ui;
+}
+
+#modal-colonthreebot header,
+#modal-colonthreebot footer
+{
+	background-color: #3a406e;
+	color: #c9cdfb;
+}
+
+
+
+/*   Secret Santa   */
+#modal-secretsanta
+{
+	background-color: #241f31;
+	color: #fff;
+	font-family: 'Noto Sans', system-ui;
+}
+
+#modal-secretsanta header,
+#modal-secretsanta footer
+{
+	background-color: #c01c28;
+}
+
+
+/*   Dot Matrix   */
 #modal-dotmatrix
 {
 	background-color: #000;
@@ -429,6 +466,22 @@ dialog .projecticons a:hover,
 	background-color: #000;
 	color: #f2f2f2;
 	font-family: 'JetBrains Mono';
+}
+
+
+/*   mal-randomizer   */
+#modal-mal
+{
+	background-color: #f0f0f0;
+	color: black;
+	font-family: 'Comic Neue';
+	font-weight: normal;
+}
+
+#modal-mal header
+{
+	background-color: #2e51a2;
+	color: white;
 }
 
 /*   language   */

@@ -56,6 +56,13 @@ const modalAnimationList =
 		openAnim: 'generic-scaley-open',
 		closeClass: 'anim-generic-scalex-close',
 		closeAnim: 'generic-scalex-close'
+	},
+	'modal-mal':
+	{
+		openClass: 'anim-slide-v-open',
+		openAnim: 'slide-v-open',
+		closeClass: 'anim-slide-v-close',
+		closeAnim: 'slide-v-close'
 	}
 }
 

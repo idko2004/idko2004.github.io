@@ -15,6 +15,7 @@ const allTexts =
 	'playicon': {es: 'Icono de reproducir', en: 'Play icon'},
 	'listenyt': {es: 'Escuchar en Youtube Music', en: 'Listen in Youtube Music'},
 	'nodelibs': {es: 'Librerías en node.js:', en: 'Node.js libraries:'},
+	'libs': {es: 'Librerías adicionales:', en: 'Additional libraries:'},
 	'tmdview': {es: 'md-view: Visualizador de Markdown', en: 'md-view: Markdown Viewer'},
 	'tunidad': {es: 'Unidad: Juego de cartas LAN', en: 'Unidad: LAN cards game'},
 	'tcolonthree': {es: 'colon-three-bot: Un bot que hace :3', en: 'colon-three-bot: A Discord bot that does :3'},
@@ -22,6 +23,7 @@ const allTexts =
 	'tmatrix': {es: 'Dot Matrix: "Simulador" de una pantalla dot matrix', en: 'Dot Matrix: "Simulating" a dot matrix screen'},
 	'tconvertmusic': {es: 'convertMusic: Usa ffmpeg para convertir una carpeta de archivos en un formato a otro', en: 'convertMusic: Use ffmpeg to convert a folder of one type of files to another'},
 	'trandomc': {es: 'random-c: Genera un número aleatorio', en: 'random-c: Generate a random number'},
+	'tmal': {es: 'mal-randomizer: Encuentra el próximo anime que ver', en: 'mal-randomizer: Find what anime to watch next'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
@@ -52,7 +54,10 @@ const allTexts =
 	'mcm3': {es: 'Lo único que hace este programa es ejecutar "ffmpeg -i input.opus output.mp3" por cada archivo en una carpeta.', en: 'This program is basically a glorified way of running "ffmpeg -i input.opus output.mp3", I mean, that\'s literally what it does, but for each file in a folder.'},
 	'mrandom1': {es: 'random-c es mi primer programa escrito en C.', en: 'random-c is my first program written in the C language'},
 	'mrandom2': {es: 'Elige de forma aleatoria una de las opciones proporcionadas en los argumentos. O un número random con la flag -d.', en: 'It chooses one of the options you give in the arguments. Or a random number if you use the -d flag.'},
-	'mrandom3': {es: 'También se puede usar con archivos usando la flag -f, o se puede leer la salida de otro programa con la flag -p.', en: 'Can choose from a file with the -f flag, or be piped to another program with the -p flag.'}
+	'mrandom3': {es: 'También se puede usar con archivos usando la flag -f, o se puede leer la salida de otro programa con la flag -p.', en: 'Can choose from a file with the -f flag, or be piped to another program with the -p flag.'},
+	'mmal1': {es: 'mal-randomizer muestra un anime aleatorio de una lista de MyAnimeList', en: 'mal-randomizer shows a random anime from MyAnimeList.'},
+	'mmal2': {es: 'Solo ingresa el usuario, elige la lista y la aplicación elegirá un anime aleatorio de esa lista.', en: 'Just type the username, choose the list and the app will pick a random anime from that list.'},
+	'mmal3': {es: 'La aplicación está desarrollada en el lenguaje C, utiliza el toolkit gráfico GTK3.', en: 'This app was made with the C language and uses the GTK3 graphic toolkit.'}
 }
 
 const langmodal = document.getElementById('modal-language');
