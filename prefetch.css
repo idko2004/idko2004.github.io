@@ -6,10 +6,11 @@
 			url('commonassets/icons/svgrepo/close-clean-no-padding-white.svg')
 			url('commonassets/icons/github-mark/github-mark.svg')
 			url("commonassets/icons/svgrepo/outside-page-no-padding.svg")
-			url("commonassets/icons/svgrepo/close-clean-no-padding.svg");
+			url("commonassets/icons/svgrepo/close-clean-no-padding.svg")
+			url("img/dados.png");
 	/* partial fallback */
 	visibility: hidden;
 	position: absolute;
-	left: -999em;
+	left: -999vw;
 }
 

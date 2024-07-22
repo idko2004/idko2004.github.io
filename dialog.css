@@ -67,6 +67,12 @@ dialog .projecticons a:hover,
 	transform: scale(1.2);
 }
 
+dialog::backdrop
+{
+	background-color: transparent;
+	backdrop-filter: blur(2px);
+}
+
 .light-icon
 {
 	--github-icon: url("commonassets/icons/github-mark/github-mark-white.svg");
@@ -362,7 +368,30 @@ dialog .projecticons a:hover,
 	}
 }
 
+.anim-dice-open
+{
+	animation: dice-open 350ms linear 1;
+}
 
+@keyframes dice-open
+{
+	0%
+	{
+		transform: translate(50vw, -100vh) rotateZ(180deg);
+	}
+	40%
+	{
+		transform: translate(15vw, 0vh) rotateZ(45deg);
+	}
+	70%
+	{
+		transform: translate(5vw, -20vh) rotateZ(20deg);
+	}
+	100%
+	{
+		transform: translate(0vw, 0vh) rotateZ(0deg);
+	}
+}
 
 
 /*
@@ -484,6 +513,15 @@ dialog .projecticons a:hover,
 {
 	background-color: #2e51a2;
 	color: white;
+}
+
+/*   random   */
+#modal-random
+{
+	background-color: black;
+	background-image: url("img/dados.png");
+	color: white;
+	font-family: 'Ubuntu', system-ui;
 }
 
 /*   language   */

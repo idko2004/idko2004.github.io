@@ -11,6 +11,7 @@ const allTexts =
 	'rightclicktip': {es: 'Haz click derecho (o mantén pulsado) sobre un projecto para ver sus detalles.', en: 'Right-click (or hold) a project to see details'},
 	'projects': {es: 'Proyectos', en: 'Projects'},
 	'smallerprojects': {es: 'Proyectos más pequeños', en: 'Smaller projects'},
+	'deadprojects': {es: 'Proyectos abandonados', en: 'Abandoned projects'},
 	'musicrecomend': {es: 'Recomendación de música', en: 'Music recomendation'},
 	'playicon': {es: 'Icono de reproducir', en: 'Play icon'},
 	'listenyt': {es: 'Escuchar en Youtube Music', en: 'Listen in Youtube Music'},
@@ -22,14 +23,15 @@ const allTexts =
 	'tsanta': {es: 'Secret Santa: Organiza un santa secreto con tus amigos en Discord', en: 'Secret Santa: Organize a secret santa between your friends on discord'},
 	'tmatrix': {es: 'Dot Matrix: "Simulador" de una pantalla dot matrix', en: 'Dot Matrix: "Simulating" a dot matrix screen'},
 	'tconvertmusic': {es: 'convertMusic: Usa ffmpeg para convertir una carpeta de archivos en un formato a otro', en: 'convertMusic: Use ffmpeg to convert a folder of one type of files to another'},
-	'trandomc': {es: 'random-c: Genera un número aleatorio', en: 'random-c: Generate a random number'},
+	'trandomc': {es: 'random-c: Elige un item aleatorio de una lista, pero ahora en c.', en: 'random-c: Choose a random item from a list, but now on c.'},
 	'tmal': {es: 'mal-randomizer: Encuentra el próximo anime que ver', en: 'mal-randomizer: Find what anime to watch next'},
 	'tcosa': {es: 'cosa-matemáticas: Ayuda con un problema de matemática en específico.', en: 'cosa-matemáticas: Helps with one specific math problem.'},
+	'trandom': {es: 'Random: Elige un item aleatorio de una lista.', en: 'Random: Choose a random item from a list.'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
 	'mmdview3': {es: 'Es un simple visualizador, no puede editar archivos, y seguramente ni sea del todo compatible con markdown, pero para archivos .md que sean simples, suele funcionar.', en: "It's just a simple reader, it can't edit files, and it isn't full compatible with markdown (may not even be markdown compliant, idk), but for simple .md files, it mostly works."},
-	'madewithhelp': {es: 'Hecho con la ayuda de:', en: 'Made with the help of:'},
+	'madewithhelp': {es: 'Hecho con:', en: 'Made with:'},
 	'munidad1': {es: 'Unidad es un juego de cartas similar a uno con un nombre muy tonto que se puede jugar con otros en tu red local.', en: "Unidad is a cards game similar to UNO with a very dumb name that you can play with others in your local network."},
 	'munidad2': {es: 'Nadie sabe jugar al UNO con las reglas oficiales, ¿verdad? Pues esto es básicamente UNO pero con las reglas de mi casa (bueno, no necesariamente de mi casa, pero se entiende, además, seguro que conoces alguna).', en: "Do you know how nobody plays UNO with the official rules? Well, this is basically UNO but with the rules I'm used to play with (although you surely may know some of them)."},
 	'munidad3': {es: 'También hay ', en: "Also, there are "},
@@ -61,7 +63,10 @@ const allTexts =
 	'mmal3': {es: 'La aplicación está desarrollada en el lenguaje C, utiliza el toolkit gráfico GTK3.', en: 'This app was made with the C language and uses the GTK3 graphic toolkit.'},
 	'mcosa1': {es: 'cosa-matemáticas genera una ecuación a partir de una serie de coordenadas.', en: 'cosa-matemáticas generates an equation from a series of coordinates.'},
 	'mcosa2': {es: 'No quería hacer la tarea de matemáticas así que hice un programa para que haga la tarea (y casi no llego a entregarla).', en: "I didn't want to do math's homework, so I made a program that did it for me."},
-	'mcosa3': {es: 'Está hecho en el lenguaje C.', en: "It's build with the C language."}
+	'mcosa3': {es: 'Está hecho en el lenguaje C.', en: "It's build with the C language."},
+	'mjsrandom1': {es: 'Random es mi primer programa en JavaScript c:', en: "Random is my first program made with JavaScript c:"},
+	'mjsrandom2': {es: 'Sirve para elegir un elemento aleatorio de una lista.', en: "It chooses a random item from a list."},
+	'mjsrandom3': {es: 'También tiene un segundo modo en el que elige un número aleatorio, se puede acceder haciendo click sobre el dado.', en: "It also has a second mode where chooses a random number, you can access it by clicking on the dice."}
 }
 
 const langmodal = document.getElementById('modal-language');

@@ -70,6 +70,13 @@ const modalAnimationList =
 		openAnim: 'generic-scalex-open',
 		closeClass: 'anim-slide-v-close',
 		closeAnim: 'slide-v-close'
+	},
+	'modal-random':
+	{
+		openClass: 'anim-dice-open',
+		openAnim: 'dice-open',
+		closeClass: 'anim-slide-v-close',
+		closeAnim: 'slide-v-close'
 	}
 }
 
