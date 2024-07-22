@@ -27,6 +27,7 @@ const allTexts =
 	'tmal': {es: 'mal-randomizer: Encuentra el próximo anime que ver', en: 'mal-randomizer: Find what anime to watch next'},
 	'tcosa': {es: 'cosa-matemáticas: Ayuda con un problema de matemática en específico.', en: 'cosa-matemáticas: Helps with one specific math problem.'},
 	'trandom': {es: 'Random: Elige un item aleatorio de una lista.', en: 'Random: Choose a random item from a list.'},
+	'tmines': {es: 'Buscaminas: El peor buscaminas que habrás jugado.', en: 'Buscaminas: The worst minesweeper you will ever play.'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
@@ -66,7 +67,8 @@ const allTexts =
 	'mcosa3': {es: 'Está hecho en el lenguaje C.', en: "It's build with the C language."},
 	'mjsrandom1': {es: 'Random es mi primer programa en JavaScript c:', en: "Random is my first program made with JavaScript c:"},
 	'mjsrandom2': {es: 'Sirve para elegir un elemento aleatorio de una lista.', en: "It chooses a random item from a list."},
-	'mjsrandom3': {es: 'También tiene un segundo modo en el que elige un número aleatorio, se puede acceder haciendo click sobre el dado.', en: "It also has a second mode where chooses a random number, you can access it by clicking on the dice."}
+	'mjsrandom3': {es: 'También tiene un segundo modo en el que elige un número aleatorio, se puede acceder haciendo click sobre el dado.', en: "It also has a second mode where chooses a random number, you can access it by clicking on the dice."},
+	'mmines1': {es: 'Seguramente el peor buscaminas que habrás jugado.', en: "Surelly the worst minesweeper you will ever play."}
 }
 
 const langmodal = document.getElementById('modal-language');

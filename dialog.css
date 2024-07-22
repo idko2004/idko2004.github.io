@@ -524,6 +524,15 @@ dialog::backdrop
 	font-family: 'Ubuntu', system-ui;
 }
 
+/*   Buscaminas   */
+#modal-buscaminas
+{
+	background-color: white;
+	color: black;
+	font-family: 'Ubuntu Mono', monospace;
+}
+
+
 /*   language   */
 #modal-language
 {

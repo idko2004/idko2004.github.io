@@ -77,6 +77,13 @@ const modalAnimationList =
 		openAnim: 'dice-open',
 		closeClass: 'anim-slide-v-close',
 		closeAnim: 'slide-v-close'
+	},
+	'modal-buscaminas':
+	{
+		openClass: 'anim-slide-v-open',
+		openAnim: 'slide-v-open',
+		closeClass: 'anim-generic-scalex-close',
+		closeAnim: 'generic-scalex-close'
 	}
 }
 
