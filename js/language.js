@@ -9,7 +9,7 @@ const allTexts =
 	'maintitle': {es: 'La idko página', en: "idko's projects"},
 	'tip': {es: 'Consejo: ', en: 'Tip: '},
 	'and': {es: 'y', en: 'and'},
-	'rightclicktip': {es: 'Haz click derecho (o mantén pulsado) sobre un projecto para ver sus detalles.', en: 'Right-click (or hold) a project to see details'},
+	'rightclicktip': {es: 'Haz click derecho (o mantén pulsado) sobre un proyecto para ver sus detalles.', en: 'Right-click (or hold) a project to see details'},
 	'projects': {es: 'Proyectos', en: 'Projects'},
 	'smallerprojects': {es: 'Proyectos más pequeños', en: 'Smaller projects'},
 	'deadprojects': {es: 'Proyectos abandonados', en: 'Abandoned projects'},
