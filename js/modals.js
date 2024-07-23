@@ -84,6 +84,13 @@ const modalAnimationList =
 		openAnim: 'slide-v-open',
 		closeClass: 'anim-generic-scalex-close',
 		closeAnim: 'generic-scalex-close'
+	},
+	'modal-idkobot':
+	{
+		openClass: 'anim-generic-scalex-open',
+		openAnim: 'generic-scalex-open',
+		closeClass: 'anim-generic-scalex-close',
+		closeAnim: 'generic-scalex-close'
 	}
 }
 

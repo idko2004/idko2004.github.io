@@ -8,6 +8,7 @@ const allTexts =
 	'welcometo': {es: 'Bienvenido a', en: 'Welcome to'},
 	'maintitle': {es: 'La idko página', en: "idko's projects"},
 	'tip': {es: 'Consejo: ', en: 'Tip: '},
+	'and': {es: 'y', en: 'and'},
 	'rightclicktip': {es: 'Haz click derecho (o mantén pulsado) sobre un projecto para ver sus detalles.', en: 'Right-click (or hold) a project to see details'},
 	'projects': {es: 'Proyectos', en: 'Projects'},
 	'smallerprojects': {es: 'Proyectos más pequeños', en: 'Smaller projects'},
@@ -28,6 +29,7 @@ const allTexts =
 	'tcosa': {es: 'cosa-matemáticas: Ayuda con un problema de matemática en específico.', en: 'cosa-matemáticas: Helps with one specific math problem.'},
 	'trandom': {es: 'Random: Elige un item aleatorio de una lista.', en: 'Random: Choose a random item from a list.'},
 	'tmines': {es: 'Buscaminas: El peor buscaminas que habrás jugado.', en: 'Buscaminas: The worst minesweeper you will ever play.'},
+	'tidkobot': {es: 'idko-bot: Bot de discord multifunción', en: 'idko-bot: Multipurpose discord bot'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
@@ -68,7 +70,10 @@ const allTexts =
 	'mjsrandom1': {es: 'Random es mi primer programa en JavaScript c:', en: "Random is my first program made with JavaScript c:"},
 	'mjsrandom2': {es: 'Sirve para elegir un elemento aleatorio de una lista.', en: "It chooses a random item from a list."},
 	'mjsrandom3': {es: 'También tiene un segundo modo en el que elige un número aleatorio, se puede acceder haciendo click sobre el dado.', en: "It also has a second mode where chooses a random number, you can access it by clicking on the dice."},
-	'mmines1': {es: 'Seguramente el peor buscaminas que habrás jugado.', en: "Surelly the worst minesweeper you will ever play."}
+	'mmines1': {es: 'Seguramente el peor buscaminas que habrás jugado.', en: "Surelly the worst minesweeper you will ever play."},
+	'midkobot1': {es: 'idko-bot fue mi primer programa para node.js y pretendía ser un bot de Discord multifunción.', en: "idko-bot was my first program for node.js and it was supposed to be a multipurpose Discord bot."},
+	'midkobot2': {es: 'Estaba fuertemente inspirado en bots como', en: "It was heavily inspired by bots such as"},
+	'midkobot3': {es: 'idko-bot nunca fue terminado y en su lugar fue reemplazado por colon-three-bot.', en: "idko-bot was never finished and instead was replaced by colon-three-bot."}
 }
 
 const langmodal = document.getElementById('modal-language');

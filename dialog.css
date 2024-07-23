@@ -533,6 +533,20 @@ dialog::backdrop
 }
 
 
+/*   idko-bot   */
+#modal-idkobot
+{
+	background-color: #2c2f33;
+	color: white;
+	font-family: 'Ubuntu', system-ui;
+}
+
+#modal-idkobot header
+{
+	background-color: #5865f2;
+}
+
+
 /*   language   */
 #modal-language
 {
