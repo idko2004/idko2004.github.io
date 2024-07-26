@@ -32,6 +32,7 @@ const allTexts =
 	'tmines': {es: 'Buscaminas: El peor buscaminas que habrás jugado.', en: 'Buscaminas: The worst minesweeper you will ever play.'},
 	'tidkobot': {es: 'idko-bot: Bot de discord multifunción', en: 'idko-bot: Multipurpose discord bot'},
 	'tnotas': {es: 'Notas: Aplicación simple para notas', en: 'Notas: Simple notes application'},
+	'tscriptsandthings': {es: 'scripts-and-things: También conocido como dot-files', en: 'scripts-and-things: Also known as dot-files'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
@@ -79,7 +80,8 @@ const allTexts =
 	'mnotas1': {es: 'Notas es una aplicación sencilla para guardar notas en un servidor.', en: "Notas is a simple app for saving notes in a server."},
 	'mnotas2': {es: 'Consiste de un sitio web y un servidor en node.js.', en: "Consist of a website and a node.js server."},
 	'mnotas3': {es: 'Inicialmente empecé este proyecto para aprender como funcionaban las peticiones HTTP, pero luego de llevar con él demasiado tiempo me desmotivé y lo dejé de lado.', en: "Initially I started this project to learn how to do HTTP calls, but after I have been with it for so long I became demotivated and put it aside."},
-	'mnotas4': {es: 'No estoy seguro si es posible utilizar el proyecto en el estado en el que está actualmente, además se necesita una base de datos mongodb.', en: "I'm not sure if it's posible to use it in the state it's in, also, you need a mongodb database."}
+	'mnotas4': {es: 'No estoy seguro si es posible utilizar el proyecto en el estado en el que está actualmente, además se necesita una base de datos mongodb.', en: "I'm not sure if it's posible to use it in the state it's in, also, you need a mongodb database."},
+	'mscripts1': {es: 'También conocido como dot-files.', en: "Also known as dot-files."}
 }
 
 const langmodal = document.getElementById('modal-language');

@@ -491,8 +491,10 @@ dialog::backdrop
 
 /*   random-c   */
 /*   cosa-matemáticas   */
+/*   scripts-and-things   */
 #modal-randomc,
-#modal-cosa
+#modal-cosa,
+#modal-scriptsandthings
 {
 	background-color: #000;
 	color: #f2f2f2;

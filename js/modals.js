@@ -98,6 +98,13 @@ const modalAnimationList =
 		openAnim: 'unidad-open',
 		closeClass: 'anim-unidad-close',
 		closeAnim: 'unidad-close'
+	},
+	'modal-scriptsandthings':
+	{
+		openClass: 'anim-generic-scalex-open',
+		openAnim: 'generic-scalex-open',
+		closeClass: 'anim-generic-scaley-close',
+		closeAnim: 'generic-scaley-close'
 	}
 }
 
