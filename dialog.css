@@ -547,6 +547,21 @@ dialog::backdrop
 }
 
 
+/*   Notas   */
+#modal-notas
+{
+	background-color: #479b5b;
+	color: white;
+	font-family: 'Rubik', system-ui;
+}
+
+#modal-notas header
+{
+	background-color: #53b56a;
+	font-weight: bold;
+}
+
+
 /*   language   */
 #modal-language
 {

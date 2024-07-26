@@ -16,6 +16,7 @@ const allTexts =
 	'musicrecomend': {es: 'Recomendación de música', en: 'Music recomendation'},
 	'playicon': {es: 'Icono de reproducir', en: 'Play icon'},
 	'listenyt': {es: 'Escuchar en Youtube Music', en: 'Listen in Youtube Music'},
+	'frontendlibs': {es: 'Librerías en el frontend ', en: 'Frontend libraries:'},
 	'nodelibs': {es: 'Librerías en node.js:', en: 'Node.js libraries:'},
 	'libs': {es: 'Librerías adicionales:', en: 'Additional libraries:'},
 	'tmdview': {es: 'md-view: Visualizador de Markdown', en: 'md-view: Markdown Viewer'},
@@ -30,6 +31,7 @@ const allTexts =
 	'trandom': {es: 'Random: Elige un item aleatorio de una lista.', en: 'Random: Choose a random item from a list.'},
 	'tmines': {es: 'Buscaminas: El peor buscaminas que habrás jugado.', en: 'Buscaminas: The worst minesweeper you will ever play.'},
 	'tidkobot': {es: 'idko-bot: Bot de discord multifunción', en: 'idko-bot: Multipurpose discord bot'},
+	'tnotas': {es: 'Notas: Aplicación simple para notas', en: 'Notas: Simple notes application'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},
@@ -73,7 +75,11 @@ const allTexts =
 	'mmines1': {es: 'Seguramente el peor buscaminas que habrás jugado.', en: "Surelly the worst minesweeper you will ever play."},
 	'midkobot1': {es: 'idko-bot fue mi primer programa para node.js y pretendía ser un bot de Discord multifunción.', en: "idko-bot was my first program for node.js and it was supposed to be a multipurpose Discord bot."},
 	'midkobot2': {es: 'Estaba fuertemente inspirado en bots como', en: "It was heavily inspired by bots such as"},
-	'midkobot3': {es: 'idko-bot nunca fue terminado y en su lugar fue reemplazado por colon-three-bot.', en: "idko-bot was never finished and instead was replaced by colon-three-bot."}
+	'midkobot3': {es: 'idko-bot nunca fue terminado y en su lugar fue reemplazado por colon-three-bot.', en: "idko-bot was never finished and instead was replaced by colon-three-bot."},
+	'mnotas1': {es: 'Notas es una aplicación sencilla para guardar notas en un servidor.', en: "Notas is a simple app for saving notes in a server."},
+	'mnotas2': {es: 'Consiste de un sitio web y un servidor en node.js.', en: "Consist of a website and a node.js server."},
+	'mnotas3': {es: 'Inicialmente empecé este proyecto para aprender como funcionaban las peticiones HTTP, pero luego de llevar con él demasiado tiempo me desmotivé y lo dejé de lado.', en: "Initially I started this project to learn how to do HTTP calls, but after I have been with it for so long I became demotivated and put it aside."},
+	'mnotas4': {es: 'No estoy seguro si es posible utilizar el proyecto en el estado en el que está actualmente, además se necesita una base de datos mongodb.', en: "I'm not sure if it's posible to use it in the state it's in, also, you need a mongodb database."}
 }
 
 const langmodal = document.getElementById('modal-language');

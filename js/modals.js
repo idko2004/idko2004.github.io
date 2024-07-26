@@ -91,6 +91,13 @@ const modalAnimationList =
 		openAnim: 'generic-scalex-open',
 		closeClass: 'anim-generic-scalex-close',
 		closeAnim: 'generic-scalex-close'
+	},
+	'modal-notas':
+	{
+		openClass: 'anim-unidad-open',
+		openAnim: 'unidad-open',
+		closeClass: 'anim-unidad-close',
+		closeAnim: 'unidad-close'
 	}
 }
 
