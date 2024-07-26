@@ -16,7 +16,7 @@ const allTexts =
 	'musicrecomend': {es: 'Recomendación de música', en: 'Music recomendation'},
 	'playicon': {es: 'Icono de reproducir', en: 'Play icon'},
 	'listenyt': {es: 'Escuchar en Youtube Music', en: 'Listen in Youtube Music'},
-	'frontendlibs': {es: 'Librerías en el frontend ', en: 'Frontend libraries:'},
+	'frontendlibs': {es: 'Librerías en el frontend:', en: 'Frontend libraries:'},
 	'nodelibs': {es: 'Librerías en node.js:', en: 'Node.js libraries:'},
 	'libs': {es: 'Librerías adicionales:', en: 'Additional libraries:'},
 	'tmdview': {es: 'md-view: Visualizador de Markdown', en: 'md-view: Markdown Viewer'},

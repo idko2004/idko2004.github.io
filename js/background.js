@@ -16,7 +16,7 @@ do
 
 const color1 = primaryColors[i1];
 const color2 = secondaryColors[i2];
-const rotation = randomRange(0, 80);
+const rotation = randomRange(0, 180);
 
 console.log({color1, color2, rotation});
 
