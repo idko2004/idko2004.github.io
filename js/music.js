@@ -21,7 +21,7 @@ async function setMusicRecomendation()
 	}
 	catch(err)
 	{
-		alert(err);
+		alert(`Trying to parse musicinfo.json: ${err}`);
 		return;
 	}
 
@@ -39,7 +39,7 @@ async function setMusicRecomendation()
 	}
 	catch(err)
 	{
-		alert(err);
+		alert(`Trying to parse musicResponse of (${musicIndex}):${musicFiles[musicIndex]}: ${err}`);
 		return;
 	}
 

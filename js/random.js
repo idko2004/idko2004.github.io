@@ -7,7 +7,7 @@ function randomRange(min, max)
 	}
 	if(min === undefined) min = 0;
 
-	let n = max ** 2;
+	let n = max ** 3;
 
 	let r = Math.floor(Math.random() * (n - min) + min);
 

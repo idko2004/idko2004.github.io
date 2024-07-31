@@ -36,6 +36,11 @@
 		{
 			"cover": "img/music/marvin.png",
 			"url": "https://music.youtube.com/playlist?list=OLAK5uy_lMjV2uSShXNLPkjgnbRhJJL_eeVtvRIY8"
+		},
+		"Good & Evil":
+		{
+			"cover": "img/music/goodandevil.png",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_kp5RujfVeR3Mk1rYzWSgCfTXbfP65DuNc"
 		}
 	},
 	"music-files":
@@ -81,6 +86,9 @@
 		"musicinfo/marvin-springandstorm.json",
 		"musicinfo/marvin-haiku.json",
 		"musicinfo/marvin-wholeworld.json",
-		"musicinfo/marvin-ruler.json"
+		"musicinfo/marvin-ruler.json",
+		"musicinfo/goodevil-and.json",
+		"musicinfo/goodevil-scarecrow.json",
+		"musicinfo/goodevil-stars.json"
 	]
 }
