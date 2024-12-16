@@ -106,6 +106,7 @@ article a img
 	max-width: 70vw;
 	cursor: pointer;
 	transition: transform 100ms cubic-bezier(.39,.58,.57,1);
+	filter: drop-shadow(0.5rem 0.7rem 0.3rem rgba(1,1,1,0.3));
 }
 
 article a img:hover
