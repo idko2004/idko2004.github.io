@@ -402,6 +402,7 @@ dialog::backdrop
 #modal-mdview
 {
 	font-family: system-ui;
+	filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.5));
 }
 
 #modal-mdview header
@@ -426,6 +427,7 @@ dialog::backdrop
 	background-color: #241f31;
 	color: #f6f5f4;
 	font-family: 'Tilt Warp', cursive;
+	filter: drop-shadow(0 0 1rem #241f316f);
 }
 
 #modal-unidad header,
@@ -442,6 +444,7 @@ dialog::backdrop
 {
 	color: #dbdee1;
 	background-color: #2e3035;
+	filter: drop-shadow(0 0 1rem #2e30356f);
 	font-family: 'Noto Sans', system-ui;
 }
 
@@ -458,6 +461,7 @@ dialog::backdrop
 #modal-secretsanta
 {
 	background-color: #241f31;
+	filter: drop-shadow(0 0 1rem #241f316f);
 	color: #fff;
 	font-family: 'Noto Sans', system-ui;
 }
@@ -473,6 +477,7 @@ dialog::backdrop
 #modal-dotmatrix
 {
 	background-color: #000;
+	filter: drop-shadow(0 0 1rem #0000006f);
 	color: #fff;
 	font-family: system-ui;
 }
@@ -483,6 +488,7 @@ dialog::backdrop
 #modal-convertmusic
 {
 	background-color: #000;
+	filter: drop-shadow(0 0 1rem #0000006f);
 	color: #44aa00;
 	font-family: 'JetBrains Mono';
 }
@@ -497,6 +503,7 @@ dialog::backdrop
 #modal-scriptsandthings
 {
 	background-color: #000;
+	filter: drop-shadow(0 0 1rem #0000006f);
 	color: #f2f2f2;
 	font-family: 'JetBrains Mono';
 }
@@ -506,6 +513,7 @@ dialog::backdrop
 #modal-mal
 {
 	background-color: #f0f0f0;
+	filter: drop-shadow(0 0 1rem #f0f0f06f);
 	color: black;
 	font-family: 'Comic Neue';
 	font-weight: normal;
@@ -521,6 +529,7 @@ dialog::backdrop
 #modal-random
 {
 	background-color: black;
+	filter: drop-shadow(0 0 1rem #0000006f);
 	background-image: url("img/dados.png");
 	color: white;
 	font-family: 'Ubuntu', system-ui;
@@ -530,6 +539,7 @@ dialog::backdrop
 #modal-buscaminas
 {
 	background-color: white;
+	filter: drop-shadow(0 0 1rem #ffffff6f);
 	color: black;
 	font-family: 'Ubuntu Mono', monospace;
 }
@@ -539,6 +549,7 @@ dialog::backdrop
 #modal-idkobot
 {
 	background-color: #2c2f33;
+	filter: drop-shadow(0 0 1rem #2c2f336f);
 	color: white;
 	font-family: 'Ubuntu', system-ui;
 }
@@ -553,6 +564,7 @@ dialog::backdrop
 #modal-notas
 {
 	background-color: #479b5b;
+	filter: drop-shadow(0 0 1rem #479b5b6f);
 	color: white;
 	font-family: 'Rubik', system-ui;
 }
@@ -568,6 +580,7 @@ dialog::backdrop
 #modal-language
 {
 	background-color: #3d3846;
+	filter: drop-shadow(0 0 1rem #3d38466f);
 	color: white;
 }
 #modal-language main
