@@ -1,0 +1,248 @@
+#game nav
+{
+	background-color: var(--red);
+	border-radius: 0 0 1rem 1rem;
+	padding: 0.4rem;
+	margin: 0 0.5rem 1.5rem 0.5rem;
+	font-size: 1rem;
+	font-family: 'Tilt Warp', cursive;
+}
+
+.floatRight
+{
+	float: right;
+}
+
+.spanButton:hover
+{
+	cursor: pointer;
+	background-color: var(--dark-red);
+}
+
+.mainCardContainer
+{
+	text-align: center;
+}
+
+#currentCard
+{
+	height: 40vh;
+}
+
+.logContainer
+{
+	min-height: 1.3rem;
+	line-height: 1.3rem;
+	font-size: 1rem;
+	font-family: 'Tilt Warp', cursive;
+	text-align: center;
+	margin: 0.5rem;
+	padding: 0.4rem;
+	border-radius: 0.5rem;
+	background-color: var(--red);
+	cursor: pointer;
+}
+
+.deckContainer
+{
+	padding: 0.5rem;
+}
+
+#deck
+{
+	padding: 0.5rem 0;
+	text-align: center;
+}
+
+.cardInDeck,
+#addCard
+{
+	height: 8rem;
+	margin: 0.3rem;
+}
+
+.cardHoverAnim,
+#addCard
+{
+	transition: transform 150ms;
+	cursor: pointer;
+}
+
+.cardHoverAnim:hover,
+#addCard:hover
+{
+	transform: scale(1.1);
+}
+
+.card-spawn
+{
+	animation: cardSpawnAnim 450ms cubic-bezier(.68,-0.55,.27,1.55) 1;
+}
+
+@keyframes cardSpawnAnim
+{
+	0%
+	{
+		opacity: 0;
+		transform: rotate(90deg) scale(0);
+	}
+	/*
+	60%
+	{
+		transform: rotate(10deg);
+	}
+	*/
+	100%
+	{
+		opacity: 1;
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+
+.card-delete
+{
+	animation: cardDeleteAnim 200ms ease-out 1;
+}
+
+@keyframes cardDeleteAnim
+{
+	100%
+	{
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+.currentCard-out
+{
+	animation: currentCardOutAnim 350ms cubic-bezier(.68,-0.55,.27,1.55) 1;
+}
+
+.currentCard-in
+{
+	animation: currentCardInAnim 450ms cubic-bezier(.68,-0.55,.27,1.55) 1;
+}
+
+@keyframes currentCardInAnim
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale(0) translateX(10rem) rotateZ(90deg);
+	}
+	/*60%
+	{
+		opacity: 1;
+		transform: scale(1.2) translateX(0);
+	}*/
+	100%
+	{
+		opacity: 1;
+		transform: scale(1) translateX(0) rotateZ(0deg);
+	}
+}
+
+@keyframes currentCardOutAnim
+{
+	0%
+	{
+		opacity: 1;
+		transform: scale(1) translateX(0) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 0;
+		transform: scale(0) translateX(-10rem) rotateZ(-90deg);
+	}
+}
+
+.body-yourTurn
+{
+	animation: bgRed 400ms ease-out forwards;
+}
+
+.body-notYourTurn
+{
+	animation: bgBlack 400ms ease-out forwards;
+}
+
+@keyframes bgRed
+{
+	0%
+	{
+		background-color: var(--black);
+	}
+	100%
+	{
+		background-color: var(--darker-red);
+	}
+}
+
+@keyframes bgBlack
+{
+	0%
+	{
+		background-color: var(--darker-red);
+	}
+	100%
+	{
+		background-color: var(--black);
+	}
+}
+
+#defendContainer
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	pointer-events: none;
+	z-index: 1;
+}
+
+#defendContainer div
+{
+	font-size: clamp(3rem, 100vw / 20, 12vh);
+	text-align: center;
+	pointer-events: none;
+	text-shadow: 0 0 30px var(--red);
+	font-family: 'Tilt Warp', cursive;
+}
+
+.defendOn
+{
+	animation: defendAnimEnter 350ms ease-in-out 1;
+}
+
+@keyframes defendAnimEnter
+{
+	0%
+	{
+		transform: scaleX(0);
+	}
+	70%
+	{
+		transform: scaleX(1.4);
+	}
+	100%
+	{
+		transform: scaleX(1);
+	}
+}
+
+.defendOff
+{
+	animation: defendAnimExit 200ms ease-out 1;
+}
+
+@keyframes defendAnimExit
+{
+	0%
+	{
+		transform: scaleX(1);
+	}
+	100%
+	{
+		transform: scaleX(0);
+	}
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Unidad</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="img/favicon.png">
+		<link rel="prefetch" href="img/cardsheet.png" as="image">
+
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="/commonassets/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/spritesheet.css">
+		<link rel="stylesheet" type="text/css" href="css/floatingWindow.css">
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+		<link rel="stylesheet" type="text/css" href="css/confeti.css">
+
+		<script defer src="js/floatingWindow.js"></script>
+		<script defer src="js/main.js"></script>
+		<script defer src="js/menu.js"></script>
+		<script defer src="js/spritesheet.js"></script>
+		<script defer src="js/cards.js"></script>
+		<script defer src="js/game.js"></script>
+		<script defer src="js/gameUpdate.js"></script>
+		<script defer src="js/gameAnimations.js"></script>
+		<script defer src="js/gameDeck.js"></script>
+		<script defer src="js/gameLogs.js"></script>
+		<script defer src="js/gameSpecialCards.js"></script>
+		<script defer src="js/confeti.js"></script>
+		<script defer src="js/ws.js"></script>
+
+	</head>
+	<body>
+		<div id="loadingScreen">
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<section class="menuContent">
+				<div class="cardsize-small loadingCard"><div class="cardsprite card-REVERSEr" alt="loading icon"></div></div>
+			</section>
+		</div>
+
+		<div id="serverMenu" hidden>
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<section>
+				<div class="redTitleText">
+					Elegir tipo de servidor
+				</div>
+				<div class="menuContent">
+					<div class="remPadding">
+						<div>
+							<button id="onlineServerButton" title="Conectarse al servidor online">Conectarse a servidor local</button>
+						</div>
+						<div>
+							<button id="localServerButton" title="Conectarse a otro servidor">Conectarse a otro servidor</button>
+						</div>
+					</div>
+					<hr>
+					<p>
+						<small>
+							Para usar un servidor local es necesario descargar el programa del servidor (backend) y que alguien lo ejecute en tu red local.
+						</small>
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div id="localServerMenu" hidden>
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<section>
+				<div class="redTitleText">
+					Servidor local
+				</div>
+				<div class="menuContent">
+					<p>
+						Escribe la dirección ip del servidor:
+					</p>
+						<input type="text" id="customUrlField">
+					<div class="remPadding">
+						<button id="customServerBackButton">Volver</button>
+						<button id="connectCustomServerButton">Conectarse</button>
+					</div>
+					<hr>
+					<p>
+						<small>
+							Para usar un servidor local es necesario descargar el programa del servidor (backend) y que alguien lo ejecute en tu red local.
+						</small>
+					</p>
+				</div>
+			</section>
+		</div>
+
+		<div id="mainMenu" hidden>
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<section>
+				<div class="redTitleText">
+					Para nada una copia barata del UNO
+				</div>
+				<div class="menuContent">
+					<div class="remPadding">
+						<div>
+							<button id="mainMenuToCreateGame">Crear partida</button>
+						</div>
+						<div>
+							<button id="mainMenuToFindGame">Unirse a una partida</button>
+						</div>
+					</div>
+					<div id="serverLabelContainer" hidden>
+						<hr>
+						<p id="serverLabel"></p>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div id="createGameMenu" hidden>
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<section>
+				<div class="redTitleText">
+					Crear una partida
+				</div>
+				<div class="menuContent">
+					<div class="remPadding">
+						<p>
+							Tu nombre:
+						</p>
+						<input type="text" id="createGameUsername">
+					</div>
+					<div>
+						<button id="createGameOptionsButton">Modificar algunas reglas</button>
+						<div id="createGameOptionsMenu" hidden>
+							<hr>
+							<div class="remPadding">
+								<p>
+									Cartas iniciales
+								</p>
+								<input type="number" value="7" id="createGameCardsNumber">
+							</div>
+							<div class="remPadding">
+								<p>
+									Cartas muy especiales
+								</p>
+								<div id="createGameSpecialCardsState">
+									Activado
+								</div>
+								<button id="createGameSpecialCards">Desactivar</button>
+							</div>
+							<div class="remPadding">
+								<p>
+									Soplar
+								</p>
+								<div id="createGameBlowState">
+									Activado
+								</div>
+								<button id="createGameBlow">Desactivar</button>
+							</div>
+							<div class="remPadding">
+								<p>
+									Defenderse con cartas de bloqueo y reversa
+								</p>
+								<div id="createGameDefendState">
+									Activado
+								</div>
+								<button id="createGameDefend">Desactivar</button>
+							</div>
+							<div class="remPadding">
+								<p>
+									Intercambiar mazos con una carta 0
+								</p>
+								<div id="createGameInterchangeZeroState">
+									Activado
+								</div>
+								<button id="createGameInterchangeZero">Desactivar</button>
+							</div>
+							<hr>
+						</div>
+					</div>
+					<div class="remPadding">
+						<button id="createGameBack">Volver</button>
+						<button id="createGameButton">Crear partida</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div id="findGameMenu" hidden>
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<section>
+				<div class="redTitleText">
+					Unirte a una partida
+				</div>
+				<div class="menuContent">
+					<p>
+						Tu nombre:
+					</p>
+					<input type="text" id="searchGameUsername">
+					<p>
+						ID de la sala:
+					</p>
+					<input type="text" id="searchGameRoom">
+					<div class="remPadding">
+						<button id="searchGameBack">Volver</button>
+						<button id="searchGameButton">Buscar partida</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+		<div id="waitForPlayersMenu" hidden>
+			<div class="bigTitleContainer">
+				<div class="bigTitleText">
+					Unidad
+				</div>
+			</div>
+			<div class="redTitleText">
+				ID de la sala: <span id="waitRoomID"></span>
+			</div>
+			<div class="playersList" id="playersList">
+				<!--div class="playerInTheList">
+					<span>Fulanito de tal</span>
+					<button class="btnFloatRight">(X)</button>
+				</div-->
+			</div>
+			<div class="menuContent">
+				<div id="waitingForPlayersText">
+					<p id="waitingPlayersText">
+						Esperando a los demás jugadores...
+					</p>
+				</div>
+				<div class="remPadding">
+					<button id="waitExitButton">Salir</button>
+					<button id="waitStartButton" hidden>Empezar</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="game" hidden>
+			<nav>
+				Unidad
+				<span class="floatRight spanButton" id="gameMenu" title="Acceder al menú">
+					<span id="navUsername">Username</span>
+					|
+					Sala:
+					<span id="navRoomID">roomID</span>
+					(Menú ⚙)
+				</span>
+			</nav>
+			<div id="defendContainer" hidden>
+				<div>¡Defiéndete!</div>
+			</div>
+			<div class="mainCardContainer">
+				<!--img id="currentCard"-->
+				<div class="cardsize-big" id="currentCardDiv"><div class="cardsprite card-SKIP" id="currentCardSprite"></div></div>
+			</div>
+			<div class="logContainer" id="logsDiv">
+				Es el turno de alguien.
+			</div>
+			<div class="deckContainer">
+				<div id="deck">
+					<!--img class="cardInDeck" src="img/examplecard.png"-->
+				</div>
+				<div class="centerAlign">
+					<!--img id="addCard" src="img/add.png"-->
+					<div class="cardsize-small" id="addCard"><div class="cardsprite card-ADD"></div></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="winScreen" hidden>
+			<div id="confetiContainer">
+				<!--div class="confeti"></div-->
+			</div>
+			<div class="youWinText">
+				<h1>¡Has ganado!</h1>
+				<p>
+					<button id="winReload">Volver al menú principal</button>
+				</p>
+			</div>
+		</div>
+
+		<div id="loseScreen" hidden>
+			<div class="youWinText" hidden>
+				<h1>Has perdido</h1>
+				<p>
+					<span id="loseWinnerName"></span> te ha ganado.
+				</p>
+				<div>
+					<button id="loseReload">Volver al menú principal</button>
+				</div>
+			</div>
+		</div>
+
+		<div id='floatWindow' hidden>
+			<div id='window' class="open">
+				<h1 id='windowTitle'></h1>
+				<div id='windowText'></div>
+				<div id='windowInput'>
+					<input type='text' id='inputInTheWindow'>
+				</div>
+				<div id="menuButtons"></div>
+				<div id='windowButtons'></div>
+			</div>
+		</div>
+
+		<div id='colorWindowBg' hidden>
+			<div id='colorWindow' class="open">
+				<h1 id='colorTitle'>Elige un color</h1>
+				<div id='colorContent'>
+					<div class="cardsize-smaller" id="colorCardRed"><div class="cardsprite card-COLORr"></div></div>
+					<div class="cardsize-smaller" id="colorCardGreen"><div class="cardsprite card-COLORg"></div></div>
+					<div class="cardsize-smaller" id="colorCardBlue"><div class="cardsprite card-COLORb"></div></div>
+					<div class="cardsize-smaller" id="colorCardYellow"><div class="cardsprite card-COLORy"></div></div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
