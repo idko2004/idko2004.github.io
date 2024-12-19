@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instalar Unidad en Linux</title>
+
+	<link rel="icon" href="../play/img/favicon.png">
+
+	<link rel="stylesheet" type="text/css" href="../play/css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/commonassets/fonts.css">
+</head>
+<body>
+	<div>
+		<div class="bigTitleContainer">
+			<div class="bigTitleText">
+				Unidad
+			</div>
+		</div>
+
+		<section>
+			<div class="redTitleText">
+				Instalar Unidad en Linux
+			</div>
+
+			<div class="menuContent">
+				<p>
+					Índice:<br>
+					<a href="#step1">1. Instalar node</a><br>
+					<a href="#step2">2. Descargar Unidad</a><br>
+					<a href="#step3">3. Instalar dependencias de Unidad</a><br>
+					<a href="#step4">4. Ejecutar el Servidor de Unidad</a><br>
+					<a href="#step5">5. Entrar a jugar</a>
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="redTitleText" id="step1">
+				1. Instalar node
+			</div>
+			<div class="menuContent">
+				<p>
+					Es posible que ya tengas node instalado, para comprobarlo, ejecuta los comandos:<br>
+					<span class="monospaced">node --version</span> y <span class="monospaced">npm --version</span>
+				</p>
+				<p>
+					Si sale un número de versión y no un mensaje de error, significa que ya los tienes instalados y puedes pasar a la siguiente sección de la guía.
+				</p>
+				<p class="sidenote">
+					No estoy seguro de que versión es la mínima para poder ejecutar Unidad, la más antigua con la que he probado ha sido node v18.18.2. Si sientes que tu versión de node es muy antigua, igual puedes seguir con el resto de esta sección.
+				</p>
+				<p>
+					Para instalar una versión de node más reciente, personalmente recomiendo utilizar <a href="https://github.com/nvm-sh/nvm" target="_blank">nvm (Node Version Manager)</a>
+				</p>
+				<p class="sidenote">
+					La guía de instalación de nvm está disponible en su página de github <a href="https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating" target="_blank">aquí</a>, es recomendable seguir esta guía de ser posible. En esta página (la de Unidad) se tratará de seguir la guía de instalación de nvm disponible a la fecha de escribir esta guía.
+				</p>
+				<p class="sidenote">
+					Alternativamente, puedes descargargar node y npm a través del gestor de paquetes de tu distribución de linux.
+				</p>
+				<p>
+					Descarga el <a href="https://github.com/nvm-sh/nvm/blob/v0.40.1/install.sh" target="_blank">script de instalación de nvm</a>
+				</p>
+				<p>
+					Abre una terminal en la carpeta en la que descargaste el script y ejecuta el siguiente comando:<br>
+					<span class="monospaced">chmod +x install.sh</span><br>
+					Esto asegura que el script que acabamos de descargar pueda ser ejecutado, si no, es posible que el sistema operativo bloquee la ejecución del script.
+				</p>
+				<p>
+					Ahora, vamos a ejecutar el script de instalación de nvm, para esto ejecutamos:<br>
+					<span class="monospaced">./install.sh</span>
+				</p>
+				<p>
+					Ahora ya tenemos instalado el gestor de versiones de node, con esto podemos instalar una versión de node, para instalar la versión estable más reciente ejecutamos:<br>
+					<span class="monospaced">nvm install node</span><br>
+					Una vez este comando termine de ejecutarse, cerramos la terminal
+				</p>
+				<p>
+					Ya deberíamos de tener node instalado, para comprobarlo, vuelve a abrir una terminal y ejecuta los comandos <span class="monospaced">node --version</span> y <span class="monospaced">npm --version</span>. Esta vez debería de salir la versión de node que acabamos de instalar.
+				</p>
+				<p class="sidenote">
+					Si planeas hacer un script que ejecute Unidad automáticamente, o algo parecido, ten en cuenta que la forma en la que nvm funciona es añadiendose a tu archivo .bashrc, por lo que si ejecutas <span class="monospaced">node</span> directamente, no funcionará. Para que funcione, debes ingresar la ruta en donde nvm ha instalado node, suele ser algo parecido a esto: <span class="monospaced">/home/user/.nvm/versions/node/vx.x.x/bin/node</span>. Claro que esto no importa si no planeas hacer un script.
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="redTitleText" id="step2">
+				2. Descargar Unidad
+			</div>
+			<div class="menuContent">
+				<p>
+					Ve al repositorio de Github de Unidad:
+					<a target="_blank" href="https://github.com/idko2004/unidad">https://github.com/idko2004/unidad</a>
+				</p>
+				<p>
+					Haz click en este botón para descargar el código:
+					<br>
+					<img src="img/github-code-button.png" alt="Botón verde que dice &quot;Code&quot; en GitHub">
+				</p>
+				<p>
+					Se abrirá esta ventana:
+					<br>
+					<img src="img/github-code-thingy.png" alt="Menú que sale al hacer click sobre el botón verde que dice &quot;Code&quot; en GitHub">
+					<br>
+					Haz click donde dice &quot;Download ZIP&quot;
+				</p>
+				<p>
+					Extrae el zip en la carpeta en la que quieras que esté Unidad.<br>Ten en cuenta que luego tendrás que ejecutar Unidad desde esta carpeta, por lo que no lo pongas en algún sitio muy complicado.
+				</p>
+				<p class="sidenote">
+					Alternativamente, si tienes instalado git, puedes clonar el repositorio con el comando<br><span class="monospaced">git clone https://github.com/idko2004/unidad.git</span>
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="redTitleText" id="step3">
+				3. Instalar dependencias de Unidad
+			</div>
+
+			<div class="menuContent">
+				<p>
+					Unidad necesita de algunas librerías para poder funcionar correctamente, para instalarlas vamos a utilizar el comando npm.
+				</p>
+				<p>
+					Abre una terminal en la carpeta en la que haya extraído Unidad y ejecute:<br>
+					<span class="monospaced">npm install</span><br>
+					Y ya estará instalado todo lo necesario para que Unidad pueda funcionar.
+				</p>
+				<p class="sidenote">
+					Es posible que npm diga que algunas de las librerías tienen vulnerabilidades, esto es cierto. Sin embargo, no creo que estas afecten a Unidad. Y, de todas formas, dudo mucho que vayan a intentar hackear su juego de cartas. Si quiere saber más acerca de estas vulnerabilidades, puede ejecutar el comando <span class="monospaced">npm audit</span>.
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="redTitleText" id="step4">
+				4. Ejecutar el Servidor de Unidad
+			</div>
+			<div class="menuContent">
+				<p>
+					Para ejecutar el servidor de Unidad, Abra una terminal en la carpeta de Unidad y ejecute uno de estos comandos:<br>
+					<span class="monospaced">npm start</span> o <span class="monospaced">node main.js</span>
+				</p>
+				<p>
+					El servidor de Unidad estará ejecutándose en esa terminal, así que no la cierre (al menos no mientras estén jugando).
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<div class="redTitleText" id="step5">
+				5. Entrar a jugar
+			</div>
+			<div class="menuContent">
+				<p>
+					Ahora solo queda entrar a jugar.<br>
+					En la terminal deben salir los métodos para poder conectarse al servidor junto con las direcciones ip.
+				</p>
+				<p>
+					<h3>Método 1:</h3>
+				</p>
+				<p>
+					En tu navegador favorito, ingresa en la barra de direcciones, la ip del dispositivo que hace de servidor y el puerto del servidor http, de esta manera:<br>
+					<span class="monospaced">&lt;DIRECCIÓN IP&gt;:&lt;PUERTO HTTP&gt;</span>
+				</p>
+				<p>
+					<h3>Método 2:</h3>
+				</p>
+				<p>
+					Dirígete a <a href="../play/" target="_blank">https://idko2004.github.io/unidad/play</a>
+				</p>
+				<p>
+					Ingresa la dirección ip del dispositivo que hace de servidor y el puerto del servidor WebSocket, de esta manera:<br>
+					<span class="monospaced">&lt;DIRECCIÓN IP&gt;:&lt;PUERTO WS&gt;</span>
+				</p>
+				<p>La dirección ip y los puertos, junto con estas mismas instrucciones, deben estar disponibles en la pantalla de la terminal del servidor de Unidad.</p>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

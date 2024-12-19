@@ -1,0 +1,50 @@
+.menuContent a,
+.menuContent a:visited
+{
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.menuContent a:hover
+{
+	color: white;
+	background-color: var(--red);
+}
+
+img
+{
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: transparent;
+	border-radius: 0.3rem;
+	border: 0.2rem solid gray;
+}
+
+.menuContent
+{
+	max-width: 90vw;
+	width: 60ch;
+	margin: 0 auto
+}
+
+.menuContent p
+{
+	margin-bottom: 3rem;
+	text-align: left;
+	line-height: 1.4;
+}
+
+.sidenote
+{
+	border-left: 0.2rem solid var(--red);
+	background-color: var(--darker-red);
+	text-align: left;
+	padding: 0.5rem
+}
+
+.monospaced
+{
+	font-family: monospace;
+	padding: 0.2rem;
+	background-color: var(--darker-red);
+}
