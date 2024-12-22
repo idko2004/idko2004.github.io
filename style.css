@@ -226,6 +226,7 @@ article
 	text-align: center;
 	overflow-wrap: break-word;
 	line-height: 1.4rem;
+	pointer-events: none;
 }
 
 .musictitle a:hover,
