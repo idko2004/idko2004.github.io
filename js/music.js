@@ -66,16 +66,23 @@ async function setMusicRecomendation()
 	});
 	
 	//Lyric
-	let lyric;
-	if(music.lyrics.length == 1) lyric = 0;
-	else if(music.lyrics.length == 2)
+	if(music.lyrics !== undefined && music.lyrics.length > 0)
 	{
-		if(Math.random() > 0.49) lyric = 0;
-		else lyric = 1;
+		let lyric;
+		if(music.lyrics.length == 1) lyric = 0;
+		else if(music.lyrics.length == 2)
+		{
+			if(Math.random() > 0.49) lyric = 0;
+			else lyric = 1;
+		}
+		else lyric = randomRange(0, music.lyrics.length - 1);
+		
+		musiclyric.innerText = `"${music.lyrics[lyric]}"`;
 	}
-	else lyric = randomRange(0, music.lyrics.length - 1);
-	
-	musiclyric.innerText = `"${music.lyrics[lyric]}"`;
+	else
+	{
+		musiclyric.hidden = true;
+	}
 }
 
 setMusicRecomendation();
