@@ -29,7 +29,8 @@ async function setMusicRecomendation()
 	albums = musicInfo.albums;
 	musicFiles = musicInfo['music-files'];
 
-	const musicIndex =musicFiles.length - 1; //randomRange(0, musicFiles.length - 1);
+	//const musicIndex =musicFiles.length - 1;
+	const musicIndex = randomRange(0, musicFiles.length - 1);
 
 	let musicResponse;
 	try
