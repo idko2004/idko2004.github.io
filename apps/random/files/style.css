@@ -1,0 +1,155 @@
+body
+{
+  background-color: black;
+  background-image: url("img/dados.png");
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color : white;
+}
+
+input[type="text"]
+{
+  background-color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 300px;
+  border:0px;
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="text"]:focus
+{
+  background-color: #828282;
+  color: white;
+}
+
+input[type="text"]:hover
+{
+  background-color: #828282;
+  color: white;
+}
+
+input[type="button"]
+{
+  background-color: #cc1f1f;
+  border-radius: 10px;
+  border:0px;
+  padding: 3px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 300px;
+  color: white;
+  outline: none;
+}
+
+input[type="button"]:hover
+{
+  background-color: #9c0000;
+  color: white;
+}
+
+input[type="number"]
+{
+  background-color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 300px;
+  border:0px;
+  border-radius: 10px;
+  outline: none;
+}
+
+input[type="number"]:focus
+{
+  background-color: #828282;
+  color: white;
+}
+
+input[type="number"]:hover
+{
+  background-color: #828282;
+  cursor: pointer;
+  color: white;
+}
+
+select
+{
+    appearance: none;
+    background-image: url("img/dices1.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    text-align: center;
+    background-color:  #636363;
+    border-radius: 10px;
+    border:0px;
+    padding: 3px;
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 300px;
+    color: white;
+    outline: none;
+}
+
+select:hover
+{
+    background-color: #545454;
+}
+
+div
+{
+  padding: 20px;
+}
+
+li
+{
+  list-style-type: none;
+}
+
+#espacio
+{
+    color:red;
+}
+
+.elemento
+{
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+}
+
+.elemento:hover
+{
+    text-decoration: underline;
+    color: #cc1f1f;
+    /*color: #9c0000;*/
+    cursor: pointer;
+}
+
+small
+{
+    font-size: 18px;
+    color: #707070;
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: normal;
+}
+
+.animHover
+{
+    width: 120px;
+    transition: 200ms all ease;
+}
+
+.animNotHover
+{
+    width: 100px;
+    transition: 200ms all ease;
+}

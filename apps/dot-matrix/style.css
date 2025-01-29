@@ -1,0 +1,40 @@
+body
+{
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container
+{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.charContainer
+{
+    margin: 0.2rem;
+    display: inline-block;
+}
+
+.char
+{
+    display: grid;
+    grid-gap: 0.1rem;
+}
+
+.dot
+{
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: rgb(70, 70, 70);
+    display: inline-grid;
+}
+
+.on
+{
+    background-color: white;
+}

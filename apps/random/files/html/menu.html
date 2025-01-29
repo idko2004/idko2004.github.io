@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random | Otras formas de tirar los dados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="shorcut icon" type="image/png" href="../img/random.png">
+</head>
+<body>
+    <a href="../../index.html">
+        <img src="../img/random.png" width="100" alt="lista" title="Volver" id="diceImage">
+    </a>
+    <script src="../js/animHover.js"></script>
+    <h1>Random</h1>
+    <h2>Otras formas de probar suerte</h2>
+    <form>
+        <div>
+            <p><input type="button" value="Lista" onclick="listaDeElementos();"></p>
+        </div>
+        <div>
+            <p><input type="button" value="Dados" onclick="dados();"></p>
+            <!--<p><input type="button" value="Rango de números" onclick="rangoDeNumeros();"></p>-->
+        </div>
+    </form>
+    <script>
+        function listaDeElementos(){window.location.href="../../index.html";}
+        function dados(){window.location.href="dado.html";}
+        function rangoDeNumeros(){window.location.href="rango.html";}
+    </script>
+</body>
+</html>

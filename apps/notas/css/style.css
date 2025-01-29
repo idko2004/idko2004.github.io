@@ -1,0 +1,100 @@
+/*=====================================================
+====================GENERAL============================
+=======================================================*/
+
+html
+{
+    --green: #53b56a;
+    --green-hover: #479b5b;
+    --green-win-bg: rgba(71, 155, 91, 0.35);
+    --bg-color: #FFF;
+    --font-color: #000;
+    --gray: #eee;
+    --rubik: 'Rubik', sans-serif;
+}
+
+body
+{
+    font-family: var(--rubik);
+    color: var(--font-color);
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+#allContainer
+{
+    margin: 0;
+    display: flex;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+#loadingScreen:hover
+{
+    cursor: wait;
+}
+
+textarea::-moz-selection,
+input::-moz-selection
+{ /* Code for Firefox */
+    color: white;
+    background: var(--green);
+}
+
+textarea::selection,
+input::selection
+{
+    color: white;
+    background: var(--green);
+}
+
+#loadingIcon
+{
+    height: 4rem;
+    animation-name: loadingIconSpin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loadingIconSpin
+{
+    from
+    {
+        transform:rotate(0deg);
+    }
+    to
+    {
+        transform:rotate(360deg);
+    }
+}
+
+
+/*=====================================================
+====================ALGUNAS CLASES=====================
+=======================================================*/
+.red
+{
+    color: red;
+}
+
+.hidden
+{
+    /*Elementos con el display cambiado por algún motivo no se ocultan.*/
+    display: none;
+}
+
+.justified
+{
+    text-align: justify;
+}
+
+.imgSpacer
+{
+    width: 0.4ch;
+    height: 0.4ch;
+    display: inline;
+}

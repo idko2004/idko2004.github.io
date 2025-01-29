@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random | Rango de números</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="shorcut icon" type="image/png" href="../img/random.png">
+</head>
+<body>
+    <a href="menu.html">
+        <img src="../img/random.png" width="100" alt="menu" title="Otras formas de tirar los dados" id="diceImage">
+    </a>
+    <script src="../js/animHover.js"></script>
+    <h1>Random</h1>
+    <h2>Rango de números</h2>
+    <form>
+        <p>
+            <h3>Valor mínimo</h3>
+            <input type="number" id="min" value="1">
+        </p>
+        <p>
+            <h3>Valor maximo</h3>
+            <input type="number" id="max" value="10">
+        </p>
+        <div id="espacio"></div>
+        <p><input type="button" id="boton" value="¡A ver que sale!"></p>
+    </form>
+    <div id="resultados"></div>
+    <script src="../js/rango.js"></script>
+</body>
+</html>

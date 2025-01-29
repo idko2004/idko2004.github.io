@@ -1,0 +1,107 @@
+/*=====================================================
+====================AREA DEL TEXTO=====================
+=======================================================*/
+
+article
+{
+    /*border: 1px solid red;*/
+    width: 100%;
+    min-width: 250px;
+}
+
+#topBar
+{
+    /*border: 1px solid blue;*/
+    background-color: var(--gray);
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+#topBarText
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+#leftToTheNoteNameButtons
+{
+    vertical-align: middle;
+    float: left;
+}
+
+#topBarButtons
+{
+    float: right;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: 1.3rem;
+}
+
+#topBarButtons button, #leftToTheNoteNameButtons button
+{
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 0.3rem;
+    margin: 0 0.3rem;
+    transition: all ease 100ms;
+}
+
+#topBarButtons img, #leftTotheNoteNameButtons img
+{
+    height: 1.3rem;
+}
+
+#topBarButtons .bg-green:hover, #leftToTheNoteNameButtons .bg-green:hover,
+#topBarButtons .bg-green:focus
+{
+    background-color: var(--green);
+    transition: all ease 100ms;
+    outline: none;
+}
+
+#topBarButtons .bg-red:hover,
+#topBarButtons .bg-red:focus
+{
+    background-color: rgb(255, 98, 98);
+    transition: all ease 100ms;
+    outline: none;
+}
+
+textarea
+{
+    height: 80vh;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    font-family: var(--rubik);
+    font-size: 1rem;
+    resize: none;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    caret-color: auto;
+    transition: border ease 100ms, color ease 100ms;
+}
+
+textarea:disabled
+{
+    border-color: var(--gray);
+    background-color: var(--gray);
+    transition: all ease 100ms;
+}
+
+textarea:focus
+{
+    outline-style: none;
+    border: 2px solid var(--green);
+    transition: all ease 100ms;
+}

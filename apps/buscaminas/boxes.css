@@ -1,0 +1,147 @@
+.box
+{
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    vertical-align: top;
+    background-color: #d9d9d9;
+}
+
+.box:hover
+{
+    background-color: #c9c9c9;
+}
+
+.box-marked
+{
+    color: black;
+    background-color: #FFDA7F;
+}
+
+.box-marked:hover
+{
+    background-color: #DFBF76;
+}
+
+.box-marked-well
+{
+    color: white;
+    background-color: #88D25A;
+}
+
+.box-marked-well:hover
+{
+    background-color: green;
+}
+
+.box-empty
+{
+    background-color: #ffffff;
+}
+
+.box-empty:hover
+{
+    background-color: #dbdbdb;
+}
+
+.box-mine
+{
+    background-color: #db0b27;
+}
+
+.box-mine:hover
+{
+    background-color: #ad0a20;
+}
+
+.box-1
+{
+    color: #45adf7;
+    background-color: #edfcff;
+}
+
+.box-1:hover
+{
+    background-color: #daf2f7;
+}
+
+.box-2
+{
+    color: #88D25A;
+    background-color: #edffed;
+}
+
+.box-2:hover
+{
+    background-color: #daf7dd;
+}
+
+.box-3
+{
+    color: #f74545;
+    background-color: #ffeded;
+}
+
+.box-3:hover
+{
+    background-color: #f7dada;
+}
+
+.box-4
+{
+    color: #ad45f7;
+    background-color: #f7edff;
+}
+
+.box-4:hover
+{
+    background-color: #eadaf7;
+}
+
+.box-5
+{
+    color: #b53535;
+    background-color: #E8C9B9;
+}
+
+.box-5:hover
+{
+    background-color: #DFA485;
+}
+
+.box-6
+{
+    color: #52E9C6;
+    background-color: #E9F6F3;
+}
+
+.box-6:hover
+{
+    background-color: #D9F1EB;
+}
+
+.box-7
+{
+    color: #000000;
+    background-color: #E2E2E2;
+}
+
+.box-7:hover
+{
+    background-color: #D6D6D6;
+}
+
+.box-8
+{
+    color: #EE34DB;
+    background-color: #E4AEDE;
+}
+
+.box-8:hover
+{
+    background-color: #E18ED8;
+}

@@ -1,0 +1,255 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gestionar Cuenta | Notas</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!--Cargar los css dependiendo de si está en modo oscuro o no -->
+        <script>
+            if(location.hash.includes('colortheme=dark')) document.write(`<link rel='stylesheet' type='text/css' href='css/style-dark.css'>`);
+            else if(location.hash.includes('colortheme=krad')) document.write(`<link rel='stylesheet' type='text/css' href='css/style-krad.css'>`);
+            else document.write(`<link rel='stylesheet' type='text/css' href='css/style.css'>`);
+        </script>
+
+
+        <link rel='stylesheet' type='text/css' href='css/load.css'>
+        <link rel='stylesheet' type='text/css' href='css/floatingWindow.css'>
+        <link rel='stylesheet' type='text/css' href='css/manageAccount.css'>
+        <link rel="shorcut icon" type="image/svg" href="img/favicon.svg">
+
+        <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"> </script>
+
+        <script>let titleTextIDLang = 'manageAccountNotes';</script>
+        <script defer src="js/hash.js"></script>
+        <script defer src="js/localStorage.js"></script>
+        <script defer src="js/language.js"></script>
+        <script defer src="js/cookies.js"></script>
+        <script defer src="js/floatingWindow.js"></script>
+        <script defer src="js/crypto.js"></script>
+        <script defer src="js/manageAccount/changeDataMenu.js"></script>
+        <script defer src="js/manageAccount/changeLanguage.js"></script>
+        <script defer src="js/manageAccount/colorTheme.js"></script>
+        <script defer src="js/manageAccount/deleteLocalData.js"></script>
+        <script defer src="js/manageAccount/localCopyMenu.js"></script>
+        <script defer src="js/manageAccount/logOutInAllDevices.js"></script>
+        <script defer src="js/manageAccount/deleteAccoutMenu.js"></script>
+        <script defer src="js/manageAccount/spellcheckMenu.js"></script>
+        <script defer src="js/manageAccount/navigationButtons.js"></script>
+        <script defer src="js/manageAccount/main.js"></script>
+    </head>
+    <body>
+        <div id=loadingScreen>
+            <section>
+                <b><span class='text' txt="noteAppName">Notas</span></b>
+                <div id="loadingDotsContainer">
+                    <div class="loadingDot loadDot1"></div>
+                    <div class="loadingDot loadDot2"></div>
+                    <div class="loadingDot loadDot3"></div>
+                </div>
+            </section>
+        </div>
+
+        <div id='mainScreen' hidden>
+            <div id='mainScreenNotesBigName'>
+                <b class="text" txt="noteAppName"></b>
+            </div>
+            <div class="container">
+                <div id="mainMenu" class="openMenu" hidden>
+                    <h1 class="text" txt="manageAccount" id="manageAccountText"></h1>
+                        <section>
+                            <button class="greenButton text" id="toChangeLanguageMenuButton" txt="changeLanguage2"></button>
+                            <button class="greenButton text" id="toChangeColorTheme" txt="changeColorTheme"></button>
+                            <button class="greenButton text" id="toLocalCopyMenuButton" txt="localCopySettings"></button>
+                            <button class="greenButton text" id="toSpellcheckMenuButton" txt="spellcheck"></button>
+                        </section>
+                        <section id="modifyUserDataSection">
+                            <p>
+                                <span class="text" txt="email"></span>:
+                            </p>
+                            <p>
+                                <b><span id="emailSpace"></span></b>
+                            </p>
+                            <button class='greenButton text' id="toChangeDataMenuButton" txt="changeEmail"></button>
+                        </section>
+                        <section id="logOutSection">
+                            <button class='greenButton text' id="logOutInAllMenuButton" txt="logOutInAll"></button>
+                            <button class='greenButton text' id="deleteAccountMenuButton" txt="deleteAccount"></button>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="toDeleteConfigurationButton" txt="deleteConfigurationData"></button>
+                            <button class="greenButton text" id="toDeleteAllButton" txt="menu_eraseAll"></button>
+                        </section>
+                        <section>
+                            <button class='greenButton text' id="goBackToNotes" txt="saveAndExit"></button>
+                        </section>
+                </div>
+
+                <div id="changeLanguageMenu" hidden>
+                    <h1 class="text" txt="changeLanguage"></h1>
+                        <section>
+                            <button class="greenButton" id="changeLanguageButton_es">Español</button>
+                            <button class="greenButton" id="changeLanguageButton_en">English</button>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="changeLanguageButton_cancel" txt="cancel"></button>
+                        </section>
+                </div>
+
+                <div id="changeColorThemeMenu" hidden>
+                    <h1 class="text" txt="changeColorTheme"></h1>
+                        <section>
+                            <button class="greenButton text" id="changeColorTheme_light" txt="lightTheme"></button>
+                            <button class="greenButton text" id="changeColorTheme_dark" txt="darkTheme"></button>
+                            <button class="greenButton text" id="changeColorTheme_krad" txt="kradTheme"></button>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="changeColorTheme_cancel" txt="cancel"></button>
+                        </section>
+                </div>
+
+                <div id="localCopyMenu" hidden>
+                    <h1 class="text" txt="localCopySettings"></h1>
+                        <section>
+                            <p class="text justified" txt="localCopyText1"></p>
+                            <p class="text justified" txt="localCopyText2"></p>
+                            <p class="text justified" txt="localCopyText3"></p>
+                            <p class="text justified" txt="localCopyText4"></p>
+                        </section>
+                        <section>
+                            <p>
+                                <span class="text" txt="localCopiesAre"></span> 
+                                <b id="localCopyEnabledText"></b>
+                            </p>
+                            <button class="greenButton" id="localCopyChangeButton"></button>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="localCopyCancelButton" txt="cancel"></button>
+                        </section>
+                </div>
+
+                <div id="spellcheckMenu" hidden>
+                    <h1 class="text" txt="spellcheck"></h1>
+                    <section>
+                        <p class="text" txt="spellcheckText"></p>
+                    </section>
+                    <section>
+                        <p>
+                            <span class="text" txt="spellcheckIs"></span> <b><span id="spellcheckText"></span></b>
+                        </p>
+                        <button class="greenButton text" id="spellcheckButton_enable" txt="enable"></button>
+                        <button class="greenButton text" id="spellcheckButton_disable" txt="disable"></button>
+                        <button class="greenButton text" id="spellcheckButton_default" txt="defaultConfiguration"></button>
+                    </section>
+                    <section>
+                        <button class="greenButton text" id="spellcheckButton_cancel" txt="cancel"></button>
+                    </section>
+                </div>
+
+                <div id="deleteConfigurationMenu" hidden>
+                    <h1 class="text" txt="deleteConfigurationData"></h1>
+                    <section>
+                        <p class="text" txt="deleteConfigText"></p>
+                        <button class="greenButton text" id="deleteConfigurationConfirm" txt="deleteConfigurationData"></button>
+                    </section>
+                    <section>
+                        <button class="greenButton text" id="deleteConfigurationCancel" txt="cancel"></button>
+                    </section>
+                </div>
+
+                <div id="deleteAllMenu" hidden>
+                    <h1 class="text" txt="menu_eraseAllLocal_title"></h1>
+                    <section>
+                        <p class="text" txt="deleteAllText"></p>
+                        <button class="greenButton text" id="deleteAllConfirm" txt="menu_eraseAllLocal_btn2"></button>
+                    </section>
+                    <section>
+                        <button class="greenButton text" id="deleteAllCancel" txt="cancel"></button>
+                    </section>
+                </div>
+
+                <div id="changeDataMenu" hidden>
+                    <h1 class="text" txt="modifyData"></h1>
+                        <section>
+                            <h2 class="text" txt="email"></h2>
+                            <p><input type="text" id="changeEmailField" placeholder=""></p>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="saveChangeDataMenu" txt="saveChanges"></button>
+                            <button class="greenButton text" id="goBackChangeDataMenu" txt="cancel"></button>
+                        </section>
+                </div>
+
+                <div id="changeDataEmailCodeMenu" hidden>
+                    <h1 class="text" txt="checkYourEmail"></h1>
+                        <section>
+                            <span class="text" txt="codesWeSent"></span>
+                            <b id="changeDataEmailSent"></b>
+                            <span class="text" txt="and"></span>
+                            <b id="changeDataEmailSent2"></b>
+                        </section>
+                        <section>
+                            <h2 class="text" txt="enterTheCodes"></h2>
+                            <p><input type="text" id="changeDataConfirmCode" maxlength="5"></p>
+                            <p><input type="text" id="changeDataConfirmCode2" maxlength="5"></p>
+                            <button class="greenButton text" id="changeDataConfirmCodeButton" txt="verify"></button>
+                        </section>
+                </div>
+
+                <div id="logOutInAllMenu" hidden>
+                    <h1 class="text" txt="logOutInAll"></h1>
+                        <section>
+                            <h2 class="text" txt="logOutAllQ"></h2>
+                            <span class="text" txt="logOutAllQ2"></span>
+                            <p>
+                                <button class="greenButton text" id="logOutInAllOkButton" txt="logOutInAll"></button>
+                            </p>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="logOutInAllCancelButton" txt="cancel"></button>
+                        </section>
+                </div>
+
+                <div id="deleteAccountMenu" hidden>
+                    <h1 class="text" txt="deleteAccount"></h1>
+                        <section>
+                            <h2 class="text" txt="doYouWantToDeleteYourAccount"></h2>
+                            <p class="text justified" txt="deleteAccountText1"></p>
+                            <p class="text justified" txt="deleteAccountText2"></p>
+                            <button class="greenButton" id="deleteAccountButton"></button>
+                        </section>
+                        <section>
+                            <button class="greenButton text" id="goBackDeleteAccountMenu" txt="cancel"></button>
+                        </section>
+                </div>
+
+                <div id="deleteAccountEmailCodeMenu" hidden>
+                    <h1 class="text" txt="checkYourEmail"></h1>
+                        <section>
+                            <span class="text" txt="deleteAccountText3"></span>
+                            <b><span id="deleteAccountEmailSent">someone@email.com</span></b>
+                        </section>
+                        <section>
+                            <h2 class="text" txt="enterTheCode"></h2>
+                            <p><input type="text" id="deleteAccountCodeInput" placeholder="A1B2C" maxlength="5"></p>
+                            <button class="greenButton text" id="confirmDeleteAccount" txt="verify"></button>
+                        </section>
+                </div>
+            </div>
+        </div>
+
+        <div id='floatWindow' hidden>
+            <div id='window'>
+                <h1 id='windowTitle'></h1>
+                <div id='windowText'></div>
+                <div id='windowInput'>
+                    <input type='text' id='inputInTheWindow'>
+                </div>
+                <div id='windowButtons'></div>
+            </div>
+        </div>
+    </body>
+</html>

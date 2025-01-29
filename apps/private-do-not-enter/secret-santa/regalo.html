@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Feliz navidad :3</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="https://img.favpng.com/25/19/15/emoji-santa-claus-emoticon-google-noto-fonts-png-favpng-xDkVujbD51neRkUg8nCticskE.jpg">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+		<style>
+			html
+			{
+				overflow: hidden;
+				width: 100vw;
+				height: 100vh;
+			}
+
+			body
+			{
+				background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2018/12/45-imagenes-frases-graciosas-felicitar-navidad.jpg");
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+
+				overflow: hidden;
+				width: 100vw;
+				height: 100vh;
+			}
+
+			dialog
+			{
+				background-color: transparent;
+				border: 0;
+				outline: none;
+				width: 90vw;
+				text-align: center;
+				overflow: visible;
+			}
+
+			dialog::backdrop
+			{
+				background-color: transparent;
+			}
+
+			img
+			{
+				width: 7rem;
+			}
+
+			.letter
+			{
+				display: inline-block;
+				font-size: 5rem;
+				max-height: 20vh;
+				margin: 0.1em;
+				text-align: center;
+				font-family: 'Chewy', sans-serif;
+				text-shadow: #3d3846 10px 5px 5px;
+			}
+
+			.floatingThing
+			{
+				position: absolute;
+				pointer-events: none;
+				transform-origin: 50% 50%;
+			}
+
+			.word-container
+			{
+
+			}
+
+			#floatWindow
+			{
+				position: fixed;
+				top: 0;
+				left: 0;
+				background-color: transparent;
+				width: 100vw;
+				height: 100vh;
+				text-align: center;
+			}
+
+			#window
+			{
+				width: 100vw;
+
+				position: fixed;
+				top: 0%;
+				left: 0%;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="floatingThing" hidden>
+			<img src="https://emoji.fileformat.info/png/1f389.png">
+		</div>
+		<div class="floatingThing" hidden>
+			<img src="http://emojisaurus.com/images/emoji/tada.png">
+		</div>
+		<div class="floatingThing" hidden>
+			<img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Gift_Present_Emoji.png?9898922749706957214">
+		</div>
+		<div class=floatingThing hidden>
+			<img src="https://media.discordapp.net/stickers/998058892758106132.webp?size=160">
+		</div>
+		<div class=floatingThing hidden>
+			<img src="https://whatemoji.org/wp-content/uploads/2020/07/Christmas-Tree-Emoji-1024x1024.png">
+		</div>
+		<div class=floatingThing hidden>
+			<img src="https://img.favpng.com/25/19/15/emoji-santa-claus-emoticon-google-noto-fonts-png-favpng-xDkVujbD51neRkUg8nCticskE.jpg">
+		</div>
+		<div class=floatingThing hidden>
+			<img src="https://i.kym-cdn.com/entries/icons/facebook/000/001/130/Untitled.jpg">
+		</div>
+		<div class="floatingThing" hidden>
+			<img src="https://cdn.shopify.com/s/files/1/1061/1924/files/Gift_Present_Emoji.png?9898922749706957214">
+		</div>
+		<div class=floatingThing hidden>
+			<img src="https://whatemoji.org/wp-content/uploads/2020/07/Christmas-Tree-Emoji-1024x1024.png">
+		</div>
+
+		<div id='floatWindow'>
+			<div id='window'>
+			<div class="word-container">
+				<div class="letter">F</div>
+				<div class="letter">e</div>
+				<div class="letter">l</div>
+				<div class="letter">i</div>
+				<div class="letter">z</div>
+			</div>
+			<div class="word-container">
+				<div class="letter">N</div>
+				<div class="letter">a</div>
+				<div class="letter">v</div>
+				<div class="letter">i</div>
+				<div class="letter">d</div>
+				<div class="letter">a</div>
+				<div class="letter">d</div>
+			</div>
+			<div class="word-container">
+				<div class="letter">S</div>
+				<div class="letter">a</div>
+				<div class="letter">m</div>
+			</div>
+			</div>
+		</div>
+
+
+		<dialog id="dialog">
+			<div class="word-container">
+				<div class="letter">F</div>
+				<div class="letter">e</div>
+				<div class="letter">l</div>
+				<div class="letter">i</div>
+				<div class="letter">z</div>
+			</div>
+			<div class="word-container">
+				<div class="letter">N</div>
+				<div class="letter">a</div>
+				<div class="letter">v</div>
+				<div class="letter">i</div>
+				<div class="letter">d</div>
+				<div class="letter">a</div>
+				<div class="letter">d</div>
+			</div>
+			<div class="word-container">
+				<div class="letter">S</div>
+				<div class="letter">a</div>
+				<div class="letter">m</div>
+			</div>
+		</dialog>
+
+		<script>
+			console.log('start script');
+			const dialog = document.getElementById('dialog');
+
+			const letters = document.getElementsByClassName('letter');
+			const floatingThings = document.getElementsByClassName('floatingThing');
+
+			async function moveThings(elementsArray, always)
+			{
+				let angle;
+				let positionX;
+				let positionY;
+				let attributeX;
+				let attributeY;
+				let centerX;
+				let centerY;
+				for(let i = 0; i < elementsArray.length; i++)
+				{
+					if(elementsArray[i].hidden) continue;
+					if(!always && Math.random() > 0.2) continue;
+					angle = randomRange(0, 40) - 20;
+					positionX = randomRange(0, 4) - 2;
+					positionY = randomRange(0, 4) - 2;
+
+					attributeX = elementsArray[i].getAttribute('px');
+					if(attributeX !== null)
+					{
+						attributeX = Number(attributeX);
+						attributeY = Number(elementsArray[i].getAttribute('py'));
+
+						positionX = attributeX + positionX;
+						positionY = attributeY + positionY;
+					}
+
+					centerX = getCenterX(elementsArray[i]);
+					centerY = getCenterY(elementsArray[i]);
+
+					if(positionX + elementsArray[i].offsetWidth > innerWidth) positionX -= elementsArray[i].offsetWidth;
+					if(positionY + elementsArray[i].offsetHeight > innerHeight) positionY -= elementsArray[i].offsetHeight;
+
+					elementsArray[i].style.transformOrigin = `${positionX + centerX}px ${positionY + centerY}px`;
+					elementsArray[i].style.transform = `rotateZ(${angle}deg) translate(${positionX}px, ${positionY}px)`;
+				}
+			}
+
+			const colors = ["#2ec27e", "#c01c28", "#33d17a", "#f6d32d", "#e01b24", "#57e389", "#ed333b", "#f5c211"];
+			//const shadows = ["036F3E", "840615", "036F3E", "840615", "036F3E", "840615"];
+			async function changeColors(elementsArray, all)
+			{
+				let color;
+				//let shadow;
+				let r;
+				for(let i = 0; i < elementsArray.length; i++)
+				{
+					if(!all && Math.random() > 0.4) continue;
+					r = randomRange(0, colors.length - 1);
+					color = colors[r];
+					//shadow = shadows[r];
+					elementsArray[i].style.color = color;
+					//elementsArray[i].style.textShadow = `${shadow} 10px 5px 5px`;
+				}
+			}
+
+			async function teleportFloatingThings(elementsArray, all, moveInvisibleThings)
+			{
+				let hidden;
+				let corner;
+				let screenWidth;
+				let screenHeight;
+				//let dialogWidth = parseInt(getComputedStyle(dialog).width);
+				//let dialogHeight = parseInt(getComputedStyle(dialog).height);
+				let movementRangeX;
+				let movementRangeY;
+				let centerX;
+				let centerY;
+				let relativeX;
+				let relativeY;
+				let absoluteX;
+				let absoluteY;
+
+				for(let i = 0; i < elementsArray.length; i++)
+				{
+					if(!all && Math.random() > 0.4) continue;
+					hidden = elementsArray[i].hidden;
+					if(!moveInvisibleThings && Math.random() > 0.5)
+					{
+						hidden = !hidden;
+						elementsArray[i].hidden = hidden;
+						break;
+					}
+
+					if(!moveInvisibleThings && hidden) continue;
+
+					centerX = getCenterX(elementsArray[i]);
+					centerY = getCenterY(elementsArray[i]);
+
+					screenWidth = innerWidth - centerX;
+					screenHeight = innerHeight - centerY;
+
+					movementRangeX = screenWidth /2;
+					movementRangeY = screenHeight /2;
+
+					relativeX = randomRange(0, screenWidth);
+					relativeY = randomRange(0, screenHeight);
+
+					corner = randomRange(0, 3);
+
+					switch(corner)
+					{
+						case 0: //Arriba izquierda
+							absoluteX = relativeX;
+							absoluteY = relativeY;
+							break;
+
+						case 1: //Arriba derecha
+							absoluteX = screenWidth - relativeX;
+							absoluteY = relativeY;
+							break;
+
+						case 2: //Abajo izquierda
+							absoluteX = relativeX;
+							absoluteY = screenHeight - relativeY;
+							break;
+
+						case 3: //Abajo derecha
+							absoluteX = screenWidth - relativeX;
+							absoluteY = screenHeight - relativeY;
+							break;
+					}
+
+					//console.log({hidden, corner, movementRangeX, movementRangeY, centerX, centerY, relativeX, relativeY, absoluteX, absoluteY});
+
+					if(absoluteX + elementsArray[i].offsetWidth > innerWidth) absoluteX -= elementsArray[i].offsetWidth;
+					if(absoluteY + elementsArray[i].offsetHeight > innerHeight) absoluteY -= elementsArray[i].offsetHeight;
+
+					elementsArray[i].style.transformOrigin = `${absoluteX + centerX}px ${absoluteY + centerY}px`;
+					elementsArray[i].style.transform = `translate(${absoluteX}px, ${absoluteY}px)`;
+					elementsArray[i].setAttribute('px', absoluteX);
+					elementsArray[i].setAttribute('py', absoluteY);
+				}
+			}
+
+			setInterval(() =>
+			{
+				moveThings(letters, false);
+				changeColors(letters);
+
+				moveThings(floatingThings, true);
+			}, 1000/3);
+
+			setInterval(() =>
+			{
+				teleportFloatingThings(floatingThings, false, false);
+			}, 1080);
+
+			changeColors(letters, true);
+			teleportFloatingThings(floatingThings, true, true);
+			//dialog.showModal();
+
+			function getCenterX(element)
+			{
+				return element.offsetWidth / 2;
+			}
+
+			function getCenterY(element)
+			{
+				return element.offsetHeight / 2;
+			}
+
+			function randomRange(min, max)
+			{
+				if(max === undefined)
+				{
+					console.log('random.range: no se ha especificado el valor máximo');
+					return null;
+				}
+				if(min === undefined) min = 0;
+				if(max < min)
+				{
+					console.log('randomRange: el valor máximo es menor que el valor minimo');
+					return min;
+				}
+
+				let n = max ** 2;
+
+				let r = Math.floor(Math.random() * (n - min) + min);
+
+				while(r > max)
+				{
+					r -= max;
+				}
+
+				if(r < min)
+				{
+					console.log('colors.range: resultado es < min');
+					r = max - 1;
+				}
+
+				if(r > max)
+				{
+					console.log('colors.range: el resultado es > max');
+					r = min;
+				}
+
+				return r;
+			}
+
+			function adjustLetterSize()
+			{
+				const words = document.getElementsByClassName('word-container');
+
+				let containerHeight;
+				let letterHeight;
+				for(let i = 0; i < words.length; i++)
+				{
+					containerHeight = Number(getComputedStyle(words[i]).height);
+
+				}
+			}
+		</script>
+	</body>
+</html>

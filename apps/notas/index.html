@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Notas</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!--Cargar los css dependiendo de si está en modo oscuro o no-->
+        <script>
+            let colorTheme = localStorage.getItem('_theme');
+            switch(colorTheme)
+            {
+                case 'dark': document.write(`<link rel='stylesheet' type='text/css' href='css/style-dark.css'>`); break;
+                case 'krad': document.write(`<link rel='stylesheet' type='text/css' href='css/style-krad.css'>`); break;
+                default: document.write(`<link rel='stylesheet' type='text/css' href='css/style.css'>`); break;
+            }
+
+        </script>
+
+        <link rel='stylesheet' type='text/css' href='css/load.css'>
+        <link rel='stylesheet' type='text/css' href='css/login.css'>
+        <link rel='stylesheet' type='text/css' href='css/topBar.css'>
+        <link rel='stylesheet' type='text/css' href='css/leftBar.css'>
+        <link rel='stylesheet' type='text/css' href='css/textArea.css'>
+        <link rel='stylesheet' type='text/css' href='css/floatingWindow.css'>
+        <link rel="shorcut icon" type="image/svg" href="img/pencil-green.svg">
+
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"> </script>
+        <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script defer src='js/const.js'></script>
+        <script defer src='js/hash.js'></script>
+        <script defer src='js/localStorage.js'></script>
+        <script defer src='js/language.js'></script>
+        <script defer src='js/crypto.js'></script>
+        <script defer src='js/resize.js'></script>
+        <script defer src='js/floatingWindow.js'></script>
+        <script defer src='js/loadNotesList.js'></script>
+        <script defer src='js/login.js'></script>
+        <script defer src='js/newNote.js'></script>
+        <script defer src='js/note.js'></script>
+        <script defer src='js/text.js'></script>
+        <script defer src='js/menu.js'></script>
+        <script defer src='js/changeIconsAndTexts.js'></script>
+        <script defer src='js/load.js'></script>
+        <script defer src='js/cookies.js'></script>
+
+    </head>
+    <body>
+        <div id="loadingScreen">
+            <section>
+                <b><span class='text' txt="noteAppName">Notas</span></b>
+                <div id="loadingDotsContainer">
+                    <div class="loadingDot loadDot1"></div>
+                    <div class="loadingDot loadDot2"></div>
+                    <div class="loadingDot loadDot3"></div>
+                </div>
+            </section>
+        </div>
+
+        <div id='loginScreen' hidden>
+            <div id='loginScreenBigName'>
+                <b><span class="text" txt="noteAppName"></span></b>
+            </div>
+            <img id="loginSettings">
+            <div>
+                <h1><span class="text" txt="login"></span></h1>
+                <section id="emailLoginSection">
+                    <span class="text" txt="email"></span><br>
+                    <input type='text' id='emailField'>
+                    <div>
+                        <button class='loginScreenButton1 text' id='loginButton' txt="login"></button>
+                    </div>
+                    <div>
+                        <button class='loginScreenButton2 text' id='signUpButton' txt="createAccount"></button>
+                    </div>
+                </section>
+                <section id="loadLoginSection">
+                    <div>
+                        <div class="loadingDot loadDot1"></div>
+                        <div class="loadingDot loadDot2"></div>
+                        <div class="loadingDot loadDot3"></div>
+                    </div>
+                </section>
+                <section id="emailCodeLoginSection">
+                    <span>Introduce the code we sent to your email</span><br>
+                    <input type="text" id="emailCodeLoginField"><br>
+                    <div>
+                        <button class="loginScreenButton1 text" id="sendCodeLoginButton" txt="login"></button>
+                    </div>
+                </section>
+                <section id="reloadLoginSection" hidden>
+                    <div class="text" txt="unableToLogIn"></div>
+                    <button class="loginScreenButton2 text" id="reloadLoginButton" txt="reload"></button>
+                </section>
+                <section>
+                    <button id='localModeButton' class='loginScreenButton2 text' txt="localMode"></button>
+                </section>
+            </div>
+        </div>
+
+        <div id='noteScreen' hidden>
+            <nav id="nav">
+                <b>
+                    <span class="text" txt="noteAppName"></span>
+                </b>
+                <button id='menuButton' class="text" txt="localMode"></button>
+            </nav>
+            <div id='allContainer'>
+                <aside id='leftBar'>
+                    <div id='leftBarTitle'>
+                        <b><span class="text" txt="yourNotes"></span></b>
+                        <img id="newNote">
+                    </div>
+                    <div id='youDontHaveNotes'>
+                        <span class="text" txt="youDontHaveNotes"></span>
+                    </div>
+                    <div id='notesList'></div>
+                </aside>
+                <article id='noteSection'>
+                    <section id='topBar'>
+                        <div id='topBarText'>
+                            <span id='leftToTheNoteNameButtons'>
+                                <button class='bg-green' id='showNotesListButton'><img id='menuImg'></button>
+                            </span>
+                            <b id='noteName'>
+                                <span class="text" txt="clickANote"></span>
+                            </b>
+                            <span id='sayThings'></span>
+                            <span id='topBarButtons' hidden>
+                                <button class='bg-green' id='renameButton' alt='Renombrar nota'><img id='renameImg'></button>
+                                <button class='bg-green' id='downloadButton' alt='Descargar nota'><img id='downloadImg' ></button>
+                                <button class='bg-green' id='saveButton' alt='Guardar nota'><img id='saveImg'></button>
+                                <button class='bg-red' id='deleteButton' alt='Borrar nota'><img id='deleteImg'></button>
+                            </span>
+                        </div>
+                    </section>
+                    <div id="textAreaContainer">
+                        <textarea id='noteField' disabled></textarea>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div id='floatWindow' hidden>
+            <div id='window' class="open">
+                <h1 id='windowTitle'></h1>
+                <div id='windowText'></div>
+                <div id='windowInput'>
+                    <input type='text' id='inputInTheWindow'>
+                </div>
+                <div id='windowButtons'></div>
+            </div>
+        </div>
+        
+        <div id='floatingMenu' hidden>
+            <div id='menu'>
+                <h1 id='menuTitle'>
+                    <button id='closeMenuButton'>
+                        <span class="text" txt="close"></span>
+                    </button>
+                    <div id='menuTitleText'></div>
+                </h1>
+                <section id='menuButtons'>
+                    <article><button id='menuExitLocalMode' class="text" txt="menu_exitLocalMode"></button></article>
+                    <article><button id='menuSettingsLocal' class="text" txt="preferences"></button></article>
+                    <article><button id='menuOnlineLogOut' class="text" txt="logOut"></button></article>
+                    <article><button id='menuOnlineManageAccount' class="text" txt="manageAccount"></button></article>
+                    <article><button id='menuOnlineChangeToLocal' class="text" txt="menu_localNotes"></button></article>
+                    <article><button id='menuAbout' class="text" txt="menu_about"></button></article>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

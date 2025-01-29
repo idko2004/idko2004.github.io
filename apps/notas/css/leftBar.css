@@ -1,0 +1,117 @@
+/*=====================================================
+=================BARRA DE LA IZQUIERDA=================
+=======================================================*/
+aside
+{
+    background-color: var(--gray);
+    width: 15vw;
+    /*max-width: 20%;*/
+    min-width: 17ch;
+    /*height: max-content;*/
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    /*overflow: scroll;*/
+}
+
+.leftBarEntireWidth
+{
+    width: 100%;
+}
+
+#newNote
+{
+    float: right;
+    height: 1.3rem;
+    padding: 0 0.3rem;
+    border-radius: 10px;
+}
+
+#newNote:hover
+{
+    background-color: var(--green);
+    cursor: pointer;
+    transition: all ease 100ms;
+    outline: none;
+}
+
+/*
+#newNote
+{
+    float: right;
+    background-color: var(--green);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    padding: 0.3rem;
+    width: 3ch;
+    transition: all ease 100ms;
+}
+
+#newNote:hover
+{
+    background-color: var(--green-hover);
+    transition: all ease 100ms;
+}
+*/
+
+#notesList
+{
+    padding: 0.5rem 0;
+    /*height: 90vh;*/
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+#youDontHaveNotes
+{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.noteInTheList
+{
+    padding: 0.3rem 0;
+}
+
+.noteListButton
+{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0.3rem;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1rem;
+    color: var(--font-color);
+    transition: all ease 70ms;
+}
+
+.noteSelected
+{
+    font-weight: 700;
+}
+
+.noteListButton:hover,
+.noteListButton:focus,
+.noteSelected
+{
+    transition: all ease 70ms;
+    background-color: var(--green);
+    color: white;
+}
+
+.noteListText
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 1rem;
+}

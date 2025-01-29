@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <title>Buscaminas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' type='text/css' href='main.css'>
+    <link rel='stylesheet' type='text/css' href='boxes.css'>
+
+    <script defer src='timer.js'></script>
+    <script defer src='win.js'></script>
+    <script defer src='lose.js'></script>
+    <script defer src='clickButton.js'></script>
+    <script defer src='main.js'></script>
+</head>
+<body>
+    <div id='header'>
+        <h1>
+            Buscaminas
+        </h1>
+        <div>
+            Tamaño del tablero<br>
+            <input type='number' id='sizeBoardX' value='10'>
+            <input type='number' id='sizeBoardY' value='10'>
+            <br>
+            Minas<br>
+            <input type='number' id='totalMines' value='10'>
+            <br><br>
+            <button id='play' onclick='play();'>
+                Crear tablero
+            </button>
+        </div>
+        <div>
+            Tiempo: <span id='timer'>0</span><br>
+            Minas: <span id='flag'>0</span>
+            <br>
+            <span id='text'></span>
+        </div>
+    </div>
+    <br>
+    <!--¿Qué estás mirando, tramposo?-->
+    <div id='table'>
+    </div>
+    <div><small><i>A veces se buguea.<br>Desarrollado por idko2004.</i></small></div>
+</body>
+</html>

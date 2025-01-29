@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Random | Dados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="shorcut icon" type="image/png" href="../img/random.png">
+</head>
+<body>
+    <a href="../../index.html">
+        <img src="../img/random.png" width="100" alt="menu" title="Lista de elementos." id="diceImage">
+    </a>
+    <script src="../js/animHover.js"></script>
+    <h1>Random</h1>
+    <h2>Tirar dados</h2>
+    <div></div>
+    <div>
+        <form>
+            <p><select id="select">
+                <option value="1" selected>1 dado</option>
+                <option value="2">2 dados</option>
+                <option value="3">3 dados</option>
+                <option value="4">4 dados</option>
+            </select></p>
+            <input type="button" value="¡Tirar dados!" onclick="tirarDados();">
+        </form>
+    </div>
+    <div id="Resultados">
+    <script src="../js/dado.js"></script>
+</body>
+</html>

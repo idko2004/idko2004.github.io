@@ -1,0 +1,29 @@
+.table-size
+{
+    overflow: scroll;
+    max-height: 80vh;
+    width: auto;
+    white-space: nowrap;
+}
+
+*
+{
+    font-family: 'Ubuntu Mono', monospace;
+    text-align: center;
+}
+
+.red
+{
+    color: red;
+}
+
+.green
+{
+    color: green;
+}
+
+#table
+{
+    text-align: center;
+    font-size: 0px;
+}

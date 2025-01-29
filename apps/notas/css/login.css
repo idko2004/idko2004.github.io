@@ -1,0 +1,150 @@
+#loginScreen
+{
+    text-align: center;
+}
+
+#loginScreenBigName
+{
+    font-size: clamp(5rem, calc(30vw - 30vh), 17vh);
+    color: white;
+    height: 25vh;
+    background-color: var(--green);
+    vertical-align: middle;
+    line-height: 25vh;
+    border-radius: 10px;
+    margin: 0.5rem;
+}
+
+#loginScreen h1
+{
+    color: var(--green)
+}
+
+#loginScreen p
+{
+    margin: 0.7rem;
+    font-size: 1rem;
+}
+
+#loginScreen section
+{
+    margin: 0.7rem;
+}
+
+#loginScreen button
+{
+    font-size: 1rem;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    width: 15rem;
+    border: 0;
+    border-radius: 10px;
+    font: var(--rubik);
+}
+
+#loginScreen input
+{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    color: var(--font-color);
+    border: 2px solid var(--green);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+}
+
+#loginScreen input:hover,
+#loginScreen input:focus
+{
+    background-color: var(--green);
+    color: white;
+    outline: none;
+    transition: all ease 100ms;
+}
+
+#loginScreen input::-moz-selection
+{ /* Code for Firefox */
+    color: var(--green);
+    background: white;
+}
+
+#loginScreen input::selection
+{
+    color: var(--green);
+    background: white;
+}
+
+
+.loginScreenButton1
+{
+    background-color: var(--green);
+    color: white;
+}
+
+.loginScreenButton2
+{
+    background-color: var(--gray);
+    color: var(--font-color);
+}
+
+.loginScreenButton1:hover,
+.loginScreenButton2:hover
+{
+    background-color: var(--green-hover);
+    color: white;
+    transition: all ease 100ms;
+}
+
+#loginSettings
+{
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    height: 2rem;
+
+    animation: spinGearOff 200ms linear 1;
+}
+
+#loginSettings:hover
+{
+    cursor: pointer;
+    animation: spinGearOn 200ms linear 1;
+}
+
+@keyframes spinGearOn
+{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+
+    100%
+    {
+        transform: rotateZ(45deg);
+    }
+}
+
+@keyframes spinGearOff
+{
+    0%
+    {
+        transform: rotateZ(45deg);
+    }
+
+    100%
+    {
+        transform: rotateZ(0deg);
+    }
+}
+
+#loadLoginSection
+{
+    padding: 1.7rem 0;
+}
+
+#loadLoginSection .loadingDot
+{
+    background-color: var(--green);
+}
