@@ -9,6 +9,7 @@ html
 
 	--bg-color: white;
 	--text-color: black;
+	--text-color-secondary: white;
 	--h1-color: #62a0ea;
 	--h2-color: #57e389;
 	--h3-color: #c061cb;
@@ -370,4 +371,30 @@ label
 .underline
 {
 	text-decoration: underline;
+}
+
+.tableContainer
+{
+	width: 100%;
+	overflow-x: auto;
+}
+
+table
+{
+	background-color: var(--code-bg);
+}
+
+thead td
+{
+	background-color: var(--h1-color);
+	color: var(--text-color-secondary);
+	font-weight: bold;
+	border-radius: 0.5rem;
+	padding: 0.2rem 0.4rem;
+}
+
+tbody td
+{
+	border-bottom: 1px solid var(--h1-color);
+	padding: 0.2rem 0.4rem;
 }

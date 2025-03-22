@@ -5,7 +5,8 @@ const textNodeTypes =
 	comment: 2,
 	title: 3,
 	image: 4,
-	list: 5
+	list: 5,
+	table: 6,
 }
 
 const lastTextNode =
@@ -18,10 +19,10 @@ let lastTitleContainer = [];//A cada título creamos un contenedor para el conte
 
 let margin = 0;
 
+const viewer = document.getElementById('viewer');
+
 function startMarkdownizing(file)
 {
-	const viewer = document.getElementById('viewer');
-
 	const fileSplit = file.split('\n');
 
 	let line;
@@ -88,6 +89,10 @@ function checkLine(line)
 	else if(line.startsWith('```'))
 	{
 		searchForCodeblocks();
+	}
+	else if(line.startsWith('| '))
+	{
+		searchForTables(line);
 	}
 	else if(line.startsWith('    '))
 	{
@@ -264,6 +269,74 @@ function searchForComments(line)
 	container.appendChild(comment);
 }
 
+function searchForTables(line)
+{
+	if(lastTextNode.type != textNodeTypes.table)
+	{
+		const tableContainer = document.createElement('div');
+		tableContainer.classList.add('tableContainer');
+
+		const table = document.createElement('table');
+		tableContainer.appendChild(table);
+
+		viewer.appendChild(tableContainer);
+
+		lastTextNode.e = table;
+		lastTextNode.type = textNodeTypes.table;
+	}
+
+	let tableHead = checkForHead(lastTextNode.e);
+	let tableBody = checkForBody(lastTextNode.e);
+
+	if(tableHead == undefined)
+	{
+		let headElement = document.createElement('thead');
+		lastTextNode.e.appendChild(headElement);
+		tableHead = headElement;
+	}
+
+	let columns = line.split('|');
+
+	let row = document.createElement('tr');
+	if(tableBody != undefined) tableBody.appendChild(row);
+	else tableHead.appendChild(row);
+
+	for(let i = 1; i < columns.length -1; i++) //Tenemos que saltarnos la primera y la última columna porque siempre van a estar vacías.
+	{
+		if(columns[i].trim().slice(0, 3) === '---')
+		{
+			//Create a table body
+			let bodyElement = document.createElement('tbody');
+			lastTextNode.e.appendChild(bodyElement);
+			return;
+		}
+
+		let td = document.createElement('td');
+		td.innerText = columns[i].trim();
+		row.appendChild(td);
+	}
+
+	function checkForHead(tableElement)
+	{
+		let children = tableElement.children;
+		for(let i = 0; i < children.length; i++)
+		{
+			if(children[i].tagName == "THEAD") return children[i];
+		}
+		return undefined;
+	}
+
+	function checkForBody(tableElement)
+	{
+		let children = tableElement.children;
+		for(let i = 0; i < children.length; i++)
+		{
+			if(children[i].tagName == "TBODY") return children[i];
+		}
+		return undefined;
+	}
+}
+
 function normalText(line)
 {
 	if(lastTextNode.e === undefined)
@@ -295,6 +368,8 @@ function addToDocument(element, content)
 
 function setNewTitleContainer(titleElement, hLevel)
 {
+	if(loadSavedSettings().helpPrinting != "1") return; //Sólo hacer esto si help printing está activo.
+
 	const section = document.createElement('div');
 	section.classList.add('titleContainer');
 	viewer.appendChild(section);
@@ -324,6 +399,8 @@ function setNewTitleContainer(titleElement, hLevel)
 
 function getLastTitleContainer()
 {
+	if(loadSavedSettings().helpPrinting != "1") return viewer; //Sólo hacer esto si help printing está activo.
+	
 	for(let i = lastTitleContainer.length - 1; i >= 0; i--)
 	{
 		if(lastTitleContainer[i] !== undefined)

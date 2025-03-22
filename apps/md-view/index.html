@@ -7,8 +7,8 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="/commonassets/fonts.css">
 
-	<script defer src="markdown.js"></script>
 	<script defer src="settings.js"></script>
+	<script defer src="markdown.js"></script>
 	<script defer src="print.js"></script>
 	<script defer src="main.js"></script>
 </head>
@@ -158,9 +158,9 @@
 						<div><button class="align-center themebtn" theme="0">Colorful</button></div>
 						<div><button class="align-center themebtn" theme="3">Colorful warm</button></div>
 						<div><button class="align-center themebtn" theme="4">Colorful warmer</button></div>
-						<div><button class="align-center themebtn" theme="5">No named blueish palette</button></div>
-						<div><button class="align-center themebtn" theme="6">Constant blue, light</button></div>
-						<div><button class="align-center themebtn" theme="7">Variable blue, light</button></div>
+						<div><button class="align-center themebtn" theme="5">Blueish tone</button></div>
+						<div><button class="align-center themebtn" theme="6">Basic blue 1</button></div>
+						<div><button class="align-center themebtn" theme="7">Basic blue 2</button></div>
 						<div><button class="align-center themebtn" theme="8">Weird</button></div>
 					</div>
 					<h3>Dark themes</h3>
@@ -226,6 +226,20 @@
 							<label for="docAlign-Right">Right</label>
 							<input type="radio" name="docAlign" id="docAlign-Justified" autocomplete="off" onclick="setTextAlignSetting(3)">
 							<label for="docAlign-Justified">Justified</label>
+						</form>
+					</div>
+					<div>
+						<h3>Prevent separation of title and content</h3>
+						<div>
+							<small>
+								When printing, try to prevent titles going at the bottom of the page and the content going to the next page without the title. Can use more paper, and sometimes pages may be mostly empty.
+							</small>
+						</div>
+						<form>
+							<input type="radio" name="printHelp" id="printHelp-off" autocomplete="off" onclick="setHelpPrinting(0)">
+							<label for="printHelp-off">Off</label>
+							<input type="radio" name="printHelp" id="printHelp-on" autocomplete="off" onclick="setHelpPrinting(1)">
+							<label for="printHelp-on">On</label>
 						</form>
 					</div>
 				</div>

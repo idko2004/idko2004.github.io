@@ -1,3 +1,5 @@
+let mdDocumentCopy = '';
+
 const msg = document.getElementById('msg');
 
 document.getElementById('filechooser').onchange = (e) =>
@@ -13,11 +15,12 @@ function readFile(file)
 	const reader = new FileReader();
 	reader.readAsText(file, 'UTF-8');
 
-	reader.onload = (readerEvent) =>
+	reader.onload = async (readerEvent) =>
 	{
 		let md = readerEvent.target.result;
 		//console.log(md);
 
+		mdDocumentCopy = md;
 		startMarkdownizing(md);
 		msg.hidden = true;
 	}
@@ -25,7 +28,7 @@ function readFile(file)
 
 const dropzone = document.getElementById('dropzone');
 
-dropzone.addEventListener('drop', (e) =>
+dropzone.addEventListener('drop', async (e) =>
 {
 	e.preventDefault();
 	msg.innerText = 'Doing things, please wait...';

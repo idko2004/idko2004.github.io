@@ -18,7 +18,8 @@ function loadSavedSettings()
 		customTextIndent: localStorage.getItem('mdview_indent-custom'),
 		customFontSize: localStorage.getItem('mdview_size-custom'),
 		align: localStorage.getItem('mdview_align'),
-		theme: localStorage.getItem('mdview_theme')
+		theme: localStorage.getItem('mdview_theme'),
+		helpPrinting: localStorage.getItem('mdview_printhelp') //Esto ayuda a alinear cosas en la hoja a la hora de imprimir para que no quede el título al final de la página.
 	}
 
 	return settingsState;
@@ -34,6 +35,7 @@ function saveSettings()
 	localStorage.setItem('mdview_size-custom', settingsState.customFontSize);
 	localStorage.setItem('mdview_align', settingsState.align);
 	localStorage.setItem('mdview_theme', settingsState.theme);
+	localStorage.setItem('mdview_printhelp', settingsState.helpPrinting);
 }
 
 //cargar cosas automáticamente
@@ -302,6 +304,33 @@ function actuallySetTextAlign(value)
 	console.log('Text align set', value);
 }
 
+function setHelpPrinting(value) //Only meant to be called when changing setting and not at startup
+{
+	loadSavedSettings().helpPrinting = value.toString();
+	saveSettings();
+	actuallySetHelpPrinting();
+}
+
+function actuallySetHelpPrinting() //Only meant to be called when changing setting and not at startup
+{
+	showSettings(false);
+	document.getElementById('documentSettingsMenu').hidden = true;
+	
+	msg.innerText = 'Doing things, please wait...';
+	msg.hidden = false;
+	viewer.hidden = true;
+	
+	async function reloadDocument()
+	{
+		viewer.innerHTML = '';
+		startMarkdownizing(mdDocumentCopy);
+		msg.hidden = true;
+		viewer.hidden = false;
+	}
+
+	reloadDocument();
+}
+
 
 function updateDocumentSettingsMenu()
 {
@@ -314,6 +343,7 @@ function updateDocumentSettingsMenu()
 	if(settings.customTextIndent === null) settings.customTextIndent = "25";
 	if(settings.customFontSize === null) settings.customFontSize = "14";
 	if(settings.align === null) settings.align = "0";
+	if(settings.helpPrinting === null || !(settings.helpPrinting === "0" || settings.helpPrinting === "1")) settings.helpPrinting = "1";
 
 	//Esconder o mostrar propiedades "custom"
 	if(settings.textIndent === "2")
@@ -354,6 +384,9 @@ function updateDocumentSettingsMenu()
 		case "2": document.getElementById('docAlign-Right').checked = true; break;
 		case "3": document.getElementById('docAlign-Justified').checked = true; break;
 	}
+
+	if(settings.helpPrinting === "1") document.getElementById('printHelp-on').checked = true;
+	else document.getElementById('printHelp-off').checked = true;
 }
 
 //
@@ -366,6 +399,7 @@ const colorthemes =
 	{
 		bgColor: 'fff',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: '62a0ea',
 		h2Color: '57e389',
 		h3Color: 'c061cb',
@@ -380,6 +414,7 @@ const colorthemes =
 	{
 		bgColor: '000',
 		textColor: 'fafafa',
+		textColorSecondary: 'fff',
 		h1Color: '62a0ea',
 		h2Color: '57e389',
 		h3Color: 'c061cb',
@@ -394,6 +429,7 @@ const colorthemes =
 	{
 		bgColor: '241f31',
 		textColor: 'fff',
+		textColorSecondary: 'fff',
 		h1Color: '62a0ea',
 		h2Color: '57e389',
 		h3Color: 'c061cb',
@@ -408,6 +444,7 @@ const colorthemes =
 	{
 		bgColor: 'fffbf6',//'fff5e8',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: '62a0ea',
 		h2Color: '57e389',
 		h3Color: 'c061cb',
@@ -422,6 +459,7 @@ const colorthemes =
 	{
 		bgColor: 'fff5e8',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: '62a0ea',
 		h2Color: '57e389',
 		h3Color: 'c061cb',
@@ -432,10 +470,11 @@ const colorthemes =
 		commentColor: '77767b'
 	},
 
-	5: //No named blueish palette
+	5: //Blueish tone
 	{
 		bgColor: 'eff5fd',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: '99c1f1',
 		h2Color: '99aff0',
 		h3Color: 'a699f0',
@@ -446,10 +485,11 @@ const colorthemes =
 		commentColor: '1c71d8'
 	},
 
-	6: //Constant blue, light
+	6: //Basic blue 1
 	{
 		bgColor: 'fff',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: '3584e4',
 		h2Color: '3584e4',
 		h3Color: '3584e4',
@@ -460,10 +500,11 @@ const colorthemes =
 		commentColor: '77767b'
 	},
 
-	7: //Variable blue, light
+	7: //Basic blue 2
 	{
 		bgColor: 'fff',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: '99c1f1',
 		h2Color: '62a0ea',
 		h3Color: '3584e4',
@@ -478,6 +519,7 @@ const colorthemes =
 	{
 		bgColor: 'f7f2fc',
 		textColor: '000',
+		textColorSecondary: 'fff',
 		h1Color: 'd13389',
 		h2Color: '7a33d1',
 		h3Color: '336ad1',
@@ -493,6 +535,7 @@ document.getElementById('changeColorthemeBtn').addEventListener('click', () =>
 {
 	showSettings(false);
 	document.getElementById('colorthemeMenu').hidden = false;
+	updateChangeColorthemeMenu();
 });
 
 //Añadir events listeners a los botones para cambiar los temas
@@ -502,7 +545,7 @@ for(let i = 0; i < themebtn.length; i++)
 {
 	themebtn[i].addEventListener('click', (e) =>
 	{
-		const theme = event.target.getAttribute('theme')
+		const theme = e.target.getAttribute('theme')
 		setTheme(theme);
 
 		loadSavedSettings().theme = theme;
