@@ -17,6 +17,7 @@
 		<script defer src="js/language.js" fetchpriority="high"></script>
 		<script defer src="js/modals.js"></script>
 		<script defer src="js/music.js"></script>
+		<script defer src="js/email.js"></script>
 	</head>
 
 	<body>
@@ -140,37 +141,76 @@
 							</article>
 						</div>
 					</section>
-				</main>
-			</div>
-			<div class="h2-container-container">
-				<div class="h2-container">
-					<h2 class="txt" txt="musicrecomend">Music Recomendation</h2>
-				</div>
-			</div>
-			<div class="musiccontainercontainer">
-				<div class="musiccontainer">
-					<div id="divmusiccover" class="musiccover titletxt" titletxt="listenyt" alt="Cover of the recomended album"></div>
-					<div class="musicinfo">
-						<div class="musictitle"><a id="amusictitle" href="https://www.youtube.com/shorts/K-xfVyf64lo" target="_blank">...</a></div>
-						<div class="musicalbum"><a id="amusicalbum" href="https://www.youtube.com/shorts/K-xfVyf64lo" target="_blank">...</a></div>
-						<div class="musicartist"><a id="amusicartist" href="https://www.youtube.com/shorts/K-xfVyf64lo" target="_blank">...</a></div>
-						<div>
-							<a class="listenlink" id="listenlink" target="_blank" href="https://www.youtube.com/shorts/K-xfVyf64lo">
-								<img src="commonassets/icons/svgrepo/play-clean-white.svg" class="alttxt titletxt" alttxt="playicon" titletxt="listenyt" alt="Play icon" title="Listen in Youtube Music">
+					<section>
+						<div class="h2-container-container">
+							<div class="h2-container">
+								<h2>Contactos</h2>
+							</div>
+						</div>
+						<div class="textcenter">
+							<a href="https://github.com/idko2004/" target="_blank" class="contacticon-container">
+								<img src="/commonassets/icons/github-mark/github-mark-white.svg" alt="Github" title="Github" class="contacticon githubcontacticon">
+							</a>
+							<a href="mailto:ivankeudell@gmail.com" target="_blank" class="contacticon-container" id="email-link">
+								<img src="/commonassets/icons/svgrepo/email-white-no-padding.svg" alt="Email" title="Email" class="contacticon emailcontacticon">
 							</a>
 						</div>
-					</div>
-					<div class="musiclyric" id="musiclyric">
-						"..."
+					</section>
+				</main>
+			</div>
+			<footer>
+				<div class="h2-container-container">
+					<div class="h2-container">
+						<h2 class="txt" txt="musicrecomend">Music Recomendation</h2>
 					</div>
 				</div>
-			</div>
+				<div class="musiccontainercontainer">
+					<div class="musiccontainer">
+						<div id="divmusiccover" class="musiccover titletxt" titletxt="listenyt" alt="Cover of the recomended album"></div>
+						<div class="musicinfo">
+							<div class="musictitle"><a id="amusictitle" href="https://www.youtube.com/shorts/K-xfVyf64lo" target="_blank">...</a></div>
+							<div class="musicalbum"><a id="amusicalbum" href="https://www.youtube.com/shorts/K-xfVyf64lo" target="_blank">...</a></div>
+							<div class="musicartist"><a id="amusicartist" href="https://www.youtube.com/shorts/K-xfVyf64lo" target="_blank">...</a></div>
+							<div>
+								<a class="listenlink" id="listenlink" target="_blank" href="https://www.youtube.com/shorts/K-xfVyf64lo">
+									<img src="commonassets/icons/svgrepo/play-clean-white.svg" class="alttxt titletxt" alttxt="playicon" titletxt="listenyt" alt="Play icon" title="Listen in Youtube Music">
+								</a>
+							</div>
+						</div>
+						<div class="musiclyric" id="musiclyric">
+							"..."
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 
 
 
 <!--Windowses-->
+		<dialog id="modal-email">
+			<div>
+				<header>
+					<span class="txt" txt="chlang">Change language</span>
+					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-email"></a>
+				</header>
+				<main>
+					<button>
+						<div>
+							<img src="/commonassets/icons/svgrepo/paperclip-white.svg" alt="Copiar">
+						</div>
+						<div>Copiar</div>
+					</button>
+					<button>
+						<div>
+							<img src="/commonassets/icons/svgrepo/email-white.svg" alt="Copiar">
+						</div>
+						<div>Enviar un correo</div>
+					</button>
+				</main>
+			</div>
+		</dialog>
 		<dialog id="modal-language">
 			<div>
 				<header>

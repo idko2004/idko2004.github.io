@@ -1,12 +1,19 @@
 //	Animations
 const modalAnimationList =
 {
+	'modal-email':
+	{
+		openClass: 'anim-fluid-right-open',
+		openAnim: 'right-open-full',
+		closeClass: 'anim-fluid-left-close',
+		closeAnim: 'left-close-full'
+	},
 	'modal-language':
 	{
 		openClass: 'anim-fluid-right-open',
-		openAnim: 'right-open',
+		openAnim: 'right-open-full',
 		closeClass: 'anim-fluid-left-close',
-		closeAnim: 'left-close'
+		closeAnim: 'left-close-full'
 	},
 	'modal-mdview':
 	{

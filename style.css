@@ -122,6 +122,11 @@ article
 	margin-bottom: 1rem;
 }
 
+footer
+{
+	padding: 2rem 0 0 0;
+}
+
 .btn-showthings
 {
 	margin: 1rem 0;
@@ -268,3 +273,38 @@ article
 	}
 }
 
+.textcenter
+{
+	text-align: center;
+}
+
+.contacticon
+{
+	transition: transform 100ms cubic-bezier(.39,.58,.57,1);
+	filter: drop-shadow(0.5rem 0.7rem 0.3rem rgba(1,1,1,0.3));
+}
+
+.contacticon:hover
+{
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.contacticon-container,
+.contacticon-container:visited,
+.contacticon-container:active
+{
+	text-decoration: none;
+}
+
+.githubcontacticon
+{
+	width: 3rem;
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+.emailcontacticon
+{
+	width: 3rem;
+	padding: 0 0.5rem 0.25rem 0.5rem;
+}

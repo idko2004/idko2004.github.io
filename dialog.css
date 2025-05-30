@@ -293,7 +293,7 @@ dialog::backdrop
 
 .anim-fluid-right-open
 {
-	animation: right-open 250ms cubic-bezier(.39,.58,.57,1) 1;
+	animation: right-open-full 250ms cubic-bezier(.39,.58,.57,1) 1;
 }
 
 @keyframes right-open
@@ -308,6 +308,20 @@ dialog::backdrop
 	}
 }
 
+@keyframes right-open-full
+{
+	0%
+	{
+		transform: translateX(100vw);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
 .anim-steps-left-close
 {
 	animation: left-close 250ms steps(3) 1;
@@ -315,7 +329,7 @@ dialog::backdrop
 
 .anim-fluid-left-close
 {
-	animation: left-close 100ms cubic-bezier(.39,.58,.57,1) 1;
+	animation: left-close-full 100ms cubic-bezier(.39,.58,.57,1) 1;
 }
 
 @keyframes left-close
@@ -327,6 +341,20 @@ dialog::backdrop
 	100%
 	{
 		transform: translateX(-50vw);
+	}
+}
+
+@keyframes left-close-full
+{
+	0%
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100%
+	{
+		transform: translateX(-100vw);
+		opacity: 0;
 	}
 }
 
@@ -604,4 +632,42 @@ dialog::backdrop
 .langbtn:hover
 {
 	text-decoration: underline;
+}
+
+
+/*   email   */
+#modal-email
+{
+	background-color: #3d3846;
+	filter: drop-shadow(0 0 1rem #3d38466f);
+	color: white;
+}
+
+#modal-email main
+{
+	height: fit-content;
+	text-align: center;
+}
+
+#modal-email main button
+{
+	width: 45%;
+	background-color: #544f5d;
+	border: 0;
+	border-radius: 0.7rem;
+	color: white;
+	padding: 0.7rem;
+	font-size: 1.1rem;
+	cursor: pointer;
+	margin: 0.5rem;
+}
+
+#modal-email main button:hover
+{
+	background-color: #28272c;
+}
+
+#modal-email main button img
+{
+	height: 4rem;
 }
