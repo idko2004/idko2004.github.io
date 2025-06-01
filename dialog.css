@@ -610,28 +610,32 @@ dialog::backdrop
 	background-color: #3d3846;
 	filter: drop-shadow(0 0 1rem #3d38466f);
 	color: white;
+	height: fit-content;
 }
+
 #modal-language main
 {
-	height: 5rem;
+	height: fit-content;
+	text-align: center;
 }
 
 #modal-language .langbtn
 {
-	width: 100%;
+	width: 45%;
 	font-size: 1rem;
-	background-color: #77767b;
+	background-color: #544f5d;
 	color: white;
-	margin: 0.3rem 0;
-	padding: 0.3rem;
+	margin: 0.3rem 0.5rem;
+	padding: 0.7rem;
 	border: 0;
 	border-radius: 0.7rem;
 	cursor: pointer;
+	min-width: fit-content;
 }
 
-.langbtn:hover
+#modal-language .langbtn:hover
 {
-	text-decoration: underline;
+	background-color: #28272c;
 }
 
 
@@ -665,6 +669,12 @@ dialog::backdrop
 #modal-email main button:hover
 {
 	background-color: #28272c;
+}
+
+#modal-email main button:focus
+{
+	background-color: #28272c;
+	outline: 0.3rem solid white;
 }
 
 #modal-email main button img

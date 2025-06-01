@@ -3,10 +3,10 @@ const modalAnimationList =
 {
 	'modal-email':
 	{
-		openClass: 'anim-fluid-right-open',
-		openAnim: 'right-open-full',
-		closeClass: 'anim-fluid-left-close',
-		closeAnim: 'left-close-full'
+		openClass: 'anim-generic-zoom-in',
+		openAnim: 'generic-zoom-in',
+		closeClass: 'anim-generic-zoom-out',
+		closeAnim: 'generic-zoom-out'
 	},
 	'modal-language':
 	{

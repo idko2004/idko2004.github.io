@@ -144,7 +144,7 @@
 					<section>
 						<div class="h2-container-container">
 							<div class="h2-container">
-								<h2>Contactos</h2>
+								<h2 class="txt" txt="contacts">Contacts</h2>
 							</div>
 						</div>
 						<div class="textcenter">
@@ -152,7 +152,7 @@
 								<img src="/commonassets/icons/github-mark/github-mark-white.svg" alt="Github" title="Github" class="contacticon githubcontacticon">
 							</a>
 							<a href="mailto:ivankeudell@gmail.com" target="_blank" class="contacticon-container" id="email-link">
-								<img src="/commonassets/icons/svgrepo/email-white-no-padding.svg" alt="Email" title="Email" class="contacticon emailcontacticon">
+								<img src="/commonassets/icons/svgrepo/email-white-no-padding.svg" alt="Email" title="Email" class="contacticon emailcontacticon alttxt titletxt" alttxt="email" titletxt="email">
 							</a>
 						</div>
 					</section>
@@ -192,21 +192,21 @@
 		<dialog id="modal-email">
 			<div>
 				<header>
-					<span class="txt" txt="chlang">Change language</span>
+					<span class="txt" txt="email">Email</span>
 					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-email"></a>
 				</header>
 				<main>
-					<button>
+					<button id="email-copy">
 						<div>
-							<img src="/commonassets/icons/svgrepo/paperclip-white.svg" alt="Copiar">
+							<img src="/commonassets/icons/svgrepo/paperclip-white.svg" alt="Copiar" class="alttxt" alttxt="copy">
 						</div>
-						<div>Copiar</div>
+						<div class="txt" txt="copy">Copiar</div>
 					</button>
-					<button>
+					<button id="email-send">
 						<div>
-							<img src="/commonassets/icons/svgrepo/email-white.svg" alt="Copiar">
+							<img src="/commonassets/icons/svgrepo/email-white.svg" alt="Enviar un correo" class="alttxt" alttxt="sendemail">
 						</div>
-						<div>Enviar un correo</div>
+						<div class="txt" txt="sendemail">Enviar un correo</div>
 					</button>
 				</main>
 			</div>
@@ -218,8 +218,8 @@
 					<a class="closemodal light-icon" alt="close button" title="Close" modalparent="modal-language"></a>
 				</header>
 				<main>
-					<div><button class="langbtn" onclick="setLanguageBtn('es')">Español</button></div>
-					<div><button class="langbtn" onclick="setLanguageBtn('en')">English</button></div>
+					<button class="langbtn" onclick="setLanguageBtn('es')">Español</button>
+					<button class="langbtn" onclick="setLanguageBtn('en')">English</button>
 				</main>
 			</div>
 		</dialog>

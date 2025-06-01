@@ -19,6 +19,10 @@ const allTexts =
 	'frontendlibs': {es: 'Librerías en el frontend:', en: 'Frontend libraries:'},
 	'nodelibs': {es: 'Librerías en node.js:', en: 'Node.js libraries:'},
 	'libs': {es: 'Librerías adicionales:', en: 'Additional libraries:'},
+	'email': {es: 'Correo electrónico', en: 'Email'},
+	'copy': {es: 'Copiar', en: 'Copy'},
+	'sendemail': {es: 'Enviar un correo', en: 'Send an email'},
+	'contacts': {es: 'Contactos', en: 'Contacts'},
 	'tmdview': {es: 'md-view: Visualizador de Markdown', en: 'md-view: Markdown Viewer'},
 	'tunidad': {es: 'Unidad: Juego de cartas LAN', en: 'Unidad: LAN cards game'},
 	'tcolonthree': {es: 'colon-three-bot: Un bot que hace :3', en: 'colon-three-bot: A Discord bot that does :3'},
@@ -81,7 +85,7 @@ const allTexts =
 	'mnotas2': {es: 'Consiste de un sitio web y un servidor en node.js.', en: "Consist of a website and a node.js server."},
 	'mnotas3': {es: 'Inicialmente empecé este proyecto para aprender como funcionaban las peticiones HTTP, pero luego de llevar con él demasiado tiempo me desmotivé y lo dejé de lado.', en: "Initially I started this project to learn how to do HTTP calls, but after I have been with it for so long I became demotivated and put it aside."},
 	'mnotas4': {es: 'No estoy seguro si es posible utilizar el proyecto en el estado en el que está actualmente, además se necesita una base de datos mongodb.', en: "I'm not sure if it's posible to use it in the state it's in, also, you need a mongodb database."},
-	'mscripts1': {es: 'También conocido como dot-files.', en: "Also known as dot-files."}
+	'mscripts1': {es: 'También conocido como dot-files.', en: "Also known as dot-files."},
 }
 
 const langmodal = document.getElementById('modal-language');
