@@ -429,7 +429,7 @@ dialog::backdrop
 /*   md-view   */
 #modal-mdview
 {
-	font-family: system-ui;
+	font-family: 'Ubuntu', system-ui;
 	filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.5));
 }
 
@@ -507,7 +507,7 @@ dialog::backdrop
 	background-color: #000;
 	filter: drop-shadow(0 0 1rem #0000006f);
 	color: #fff;
-	font-family: system-ui;
+	font-family: 'JetBrains Mono', monospace;
 }
 
 
@@ -518,7 +518,7 @@ dialog::backdrop
 	background-color: #000;
 	filter: drop-shadow(0 0 1rem #0000006f);
 	color: #44aa00;
-	font-family: 'JetBrains Mono';
+	font-family: 'JetBrains Mono', monospace;
 }
 
 
@@ -533,7 +533,7 @@ dialog::backdrop
 	background-color: #000;
 	filter: drop-shadow(0 0 1rem #0000006f);
 	color: #f2f2f2;
-	font-family: 'JetBrains Mono';
+	font-family: 'JetBrains Mono', monospace;
 }
 
 
@@ -543,7 +543,7 @@ dialog::backdrop
 	background-color: #f0f0f0;
 	filter: drop-shadow(0 0 1rem #f0f0f06f);
 	color: black;
-	font-family: 'Comic Neue';
+	font-family: 'Comic Neue', cursive;
 	font-weight: normal;
 }
 
@@ -609,6 +609,7 @@ dialog::backdrop
 {
 	background-color: #3d3846;
 	filter: drop-shadow(0 0 1rem #3d38466f);
+	font-family: 'Ubuntu', system-ui;
 	color: white;
 	height: fit-content;
 }
@@ -624,6 +625,7 @@ dialog::backdrop
 	width: 45%;
 	font-size: 1rem;
 	background-color: #544f5d;
+	font-family: 'Ubuntu', system-ui;
 	color: white;
 	margin: 0.3rem 0.5rem;
 	padding: 0.7rem;
@@ -644,6 +646,7 @@ dialog::backdrop
 {
 	background-color: #3d3846;
 	filter: drop-shadow(0 0 1rem #3d38466f);
+	font-family: 'Ubuntu', system-ui;
 	color: white;
 }
 
@@ -657,6 +660,7 @@ dialog::backdrop
 {
 	width: 45%;
 	background-color: #544f5d;
+	font-family: 'Ubuntu', system-ui;
 	border: 0;
 	border-radius: 0.7rem;
 	color: white;

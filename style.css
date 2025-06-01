@@ -34,11 +34,14 @@ body
 	border: 0;
 	border-radius: 0.7rem;
 	cursor: pointer;
+	font-family: 'Ubuntu', system-ui;
+	transition: transform 80ms cubic-bezier(.39,.58,.57,1);
 }
 
 #langbtn:hover
 {
 	text-decoration: underline;
+	transform: scale(1.1);
 }
 
 
