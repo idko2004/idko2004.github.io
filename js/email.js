@@ -2,11 +2,13 @@ const email = 'ivankeudell@gmail.com';
 
 let emailLink = document.getElementById('email-link');
 
-emailLink.removeAttribute('href');
+emailLink.setAttribute('href', '#');
 emailLink.removeAttribute('target');
 
 emailLink.addEventListener('click', function(e)
 {
+	e.preventDefault();
+
 	const id = 'modal-email'
 	const modal = document.getElementById(id);
 
@@ -19,7 +21,14 @@ delete emailLink;
 
 document.getElementById('email-copy').addEventListener('click', function()
 {
-	navigator.clipboard.writeText(email);
+	try
+	{
+		navigator.clipboard.writeText(email);
+	}
+	catch
+	{
+		alert(allTexts['unabletocopy'][lang]);
+	}
 	closeModal(document.getElementById('modal-email'), 'modal-email');
 });
 
