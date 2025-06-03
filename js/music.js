@@ -8,7 +8,6 @@ const listenlink = document.getElementById('listenlink');
 const amusicalbum = document.getElementById('amusicalbum');
 const amusicartist = document.getElementById('amusicartist');
 const divmusiccover = document.getElementById('divmusiccover');
-const musiclyric = document.getElementById('musiclyric');
 
 async function setMusicRecomendation()
 {
@@ -65,25 +64,6 @@ async function setMusicRecomendation()
 	{
 		document.getElementById('listenlink').click();
 	});
-	
-	//Lyric
-	if(music.lyrics !== undefined && music.lyrics.length > 0)
-	{
-		let lyric;
-		if(music.lyrics.length == 1) lyric = 0;
-		else if(music.lyrics.length == 2)
-		{
-			if(Math.random() > 0.49) lyric = 0;
-			else lyric = 1;
-		}
-		else lyric = randomRange(0, music.lyrics.length - 1);
-		
-		musiclyric.innerText = `"${music.lyrics[lyric]}"`;
-	}
-	else
-	{
-		musiclyric.innerText = "";
-	}
 }
 
 setMusicRecomendation();

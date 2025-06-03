@@ -166,10 +166,12 @@ footer
 	backdrop-filter: sepia(40%);
 	max-width: 80vw;
 	width: 37.5rem; /*article witdh + half article width*/
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-template-rows: 12.5rem fit-content(10rem);
+	display: block;
+	/*grid-template-columns: 1fr 2fr;*/
+	/*grid-template-rows: 12.5rem fit-content(10rem);*/
 	border-radius: 0.7rem;
+	text-align: center;
+	padding-top: 1rem;
 }
 
 .musiccontainer>div
@@ -184,9 +186,11 @@ footer
 	background-size: contain;
 	background-repeat: no-repeat;
 	display: inline-block;
-	height: 12.5rem; /*Half article width*/
+	/*height: 12.5rem; /*Half article width*/
 	margin: 0.5rem;
 	cursor: pointer;
+	width: 30%;
+	aspect-ratio: 1/1;
 }
 
 .musicinfo
@@ -258,6 +262,7 @@ footer
 	transform: scale(1.2);
 }
 
+/*
 @media (max-width: 40rem)
 {
 	.musiccontainer
@@ -275,6 +280,7 @@ footer
 		display: inline-block;
 	}
 }
+*/
 
 .textcenter
 {
