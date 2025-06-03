@@ -130,30 +130,6 @@ footer
 	padding: 2rem 0 0 0;
 }
 
-.btn-showthings
-{
-	margin: 1rem 0;
-	width: 100%;
-	padding: 0.5rem;
-	font-size: 1rem;
-	/*border: 1.5px solid #1a5fb4;*/
-	border: 0;
-	border-radius: 0.7rem;
-	/*background-image: linear-gradient(to right, #62a0ea, #1a5fb4);*/
-	background-image: linear-gradient(to right, #1a5fb4, #613583);
-	color: white;
-	font-weight: bold;
-	cursor: pointer;
-	transition: transform 100ms cubic-bezier(.39,.58,.57,1);
-	box-shadow: 0 0 1px 0px #613583 inset, 0 0 1px 0px #613583;
-}
-
-.btn-showthings:hover
-{
-	text-decoration: underline;
-	transform: scale(1.1);
-}
-
 .musiccontainercontainer
 {
 	display: flex;
@@ -171,7 +147,7 @@ footer
 	/*grid-template-rows: 12.5rem fit-content(10rem);*/
 	border-radius: 0.7rem;
 	text-align: center;
-	padding-top: 1rem;
+	padding: 1rem 0 0.3rem 0;
 }
 
 .musiccontainer>div
@@ -191,6 +167,14 @@ footer
 	cursor: pointer;
 	width: 30%;
 	aspect-ratio: 1/1;
+	border-radius: 0.4rem;
+	filter: drop-shadow(0.3rem 0.5rem 0.2rem rgba(1,1,1,0.2));
+	transition: transform 100ms cubic-bezier(.39,.58,.57,1);
+}
+
+.musiccover:hover
+{
+	transform: scale(1.1);
 }
 
 .musicinfo
@@ -201,6 +185,7 @@ footer
 .musictitle
 {
 	margin-bottom: 0.5rem;
+	filter: drop-shadow(0.3rem 0.5rem 0.2rem rgba(1,1,1,0.2));
 }
 
 .musicalbum
@@ -229,16 +214,6 @@ footer
 	font-size: 1rem;
 	text-decoration: none;
 	color: white;
-}
-
-.musiclyric
-{
-	grid-column: 1/4; grid-row: 2;
-	font-weight: normal;
-	text-align: center;
-	overflow-wrap: break-word;
-	line-height: 1.4rem;
-	pointer-events: none;
 }
 
 .musictitle a:hover,
