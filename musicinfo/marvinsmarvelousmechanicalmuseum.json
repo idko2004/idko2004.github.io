@@ -1,0 +1,40 @@
+{
+	"album":
+	{
+		"name": "Marvin's Marvelous Mechanical Museum",
+		"image": "img/music/marvin.png",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_lMjV2uSShXNLPkjgnbRhJJL_eeVtvRIY8"
+	},
+	"artist":
+	{
+		"name": "Tally Hall",
+		"url": "https://music.youtube.com/channel/UC9xRJvhCNHF3Kv8j9jEA6tQ"
+	},
+	"songs":
+	[
+		{
+			"name": "Banana Man",
+			"url": "https://music.youtube.com/watch?v=BRD9BqjIk-E"
+		},
+		{
+			"name": "Good Day",
+			"url": "https://music.youtube.com/watch?v=VGQZItOMz6k"
+		},
+		{
+			"name": "Haiku",
+			"url": "https://music.youtube.com/watch?v=QvmdEGR93mE"
+		},
+		{
+			"name": "Ruler of Everything",
+			"url": "https://music.youtube.com/watch?v=I8sUC-dsW8A"
+		},
+		{
+			"name": "Spring and a Storm",
+			"url": "https://music.youtube.com/watch?v=DehRu-4kgHY"
+		},
+		{
+			"name": "The Whole World and You",
+			"url": "https://music.youtube.com/watch?v=A-ZUo62N7Kc"
+		}
+	]
+}

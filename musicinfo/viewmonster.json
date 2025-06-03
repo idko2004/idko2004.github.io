@@ -1,0 +1,52 @@
+{
+	"album":
+	{
+		"name": "View-Monster",
+		"image": "img/music/view-monster.jpg",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_k1UEDR-LlDPRR8RLPPdJr69Xod0JjmyAc"
+	},
+	"artist":
+	{
+		"name": "Lemon Demon",
+		"url": "https://music.youtube.com/channel/UCOk35jhmr5852r8_XHQSguQ"
+	},
+	"songs":
+	[
+		{
+			"name": "The Afternoon",
+			"url": "https://music.youtube.com/watch?v=qbxJgfV0mEA"
+		},
+		{
+			"name": "Amnesia Was Her Name",
+			"url": "https://music.youtube.com/watch?v=Onw61aL6dcU"
+		},
+		{
+			"name": "Bill Watterson",
+			"url": "https://music.youtube.com/watch?v=UTaszc1Q6eY"
+		},
+		{
+			"name": "Everyday French",
+			"url": "https://music.youtube.com/watch?v=LEXhOSwe4pc"
+		},
+		{
+			"name": "The Only House That's Not on Fire (Yet)",
+			"url": "https://music.youtube.com/watch?v=LwntIpXvV-Q"
+		},
+		{
+			"name": "The Machine",
+			"url": "https://music.youtube.com/watch?v=849q2h1OkKs"
+		},
+		{
+			"name": "The Ocean",
+			"url": "https://music.youtube.com/watch?v=5P9_FHeFRcc"
+		},
+		{
+			"name": "Something Glowing",
+			"url": "https://music.youtube.com/watch?v=fIT1RSAcTDo"
+		},
+		{
+			"name": "Sundial",
+			"url": "https://music.youtube.com/watch?v=tdbhU7EHAhc"
+		}
+	]
+}

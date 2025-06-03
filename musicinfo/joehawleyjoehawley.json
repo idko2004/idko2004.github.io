@@ -1,0 +1,24 @@
+{
+	"album":
+	{
+		"name": "Joe Hawley Joe Hawley",
+		"image": "img/music/joehawleyjoehawley.jpg",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_m24BuZxKezZYtMNqj9OHSZDubAVYEY270"
+	},
+	"artist":
+	{
+		"name": "Joe Hawley",
+		"url": "https://music.youtube.com/channel/UC7wcp1iSZEqAbZfaXk-YMAA"
+	},
+	"songs":
+	[
+		{
+			"name": "Bring Her Along",
+			"url": "https://music.youtube.com/watch?v=EbPdRgkI238"
+		},
+		{
+			"name": "Rotary Park",
+			"url": "https://music.youtube.com/watch?v=ACAzcGYNX80"
+		}
+	]
+}

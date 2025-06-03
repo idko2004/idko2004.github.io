@@ -1,0 +1,24 @@
+{
+	"album":
+	{
+		"name": "I Am Become Christmas",
+		"image": "img/music/iambecomechristmas.jpg",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_meZR7YAAKWmOgGRCJypf-uMsi0cYrck6c"
+	},
+	"artist":
+	{
+		"name": "Lemon Demon",
+		"url": "https://music.youtube.com/channel/UCOk35jhmr5852r8_XHQSguQ"
+	},
+	"songs":
+	[
+		{
+			"name": "Aurora Borealis",
+			"url": "https://music.youtube.com/watch?v=rbMY-NMT_vc"
+		},
+		{
+			"name": "CryptoSanta",
+			"url": "https://music.youtube.com/watch?v=KXJwiwjgyD4"
+		}
+	]
+}

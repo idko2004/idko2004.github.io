@@ -1,0 +1,28 @@
+{
+	"album":
+	{
+		"name": "Good & Evil",
+		"image": "img/music/goodandevil.png",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_kp5RujfVeR3Mk1rYzWSgCfTXbfP65DuNc"
+	},
+	"artist":
+	{
+		"name": "Tally Hall",
+		"url": "https://music.youtube.com/channel/UC9xRJvhCNHF3Kv8j9jEA6tQ"
+	},
+	"songs":
+	[
+		{
+			"name": "&",
+			"url": "https://music.youtube.com/watch?v=pLJ85XExZtQ"
+		},
+		{
+			"name": "Hymn for a Scarecrow",
+			"url": "https://music.youtube.com/watch?v=rfUeWe7u364"
+		},
+		{
+			"name": "Fate of the Stars",
+			"url": "https://music.youtube.com/watch?v=tRnMWzz44gA"
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"artists":
+	{
+		"Miracle Musical": "https://music.youtube.com/channel/UCLcDCIWMBruo5VASmmlv7Uw",
+		"Lemon Demon": "https://music.youtube.com/channel/UCOk35jhmr5852r8_XHQSguQ",
+		"Tally Hall": "https://music.youtube.com/channel/UC9xRJvhCNHF3Kv8j9jEA6tQ",
+		"Will Wood and the Tapeworms": "https://music.youtube.com/channel/UCU5ZC6JENEIymH9oDxBarzw",
+		"Joe Hawley": "https://music.youtube.com/channel/UC7wcp1iSZEqAbZfaXk-YMAA"
+	},
+	"albums":
+	{
+		"Hawaii: Part II":
+		{
+			"cover": "img/music/hawaiipartii.jpg",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_kCPng04PE0tr1Lw6kaCt7-O5xk2ztqsJw"
+		},
+		"Spirit Phone":
+		{
+			"cover": "img/music/spiritphone.jpg",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_k-gjwrMLQJbpBbYgWuTv0FYiws5aXkoG0"
+		},
+		"I Am Become Christmas":
+		{
+			"cover": "img/music/iambecomechristmas.jpg",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_meZR7YAAKWmOgGRCJypf-uMsi0cYrck6c"
+		},
+		"View-Monster":
+		{
+			"cover": "img/music/view-monster.jpg",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_k1UEDR-LlDPRR8RLPPdJr69Xod0JjmyAc"
+		},
+		"Damn Skippy":
+		{
+			"cover": "img/music/damnskippy.png",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_mEnkr4sqnNPZh6t5EqLWcKAR_9DfQoIrc"
+		},
+		"Marvin's Marvelous Mechanical Museum":
+		{
+			"cover": "img/music/marvin.png",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_lMjV2uSShXNLPkjgnbRhJJL_eeVtvRIY8"
+		},
+		"Good & Evil":
+		{
+			"cover": "img/music/goodandevil.png",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_kp5RujfVeR3Mk1rYzWSgCfTXbfP65DuNc"
+		},
+		"SELF-iSH":
+		{
+			"cover": "img/music/self-ish.jpg",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_mymzlqG9uwj0i_kyFgNdZF6EEE9j0aqes"
+		},
+		"Joe Hawley Joe Hawley":
+		{
+			"cover": "img/music/joehawleyjoehawley.jpg",
+			"url": "https://music.youtube.com/playlist?list=OLAK5uy_m24BuZxKezZYtMNqj9OHSZDubAVYEY270"
+		}
+	},
+	"music-files":
+	[
+		"musicinfo/hawaii-dreamsweet.json",
+		"musicinfo/hawaii-isleuntothyself.json",
+		"musicinfo/hawaii-whiteball.json",
+		"musicinfo/hawaii-murders.json",
+		"musicinfo/hawaii-mindelectric.json",
+		"musicinfo/sp-revival.json",
+		"musicinfo/sp-telephone.json",
+		"musicinfo/sp-arcade.json",
+		"musicinfo/sp-noeyed.json",
+		"musicinfo/sp-ancientaliens.json",
+		"musicinfo/sp-softfuzzy.json",
+		"musicinfo/sp-ants.json",
+		"musicinfo/sp-angrypeople.json",
+		"musicinfo/iabc-aurora.json",
+		"musicinfo/iabc-cryptosanta.json",
+		"musicinfo/vm-amnesia.json",
+		"musicinfo/vm-housefire.json",
+		"musicinfo/vm-ocean.json",
+		"musicinfo/vm-afternoon.json",
+		"musicinfo/vm-machine.json",
+		"musicinfo/vm-billwatterson.json",
+		"musicinfo/vm-something.json",
+		"musicinfo/vm-sundial.json",
+		"musicinfo/vm-french.json",
+		"musicinfo/ds-monkeys.json",
+		"musicinfo/ds-sky.json",
+		"musicinfo/ds-pie.json",
+		"musicinfo/ds-robots.json",
+		"musicinfo/ds-geeks.json",
+		"musicinfo/ds-newwayout.json",
+		"musicinfo/ds-kitten.json",
+		"musicinfo/ds-ceiling.json",
+		"musicinfo/ds-rainwater.json",
+		"musicinfo/ds-spin.json",
+		"musicinfo/ds-enemylasagna.json",
+		"musicinfo/ds-scatterbrained.json",
+		"musicinfo/marvin-goodday.json",
+		"musicinfo/marvin-banana.json",
+		"musicinfo/marvin-springandstorm.json",
+		"musicinfo/marvin-haiku.json",
+		"musicinfo/marvin-wholeworld.json",
+		"musicinfo/marvin-ruler.json",
+		"musicinfo/goodevil-and.json",
+		"musicinfo/goodevil-scarecrow.json",
+		"musicinfo/goodevil-stars.json",
+		"musicinfo/wwworm-cotard.json",
+		"musicinfo/wwworm-5names.json",
+		"musicinfo/wwworm-sunshine.json",
+		"musicinfo/jhjh-bring.json",
+		"musicinfo/jhjh-blackpeople.json",
+		"musicinfo/jhjh-rotary.json"
+	]
+}

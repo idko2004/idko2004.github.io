@@ -1,0 +1,36 @@
+{
+	"album":
+	{
+		"name": "Hawaii: Part II",
+		"image": "img/music/hawaiipartii.jpg",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_kCPng04PE0tr1Lw6kaCt7-O5xk2ztqsJw"
+	},
+	"artist":
+	{
+		"name": "Miracle Musical",
+		"url": "https://music.youtube.com/channel/UCLcDCIWMBruo5VASmmlv7Uw"
+	},
+	"songs":
+	[
+		{
+			"name": "Dream Sweet in Sea Major",
+			"url": "https://music.youtube.com/watch?v=uxyM7vhU0uU"
+		},
+		{
+			"name": "Isle Unto Thyself",
+			"url": "https://music.youtube.com/watch?v=uQnz55oYEA4"
+		},
+		{
+			"name": "The Mind Electric",
+			"url": "https://music.youtube.com/watch?v=0vfZjdK8Ktw"
+		},
+		{
+			"name": "Murders",
+			"url": "https://music.youtube.com/watch?v=CaTX0pt3uyg"
+		},
+		{
+			"name": "White Ball",
+			"url": "https://music.youtube.com/watch?v=bnUZ8HcPKsA"
+		}
+	]
+}

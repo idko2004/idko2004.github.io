@@ -1,0 +1,64 @@
+{
+	"album":
+	{
+		"name": "Damn Skippy",
+		"image": "img/music/damnskippy.png",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_mEnkr4sqnNPZh6t5EqLWcKAR_9DfQoIrc"
+	},
+	"artist":
+	{
+		"name": "Lemon Demon",
+		"url": "https://music.youtube.com/channel/UCOk35jhmr5852r8_XHQSguQ"
+	},
+	"songs":
+	[
+		{
+			"name": "The Ceiling",
+			"url": "https://music.youtube.com/watch?v=Q7DSeyUX7yk"
+		},
+		{
+			"name": "Word Disassociation",
+			"url": "https://music.youtube.com/watch?v=bil3TUilhsw"
+		},
+		{
+			"name": "Geeks in Love",
+			"url": "https://music.youtube.com/watch?v=_ZoEI-7j4xM"
+		},
+		{
+			"name": "Kitten Is Angry",
+			"url": "https://music.youtube.com/watch?v=zjf2FKlZl9M"
+		},
+		{
+			"name": "Dead Sea Monkeys",
+			"url": "https://music.youtube.com/watch?v=nvs38PgCN68"
+		},
+		{
+			"name": "New Way Out",
+			"url": "https://music.youtube.com/watch?v=zRtOVD3tIWY"
+		},
+		{
+			"name": "Pumpkin Pie",
+			"url": "https://music.youtube.com/watch?v=0Npj_Evy54U"
+		},
+		{
+			"name": "Rainwater",
+			"url": "https://music.youtube.com/watch?v=0ukn5UD8xm4"
+		},
+		{
+			"name": "When Robots Attack",
+			"url": "https://music.youtube.com/watch?v=lX-T7aUseUI"
+		},
+		{
+			"name": "Scatterbrained",
+			"url": "https://music.youtube.com/watch?v=rzjp3CaLEcU"
+		},
+		{
+			"name": "Sky Is Not Blue",
+			"url": "https://music.youtube.com/watch?v=95tWFGej2RE"
+		},
+		{
+			"name": "Dizziful Bliss",
+			"url": "https://music.youtube.com/watch?v=wen1_32bCSo"
+		}
+	]
+}

@@ -11,55 +11,66 @@ const divmusiccover = document.getElementById('divmusiccover');
 
 async function setMusicRecomendation()
 {
-	let musicInfoResponse;
 	let musicInfo;
 	try
 	{
-		musicInfoResponse = await fetch("musicinfo.json");
+		const musicInfoResponse = await fetch("musicinfo.json");
 		musicInfo = await musicInfoResponse.json();
 	}
 	catch(err)
 	{
-		alert(`Trying to parse musicinfo.json: ${err}`);
+		console.error(`Trying to parse musicinfo.json: ${err}`);
 		return;
 	}
 
-	artists = musicInfo.artists;
-	albums = musicInfo.albums;
-	musicFiles = musicInfo['music-files'];
+	const randomAlbumIndex = musicInfo.length - 1; //Hacer que sea random
+	//const randomAlbumIndex = randomRange(0, musicInfo.length - 1);
+	const randomAlbumUrl = musicInfo[randomAlbumIndex];
 
-	//const musicIndex =musicFiles.length - 1;
-	const musicIndex = randomRange(0, musicFiles.length - 1);
+	if(randomAlbumUrl === undefined)
+	{
+		console.error(`Album at index ${randomAlbumIndex} is undefined`);
+		return;
+	}
 
-	let musicResponse;
+	let album;
 	try
 	{
-		musicResponse = await fetch(musicFiles[musicIndex]);
-		music = await musicResponse.json();
+		const albumResponse = await fetch(randomAlbumUrl);
+		album = await albumResponse.json();
 	}
 	catch(err)
 	{
-		alert(`Trying to parse musicResponse of (${musicIndex}):${musicFiles[musicIndex]}: ${err}`);
+		console.error(`Trying to parse ${randomAlbumUrl}: ${err}`);
+		return;
+	}
+
+	const musicIndex = album.songs.length - 1;
+	//const musicIndex = randomRange(0, album.songs.length - 1);
+	let music = album.songs[musicIndex];
+	if(music === undefined)
+	{
+		console.error(`Music at index ${musicIndex} on album ${randomAlbumUrl} is undefined`);
 		return;
 	}
 
 	//Title
-	amusictitle.innerText = music.title;
+	amusictitle.innerText = music.name;
 	amusictitle.href = music.url;
 	
 	//Play button
 	listenlink.href = music.url;
 	
 	//Album
-	amusicalbum.innerText = music.album;
-	amusicalbum.href = albums[music.album].url;
+	amusicalbum.innerText = album.album.name;
+	amusicalbum.href = album.album.url;
 	
 	//Artist
-	amusicartist.innerText = music.artist;
-	amusicartist.href = artists[music.artist];
+	amusicartist.innerText = album.artist.name;
+	amusicartist.href = album.artist.url;
 	
 	//Cover
-	divmusiccover.style = `--music-cover:url("${albums[music.album].cover}")`;
+	divmusiccover.style = `--music-cover:url("${album.album.image}")`;
 	divmusiccover.addEventListener('click', ()=>
 	{
 		document.getElementById('listenlink').click();

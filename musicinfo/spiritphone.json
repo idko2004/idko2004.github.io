@@ -1,0 +1,48 @@
+{
+	"album":
+	{
+		"name": "Spirit Phone",
+		"image": "img/music/spiritphone.jpg",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_k-gjwrMLQJbpBbYgWuTv0FYiws5aXkoG0"
+	},
+	"artist":
+	{
+		"name": "Lemon Demon",
+		"url": "https://music.youtube.com/channel/UCOk35jhmr5852r8_XHQSguQ"
+	},
+	"songs":
+	[
+		{
+			"name": "Ancient Aliens",
+			"url": "https://music.youtube.com/watch?v=tKE1hC9mz7Y"
+		},
+		{
+			"name": "Angry People",
+			"url": "https://music.youtube.com/watch?v=EehtkGu7Imk"
+		},
+		{
+			"name": "Spiral of Ants",
+			"url": "https://music.youtube.com/watch?v=k0V9UqeSVgk"
+		},
+		{
+			"name": "Cabinet Man",
+			"url": "https://music.youtube.com/watch?v=CdxtcvnnlXI"
+		},
+		{
+			"name": "No Eyed Girl",
+			"url": "https://music.youtube.com/watch?v=IqFBdBWK9bc"
+		},
+		{
+			"name": "Lifetime Achievement Award",
+			"url": "https://music.youtube.com/watch?v=ecjnB6Ght8Y"
+		},
+		{
+			"name": "Soft Fuzzy Man",
+			"url": "https://music.youtube.com/watch?v=7AQdzGdieB8"
+		},
+		{
+			"name": "Touch-Tone Telephone",
+			"url": "https://music.youtube.com/watch?v=rbxL5BVEkRs"
+		}
+	]
+}
