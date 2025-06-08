@@ -23,8 +23,8 @@ async function setMusicRecomendation()
 		return;
 	}
 
-	const randomAlbumIndex = musicInfo.length - 1; //Hacer que sea random
-	//const randomAlbumIndex = randomRange(0, musicInfo.length - 1);
+	//const randomAlbumIndex = musicInfo.length - 1;
+	const randomAlbumIndex = randomRange(0, musicInfo.length - 1);
 	const randomAlbumUrl = musicInfo[randomAlbumIndex];
 
 	if(randomAlbumUrl === undefined)

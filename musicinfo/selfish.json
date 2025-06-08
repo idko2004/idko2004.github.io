@@ -1,0 +1,28 @@
+{
+	"album":
+	{
+		"name": "SELF-iSH",
+		"image": "img/music/self-ish.jpg",
+		"url": "https://music.youtube.com/playlist?list=OLAK5uy_mymzlqG9uwj0i_kyFgNdZF6EEE9j0aqes"
+	},
+	"artist":
+	{
+		"name": "Will Wood and the Tapeworms",
+		"url": "https://music.youtube.com/channel/UCU5ZC6JENEIymH9oDxBarzw"
+	},
+	"songs":
+	[
+		{
+			"name": "The Song with Five Names, a.k.a. Soapbox Tao, a.k.a. Checkmate Atheists! a.k.a. Neospace Government, a.k.a. You Can Never Know",
+			"url": "https://music.youtube.com/watch?v=lst1NGKHQHk"
+		},
+		{
+			"name": "Cotard's Solution (Anatta/Dukkha/Anicca)",
+			"url": "https://music.youtube.com/watch?v=Qt5DzjzyEJo"
+		},
+		{
+			"name": "Dr. Sunshine is Dead",
+			"url": "https://music.youtube.com/watch?v=mTaQTWEFeYk"
+		}
+	]
+}
