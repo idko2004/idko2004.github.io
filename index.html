@@ -92,7 +92,7 @@
 						<div>
 							<article>
 								<a href="https://github.com/idko2004/low-battery-warning-discord" target="_blank">
-									<img src="img/lowbatterywarningdiscord.svg" fetchpriority="high" class="card titletxt" titletxt="tcosa" right-click="modal-cosa" alt="cosa-matematicas" title='cosa-matemáticas: Helps with one specific math homework.'>
+									<img src="img/lowbatterywarningdiscord.svg" fetchpriority="high" class="card titletxt" titletxt="tdiscordbattery" right-click="modal-battery-discord" alt="low-battery-warning-discord" title='Let your Android device notify you via Discord when its about to die'>
 								</a>
 							</article>
 							<article>
@@ -213,6 +213,7 @@
 				</main>
 			</div>
 		</dialog>
+
 		<dialog id="modal-language">
 			<div>
 				<header>
@@ -225,6 +226,49 @@
 				</main>
 			</div>
 		</dialog>
+
+		<dialog id="modal-battery-discord">
+			<div>
+				<header>
+					low-battery-warning-<span class="discord-span">discord</span>
+					<a class="closemodal light-icon alttxt titletxt" alt="close button" title="Close" modalparent="modal-battery-discord" alttxt="close" titletxt="close"></a>
+				</header>
+				<main>
+					<div class="projecticons">
+						<a class="github-link light-icon alttxt titletxt" href="https://github.com/idko2004/low-battery-warning-discord" target="_blank" alt="github" title="View the source code" alttxt="sourcecode" titletxt="sourcecode"></a>
+					</div>
+					<p>
+						Si es que tienes un dispositivo con Android y utilizas ese dispositivo como algún tipo de servidor gracias a Termux, no quieres tenerlo enchufado todo el rato para que no se le arruine la batería, pero también se te suele olvidar enchufarlo cuando ya le queda poca, este proyecto podría ser de ayuda.
+					</p>
+					<p>
+						<b>low-battery-warning-<span class="discord-span">discord</span></b> envía un mensaje de Discord cuando la batería del dispositivo está baja. Así que si tienes activas las notificaciones de Discord, deberías enterarte cuando el bot te hace un ping. ¡Así ya no se le acaba la batería!
+					</p>
+					<p>
+						<b>low-battery-warning-<span class="discord-span">discord</span></b> no se ejecuta en segundo plano, sino que comprueba si la batería está baja, envía un mensaje si es necesario y se cierra. Por lo que tendrás que configurar un cronjob en Termux, en el readme del proyecto hay instrucciones sobre cómo hacer eso. También es necesario crear tu propio bot de Discord.
+					</p>
+					<div>
+						<span class="discord-span"><b class="txt" txt="madewithhelp">nightly</b></span>
+						<div class="madewith-icons">
+							<span class="spacer">
+								<a href="https://nodejs.org/" target="_blank" class="linknodecoration">
+									<img src="img/nodejs.svg" alt="Node.js" title="Node.js">
+								</a>
+							</span>
+							<span class="spacer">
+								<a href="https://termux.dev/en/" target="_blank" class="linknodecoration">
+									<img src="img/termux.png" alt="Termux" title="Termux">
+								</a>
+							</span>
+							<p>
+								<span class="txt" txt="nodelibs"></span> 
+								<a href="https://www.npmjs.com/package/discord.js" target="_blank">discord.js</a>
+							</p>
+						</div>
+					</div>
+				</main>
+			</div>
+		</dialog>
+
 		<dialog id="modal-mdview">
 			<div>
 				<header>

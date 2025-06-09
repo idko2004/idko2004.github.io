@@ -24,7 +24,7 @@ dialog main
 	max-height: 75vh;
 	overflow: auto;
 
-	line-height: 1.5rem;
+	line-height: 1.5;
 	padding: 0.8rem;
 	margin: 0;
 }
@@ -601,6 +601,22 @@ dialog::backdrop
 {
 	background-color: #53b56a;
 	font-weight: bold;
+}
+
+
+/*   Low Battery Warning Discord   */
+#modal-battery-discord
+{
+	background-color: #000;
+	font-family: 'Ubuntu', system-ui;
+	color: white;
+}
+
+#modal-battery-discord .discord-span
+{
+	background-color: #5865f2;
+	padding: 0 0.2em 0 0.1em;
+	border-radius: 0.15em;
 }
 
 

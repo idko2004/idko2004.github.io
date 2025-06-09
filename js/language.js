@@ -41,6 +41,7 @@ const allTexts =
 	'tidkobot': {es: 'Bot de discord multifunción', en: 'Multipurpose discord bot'},
 	'tnotas': {es: 'Aplicación simple para notas', en: 'Simple notes application'},
 	'tscriptsandthings': {es: 'También conocido como dot-files', en: 'Also known as dot-files'},
+	'tbatterydiscord': {es: 'Haz que tu dispositivo Android avise por Discord cuando se esté por morir', en: 'Let your Android device notify you via Discord when it\'s about to die'},
 	'albumcover': {es: 'Carátula del álbum recomendado', en: 'Cover of the recomended album'},
 	'mmdview1': {es: 'md-view es un visualizador de markdown para el navegador.', en: 'md-view is a markdown reader for the browser.'},
 	'mmdview2': {es: 'Lo hice porque no podía encontrar un lector de markdown que pudiera guardar pdfs, no fuese feo, dejase cambiar la fuente y no fuese difícil de instalar.', en: "I made it because i couldn't find a markdown reader that could save pdfs, wasn't ugly, let me change the font and wasn't a pain to install."},

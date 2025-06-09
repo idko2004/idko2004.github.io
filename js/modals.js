@@ -15,6 +15,13 @@ const modalAnimationList =
 		closeClass: 'anim-fluid-left-close',
 		closeAnim: 'left-close-full'
 	},
+	'modal-battery-discord':
+	{
+		openClass: 'anim-slide-v-open',
+		openAnim: 'slide-v-open',
+		closeClass: 'anim-generic-zoom-out',
+		closeAnim: 'generic-zoom-out'
+	},
 	'modal-mdview':
 	{
 		openClass: 'anim-generic-zoom-in',
