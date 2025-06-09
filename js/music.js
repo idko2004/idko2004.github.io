@@ -45,8 +45,8 @@ async function setMusicRecomendation()
 		return;
 	}
 
-	const musicIndex = album.songs.length - 1;
-	//const musicIndex = randomRange(0, album.songs.length - 1);
+	//const musicIndex = album.songs.length - 1;
+	const musicIndex = randomRange(0, album.songs.length - 1);
 	let music = album.songs[musicIndex];
 	if(music === undefined)
 	{
