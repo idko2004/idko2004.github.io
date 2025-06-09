@@ -111,7 +111,14 @@ function updateTextsByTxtClass()
 	const elements = document.getElementsByClassName('txt');
 	for(let i = 0; i < elements.length; i++)
 	{
-		elements[i].innerText = allTexts[elements[i].getAttribute('txt')][lang];
+		try
+		{
+			elements[i].innerText = allTexts[elements[i].getAttribute('txt')][lang];
+		}
+		catch(err)
+		{
+			console.error(`txt: Failed to get localized text for ${elements[i].getAttribute('txt')} on language ${lang}`, err.toString());
+		}
 	}
 }
 
@@ -120,7 +127,14 @@ function updateAltTexts()
 	const elements = document.getElementsByClassName('alttxt');
 	for(let i = 0; i < elements.length; i++)
 	{
-		elements[i].alt = allTexts[elements[i].getAttribute('alttxt')][lang];
+		try
+		{
+			elements[i].alt = allTexts[elements[i].getAttribute('alttxt')][lang];
+		}
+		catch(err)
+		{
+			console.error(`alttxt: Failed to get localized text for ${elements[i].getAttribute('alttxt')} on language ${lang}`, err.toString());
+		}
 	}
 }
 
@@ -129,7 +143,14 @@ function updateHoverTexts()
 	const elements = document.getElementsByClassName('titletxt');
 	for(let i = 0; i < elements.length; i++)
 	{
-		elements[i].title = allTexts[elements[i].getAttribute('titletxt')][lang];
+		try
+		{
+			elements[i].title = allTexts[elements[i].getAttribute('titletxt')][lang];
+		}
+		catch(err)
+		{
+			console.error(`titletxt: Failed to get localized text for ${elements[i].getAttribute('titletxt')} on language ${lang}`, err.toString());
+		}
 	}
 }
 
@@ -137,13 +158,13 @@ function setLanguage(l)
 {
 	lang = l;
 	updateAllTexts();
-	location.hash = l;
 }
 
 function setLanguageBtn(l)
 {
 	closeModal(langmodal, 'modal-language');
-	setLanguage(l);
+	location.hash = l;
+	//setLanguage(l);
 }
 
 function setLangByBrowser()
@@ -155,7 +176,12 @@ function setLangByBrowser()
 
 function setLangAtStartup()
 {
-	if(location.hash === '' || location.hash === '#') setLangByBrowser();
+	if(location.hash === '' || location.hash === '#')
+	{
+		setLangByBrowser();
+		return;
+	}
+
 	let h = location.hash;
 
 	h = h.replace('#', '');
@@ -164,6 +190,11 @@ function setLangAtStartup()
 }
 
 setLangAtStartup();
+
+window.addEventListener('hashchange', function()
+{
+	setLangAtStartup();
+});
 
 document.getElementById('langbtn').addEventListener('click', () =>
 {
