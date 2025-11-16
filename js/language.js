@@ -189,6 +189,11 @@ function setLangAtStartup()
 	else setLangByBrowser();
 }
 
+function getText(id)
+{
+	return allTexts[id][lang];
+}
+
 setLangAtStartup();
 
 window.addEventListener('hashchange', function()

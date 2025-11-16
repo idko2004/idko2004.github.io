@@ -20,3 +20,11 @@ function randomRange(min, max)
     max = Math.floor(max);
     return Math.floor(randomNumber * (max - min + 1)) + min;
 }
+
+function wait(ms)
+{
+	return new Promise(function(good, bad)
+	{
+		setTimeout(good, ms);
+	})
+}

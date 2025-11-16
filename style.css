@@ -291,3 +291,26 @@ footer
 	width: 3rem;
 	padding: 0 0.5rem 0.25rem 0.5rem;
 }
+
+.dancing-text
+{
+	animation: dancing-text 2s cubic-bezier(.45,.05,.55,.95) var(--dancing-text-delay) infinite;
+	display: inline-block;
+	opacity: 1;
+}
+
+@keyframes dancing-text
+{
+	0%
+	{
+		transform: translateY(-0.3rem) rotateZ(-7deg);
+	}
+	50%
+	{
+		transform: translateY(0.3rem) rotateZ(3deg);
+	}
+	100%
+	{
+		transform: translateY(-0.3rem) rotateZ(-7deg);
+	}
+}
