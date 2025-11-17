@@ -292,6 +292,19 @@ footer
 	padding: 0 0.5rem 0.25rem 0.5rem;
 }
 
+.word-container
+{
+	display: inline-block;
+	margin: 0.4rem 0;
+}
+
+.whitespace
+{
+	display: inline-block;
+	width: 0.3ch;
+	opacity: 0;
+}
+
 .dancing-text
 {
 	animation: dancing-text var(--velocity) cubic-bezier(.45,.05,.55,.95) var(--dancing-text-delay) infinite, appear-after-delay calc(var(--velocity)/3) linear var(--dancing-text-delay) 1 forwards;
