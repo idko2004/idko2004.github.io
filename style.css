@@ -294,9 +294,9 @@ footer
 
 .dancing-text
 {
-	animation: dancing-text 2s cubic-bezier(.45,.05,.55,.95) var(--dancing-text-delay) infinite;
+	animation: dancing-text var(--velocity) cubic-bezier(.45,.05,.55,.95) var(--dancing-text-delay) infinite, appear-after-delay calc(var(--velocity)/3) linear var(--dancing-text-delay) 1 forwards;
 	display: inline-block;
-	opacity: 1;
+	opacity: 0;
 }
 
 @keyframes dancing-text
@@ -312,5 +312,19 @@ footer
 	100%
 	{
 		transform: translateY(-0.3rem) rotateZ(-7deg);
+	}
+}
+
+@keyframes appear-after-delay
+{
+	0%
+	{
+		opacity: 0;
+		scale: 1.5;
+	}
+	100%
+	{
+		opacity: 1;
+		scale: 1;
 	}
 }

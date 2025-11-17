@@ -104,6 +104,7 @@ function updateAllTexts()
 	updateTextsByTxtClass();
 	updateAltTexts();
 	updateHoverTexts();
+	setupTipAnimation();
 }
 
 function updateTextsByTxtClass()

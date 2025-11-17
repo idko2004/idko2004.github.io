@@ -13,6 +13,17 @@ async function setupTipAnimation()
 	];
 
 	const container = document.getElementById('tip-animation-container');
+	container.innerHTML = '';
+
+	let velocity = 2000;
+	let delayFormula = 0;
+
+	for(let textToAnimIndex = 0; textToAnimIndex < textsToAnim.length; textToAnimIndex++)
+	{
+		delayFormula += getText(textsToAnim[textToAnimIndex].textId).length;
+	}
+	delayFormula = velocity/delayFormula;
+
 
 	let elementsToAnimate = [];
 	let delay = 0;
@@ -31,12 +42,13 @@ async function setupTipAnimation()
 			
 			if(text[i] !== ' ')
 			{
-				element.style = `--dancing-text-delay: ${delay}ms`;
+				element.style = `--dancing-text-delay: ${delay}ms; --velocity: ${velocity}ms`;
+				element.classList.add('appear-after-delay');
 				element.classList.add('dancing-text');
 				elementsToAnimate.push(element);
 			}
 			container.appendChild(element);
-			delay += 50;
+			delay += delayFormula;
 		}
 	}
 /*
@@ -49,4 +61,3 @@ async function setupTipAnimation()
 		*/
 }
 
-setupTipAnimation();
